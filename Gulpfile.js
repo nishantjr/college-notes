@@ -19,9 +19,12 @@ function applyTemplate(templateFile) {
 }
 
 gulp.task('build', function() {
+    const mdOpts = {
+        plugins: [ 'markdown-it-katex' ]
+    }
     return gulp
         .src('src/**/*')
-        .pipe(markdown())
+        .pipe(markdown(mdOpts))
         .pipe(connect.reload())
         .pipe(applyTemplate('template.html'))
         .pipe(gulp.dest('.build/www/'))
