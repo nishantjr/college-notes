@@ -34,5 +34,5 @@ gulp.task('serve', ['build'], function() {
         root: '.build/www',
         livereload: true
         })
-    watch('src/**/*', function() { gulp.start('build') } )
+    watch(['./template.html*', 'src/**/*'], function() { gulp.start('build') } )
 })
