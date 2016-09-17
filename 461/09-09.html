@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.css">
+    <style>
+        #content {
+            max-width: 600px;
+            margin: auto;
+        }
+
+        blockquote, .katex-display {
+            padding: 15px;
+            background-color: #f8f8f8;
+            border-radius: 5px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+    </style>
+    <title>Notes</title>
+</head>
+<body>
+<div id='content'>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>P</mi><mo>(</mo><msub><mi>E</mi><mn>1</mn></msub><mi>n</mi><msub><mi>E</mi><mn>2</mn></msub><mi>n</mi><msub><mi>E</mi><mn>3</mn></msub><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mi>n</mi><msub><mi>E</mi><mi>n</mi></msub><mo>)</mo><mo>=</mo></mrow><annotation encoding="application/x-tex">P ( E_1 n E_2 n E_3 ... n E_n ) = 
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1em;vertical-align:-0.25em;"></span><span class="base displaystyle textstyle uncramped"><span class="mord mathit" style="margin-right:0.13889em;">P</span><span class="mopen">(</span><span class="mord"><span class="mord mathit" style="margin-right:0.05764em;">E</span><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:-0.05764em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord mathrm">1</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="mord mathit">n</span><span class="mord"><span class="mord mathit" style="margin-right:0.05764em;">E</span><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:-0.05764em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord mathrm">2</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="mord mathit">n</span><span class="mord"><span class="mord mathit" style="margin-right:0.05764em;">E</span><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:-0.05764em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord mathrm">3</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="mord mathrm">.</span><span class="mord mathrm">.</span><span class="mord mathrm">.</span><span class="mord mathit">n</span><span class="mord"><span class="mord mathit" style="margin-right:0.05764em;">E</span><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:-0.05764em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord mathit">n</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="mclose">)</span><span class="mrel">=</span></span></span></span></span></p>
+<p>4 people are dealt 13 cards each: what is the probability that each person has
+an Ace?</p>
+<p>soln:</p>
+<p>Let E = E1 n E2 E3 n E4</p>
+<ul>
+<li>E1: Ace of D is a hand</li>
+<li>E2: Ace of D and Ace of H are in different hands</li>
+<li>E3: Ace of D H S are in diff hands</li>
+<li>E4: ACe of D H S C are in diff hands</li>
+</ul>
+<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>P</mi><mo>(</mo><mi>E</mi><mo>)</mo><mo>=</mo><mi>P</mi><mo>(</mo><mi>E</mi><mn>1</mn><mo>)</mo><mi>P</mi><mo>(</mo><mi>E</mi><mn>2</mn><mi mathvariant="normal">∣</mi><mi>E</mi><mn>1</mn><mo>)</mo><mi>P</mi><mo>(</mo><mi>E</mi><mn>3</mn><mi mathvariant="normal">∣</mi><mi>E</mi><mn>2</mn><mi>n</mi><mi>E</mi><mn>1</mn><mo>)</mo><mi>P</mi><mo>(</mo><mi>E</mi><mn>4</mn><mi mathvariant="normal">∣</mi><mi>E</mi><mn>3</mn><mi>n</mi><mi>E</mi><mn>2</mn><mi>n</mi><mi>E</mi><mn>1</mn><mo>)</mo></mrow><annotation encoding="application/x-tex">P(E) = P(E1) P(E2 | E1) P(E3 | E2 n E1) P(E4 | E3 n E2 n E1)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1em;vertical-align:-0.25em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.13889em;">P</span><span class="mopen">(</span><span class="mord mathit" style="margin-right:0.05764em;">E</span><span class="mclose">)</span><span class="mrel">=</span><span class="mord mathit" style="margin-right:0.13889em;">P</span><span class="mopen">(</span><span class="mord mathit" style="margin-right:0.05764em;">E</span><span class="mord mathrm">1</span><span class="mclose">)</span><span class="mord mathit" style="margin-right:0.13889em;">P</span><span class="mopen">(</span><span class="mord mathit" style="margin-right:0.05764em;">E</span><span class="mord mathrm">2</span><span class="mord mathrm">∣</span><span class="mord mathit" style="margin-right:0.05764em;">E</span><span class="mord mathrm">1</span><span class="mclose">)</span><span class="mord mathit" style="margin-right:0.13889em;">P</span><span class="mopen">(</span><span class="mord mathit" style="margin-right:0.05764em;">E</span><span class="mord mathrm">3</span><span class="mord mathrm">∣</span><span class="mord mathit" style="margin-right:0.05764em;">E</span><span class="mord mathrm">2</span><span class="mord mathit">n</span><span class="mord mathit" style="margin-right:0.05764em;">E</span><span class="mord mathrm">1</span><span class="mclose">)</span><span class="mord mathit" style="margin-right:0.13889em;">P</span><span class="mopen">(</span><span class="mord mathit" style="margin-right:0.05764em;">E</span><span class="mord mathrm">4</span><span class="mord mathrm">∣</span><span class="mord mathit" style="margin-right:0.05764em;">E</span><span class="mord mathrm">3</span><span class="mord mathit">n</span><span class="mord mathit" style="margin-right:0.05764em;">E</span><span class="mord mathrm">2</span><span class="mord mathit">n</span><span class="mord mathit" style="margin-right:0.05764em;">E</span><span class="mord mathrm">1</span><span class="mclose">)</span></span></span></span></p>
+<p>Now,<br>
+<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>P</mi><mo>(</mo><mi>E</mi><mn>1</mn><mo>)</mo><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">P(E1) = 1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1em;vertical-align:-0.25em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.13889em;">P</span><span class="mopen">(</span><span class="mord mathit" style="margin-right:0.05764em;">E</span><span class="mord mathrm">1</span><span class="mclose">)</span><span class="mrel">=</span><span class="mord mathrm">1</span></span></span></span><br>
+<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>P</mi><mo>(</mo><mi>E</mi><mn>2</mn><mi mathvariant="normal">∣</mi><mi>E</mi><mn>1</mn><mo>)</mo><mo>=</mo><mn>3</mn><mn>9</mn><mi mathvariant="normal">/</mi><mn>5</mn><mn>1</mn></mrow><annotation encoding="application/x-tex">P(E2 | E1) = 39 / 51</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1em;vertical-align:-0.25em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.13889em;">P</span><span class="mopen">(</span><span class="mord mathit" style="margin-right:0.05764em;">E</span><span class="mord mathrm">2</span><span class="mord mathrm">∣</span><span class="mord mathit" style="margin-right:0.05764em;">E</span><span class="mord mathrm">1</span><span class="mclose">)</span><span class="mrel">=</span><span class="mord mathrm">3</span><span class="mord mathrm">9</span><span class="mord mathrm">/</span><span class="mord mathrm">5</span><span class="mord mathrm">1</span></span></span></span>    (Can be in any of the other 13 card hands)<br>
+<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>E</mi><mo>(</mo><mi>E</mi><mn>3</mn><mi mathvariant="normal">∣</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mo>)</mo><mo>=</mo><mn>2</mn><mn>6</mn><mi mathvariant="normal">/</mi><mn>5</mn><mn>0</mn></mrow><annotation encoding="application/x-tex">E(E3 | ...) = 26 / 50</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1em;vertical-align:-0.25em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.05764em;">E</span><span class="mopen">(</span><span class="mord mathit" style="margin-right:0.05764em;">E</span><span class="mord mathrm">3</span><span class="mord mathrm">∣</span><span class="mord mathrm">.</span><span class="mord mathrm">.</span><span class="mord mathrm">.</span><span class="mclose">)</span><span class="mrel">=</span><span class="mord mathrm">2</span><span class="mord mathrm">6</span><span class="mord mathrm">/</span><span class="mord mathrm">5</span><span class="mord mathrm">0</span></span></span></span><br>
+<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>E</mi><mo>(</mo><mi>E</mi><mn>4</mn><mi mathvariant="normal">∣</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mo>)</mo><mo>=</mo><mn>1</mn><mn>3</mn><mi mathvariant="normal">/</mi><mn>4</mn><mn>9</mn></mrow><annotation encoding="application/x-tex">E(E4 | ...) = 13 / 49</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1em;vertical-align:-0.25em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.05764em;">E</span><span class="mopen">(</span><span class="mord mathit" style="margin-right:0.05764em;">E</span><span class="mord mathrm">4</span><span class="mord mathrm">∣</span><span class="mord mathrm">.</span><span class="mord mathrm">.</span><span class="mord mathrm">.</span><span class="mclose">)</span><span class="mrel">=</span><span class="mord mathrm">1</span><span class="mord mathrm">3</span><span class="mord mathrm">/</span><span class="mord mathrm">4</span><span class="mord mathrm">9</span></span></span></span></p>
+<p>So, <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>P</mi><mo>(</mo><mi>E</mi><mo>)</mo><mo>=</mo><mn>3</mn><mn>9</mn><mo>∗</mo><mn>2</mn><mn>6</mn><mo>∗</mo><mn>1</mn><mn>3</mn><mi mathvariant="normal">/</mi><mo>(</mo><mn>5</mn><mn>1</mn><mo>∗</mo><mn>5</mn><mn>0</mn><mo>∗</mo><mn>4</mn><mn>9</mn><mo>)</mo></mrow><annotation encoding="application/x-tex">P(E) = 39 * 26 * 13 / (51 * 50 * 49)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1em;vertical-align:-0.25em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.13889em;">P</span><span class="mopen">(</span><span class="mord mathit" style="margin-right:0.05764em;">E</span><span class="mclose">)</span><span class="mrel">=</span><span class="mord mathrm">3</span><span class="mord mathrm">9</span><span class="mbin">∗</span><span class="mord mathrm">2</span><span class="mord mathrm">6</span><span class="mbin">∗</span><span class="mord mathrm">1</span><span class="mord mathrm">3</span><span class="mord mathrm">/</span><span class="mopen">(</span><span class="mord mathrm">5</span><span class="mord mathrm">1</span><span class="mbin">∗</span><span class="mord mathrm">5</span><span class="mord mathrm">0</span><span class="mbin">∗</span><span class="mord mathrm">4</span><span class="mord mathrm">9</span><span class="mclose">)</span></span></span></span></p>
+<h2>Bayes's Formula:</h2>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>P</mi><mo>(</mo><mi>E</mi><mi mathvariant="normal">∣</mi><mi>F</mi><mo>)</mo><mo>=</mo><mfrac><mrow><mi>P</mi><mo>(</mo><mi>F</mi><mi mathvariant="normal">∣</mi><mi>E</mi><mo>)</mo><mo>∗</mo><mi>P</mi><mo>(</mo><mi>E</mi><mo>)</mo></mrow><mrow><mi>P</mi><mo>(</mo><mi>F</mi><mo>)</mo></mrow></mfrac></mrow><annotation encoding="application/x-tex">P(E|F) = \frac { P(F|E) * P(E) }{ P(F)} 
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:1.427em;"></span><span class="strut bottom" style="height:2.363em;vertical-align:-0.936em;"></span><span class="base displaystyle textstyle uncramped"><span class="mord mathit" style="margin-right:0.13889em;">P</span><span class="mopen">(</span><span class="mord mathit" style="margin-right:0.05764em;">E</span><span class="mord mathrm">∣</span><span class="mord mathit" style="margin-right:0.13889em;">F</span><span class="mclose">)</span><span class="mrel">=</span><span class="mord reset-textstyle displaystyle textstyle uncramped"><span class="sizing reset-size5 size5 reset-textstyle textstyle uncramped nulldelimiter"></span><span class="mfrac"><span class="vlist"><span style="top:0.686em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle textstyle cramped"><span class="mord textstyle cramped"><span class="mord mathit" style="margin-right:0.13889em;">P</span><span class="mopen">(</span><span class="mord mathit" style="margin-right:0.13889em;">F</span><span class="mclose">)</span></span></span></span><span style="top:-0.2300000000000001em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle textstyle uncramped frac-line"></span></span><span style="top:-0.677em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle textstyle uncramped"><span class="mord textstyle uncramped"><span class="mord mathit" style="margin-right:0.13889em;">P</span><span class="mopen">(</span><span class="mord mathit" style="margin-right:0.13889em;">F</span><span class="mord mathrm">∣</span><span class="mord mathit" style="margin-right:0.05764em;">E</span><span class="mclose">)</span><span class="mbin">∗</span><span class="mord mathit" style="margin-right:0.13889em;">P</span><span class="mopen">(</span><span class="mord mathit" style="margin-right:0.05764em;">E</span><span class="mclose">)</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="sizing reset-size5 size5 reset-textstyle textstyle uncramped nulldelimiter"></span></span></span></span></span></span></p>
+<p>Why? :</p>
+<ul>
+<li>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>P</mi><mo>(</mo><mi>E</mi><mi mathvariant="normal">∣</mi><mi>F</mi><mo>)</mo><mo>=</mo><mfrac><mrow><mi>P</mi><mo>(</mo><mi>E</mi><mo>∩</mo><mi>F</mi><mo>)</mo></mrow><mrow><mi>P</mi><mo>(</mo><mi>F</mi><mo>)</mo></mrow></mfrac></mrow><annotation encoding="application/x-tex">P(E|F) = \frac{P(E \cap F)}{P(F)}
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:1.427em;"></span><span class="strut bottom" style="height:2.363em;vertical-align:-0.936em;"></span><span class="base displaystyle textstyle uncramped"><span class="mord mathit" style="margin-right:0.13889em;">P</span><span class="mopen">(</span><span class="mord mathit" style="margin-right:0.05764em;">E</span><span class="mord mathrm">∣</span><span class="mord mathit" style="margin-right:0.13889em;">F</span><span class="mclose">)</span><span class="mrel">=</span><span class="mord reset-textstyle displaystyle textstyle uncramped"><span class="sizing reset-size5 size5 reset-textstyle textstyle uncramped nulldelimiter"></span><span class="mfrac"><span class="vlist"><span style="top:0.686em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle textstyle cramped"><span class="mord textstyle cramped"><span class="mord mathit" style="margin-right:0.13889em;">P</span><span class="mopen">(</span><span class="mord mathit" style="margin-right:0.13889em;">F</span><span class="mclose">)</span></span></span></span><span style="top:-0.2300000000000001em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle textstyle uncramped frac-line"></span></span><span style="top:-0.677em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle textstyle uncramped"><span class="mord textstyle uncramped"><span class="mord mathit" style="margin-right:0.13889em;">P</span><span class="mopen">(</span><span class="mord mathit" style="margin-right:0.05764em;">E</span><span class="mbin">∩</span><span class="mord mathit" style="margin-right:0.13889em;">F</span><span class="mclose">)</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="sizing reset-size5 size5 reset-textstyle textstyle uncramped nulldelimiter"></span></span></span></span></span></span></p>
+</li>
+<li>so <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>P</mi><mo>(</mo><mi>E</mi><mo>)</mo><mi>P</mi><mo>(</mo><mi>F</mi><mi mathvariant="normal">∣</mi><mi>E</mi><mo>)</mo><mi mathvariant="normal">/</mi><mi>P</mi></mrow><annotation encoding="application/x-tex">P(E) P(F|E) / P</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1em;vertical-align:-0.25em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.13889em;">P</span><span class="mopen">(</span><span class="mord mathit" style="margin-right:0.05764em;">E</span><span class="mclose">)</span><span class="mord mathit" style="margin-right:0.13889em;">P</span><span class="mopen">(</span><span class="mord mathit" style="margin-right:0.13889em;">F</span><span class="mord mathrm">∣</span><span class="mord mathit" style="margin-right:0.05764em;">E</span><span class="mclose">)</span><span class="mord mathrm">/</span><span class="mord mathit" style="margin-right:0.13889em;">P</span></span></span></span></li>
+</ul>
+<h3>Law of total probabliliy: P(E) = P(F) * P(E|F) + (1 - P(F)) * P(E|F^c)</h3>
+<p>P(E) = P(E n F) + P(E n F^c)
+... apply multiplication formula ..</p>
+<h4>Medical example</h4>
+<p>A lab test is 95% efficive in detecting a disease</p>
+<p>But has false positive rate of 1%</p>
+<p>0.5 % of the population have the disease</p>
+<p>If my test is +ve what is tje porobiability I have teh disease.</p>
+<hr>
+<blockquote>
+<p>A lab test is 95% efficive in detecting a disease</p>
+</blockquote>
+<p>=&gt; P(T | D) = .95</p>
+<blockquote>
+<p>But has false positive rate of 1%</p>
+</blockquote>
+<p>P(T | D^c) = 0.01</p>
+<blockquote>
+<p>0.5 % of the population have the disease</p>
+</blockquote>
+<p>P(D) = 0.005</p>
+<blockquote>
+<p>If my test is +ve what is tje porobiability I have teh disease.</p>
+</blockquote>
+<p>P(D | T) = ?</p>
+<hr>
+<p>P(D|T) = P(T|D) P(D) / P(T) ... Bayes's</p>
+<pre><code>   =  P(T|D) * P(D) / (P(T|D) * P(D) + P(T|D^c) * P(D^c)
+   =  0.95 * 0.005  / ....
+
+
+   ~= 0.32
+</code></pre>
+<p>This is quite a surprising result: 2/3 positive tests are false positives.</p>
+<h1>Generalizsed for n events:</h1>
+<p>Suppose F1 ... Fn are mutually exclusive and exhaustive
+i.e. **exactly one event occurs.</p>
+<p>If E is another event
+-&gt;   E  = union_n (E n F_i)
+-&gt; P(E) = sum P(E n F_i)
+=  = sum_i^n P(E|F) P(F_i)
+This is law of totoal probability</p>
+<p>P(F_j | E) = P(En F_j) / P(E)
+= P(E n F_j) / sum(P(E|F_i) P(Fi)
+THis is Bayes's' Formula</p>
+<p>Example: Plane crasehs. Lands in either region A_1, A_2, A_3</p>
+<p>P (Ai) = 1/3</p>
+<p>P(S_i | Ai ) = 1 - B_i</p>
+
+</div>
+<script src="//localhost:35729/livereload.js?snipver=1"></script>
+</body>
+</html>
