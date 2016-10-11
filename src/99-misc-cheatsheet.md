@@ -1,10 +1,10 @@
 
 ## Functions
 
-For $F: y \to x$
+For $F: x \to y$
 * **one-to-one**, **injective**: "in-to"
   - preserves distintiveness
-  - every x may not have a y.
+  - every y may not have a x.
 * **surjective**, **onto**
-  - every x has a y, maybe more than one
+  - every y has a x, maybe more than one
 
