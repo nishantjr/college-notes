@@ -20,7 +20,10 @@ function applyTemplate(templateFile) {
 
 gulp.task('build', function() {
     const mdOpts = {
-        plugins: [ 'markdown-it-katex' ]
+        plugins: [
+            'markdown-it-katex',
+            'markdown-it-deflist'
+        ]
     }
     return gulp
         .src('src/**/*')
