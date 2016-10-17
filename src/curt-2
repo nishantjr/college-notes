@@ -1,0 +1,36 @@
+Not commutative (hmmm... but this is associative....):
+
+    Config + Config -> config
+
+      { times = 1, input = stdin, munge = no }
+    + { times = 2, input =      , munge =    } 
+    = { times = 2, input = stdin, munge = no } 
+
+Has identity:    
+
+      { times = 1, input = stdin, munge = no }
+    + { times =  , input =      , munge =    } 
+    = { times = 1, input = stdin, munge = no } 
+
+let e = { times =  , input =      , munge =    } 
+    then e + x = x
+
+Can you have a single operation with different identites?
+
+equivalance relations:
+
+    * transitive
+    * reflexive
+    * symmetric
+
+Order relations:
+
+    * Anti-symmetric: A ⇐ B and B ⇐ A => A = B
+    * Reflexive: A ⇐ A
+    * 
+
+Poset don't have a totalling ordering
+
+Huh. Never heard or pre-orders before
+
+
