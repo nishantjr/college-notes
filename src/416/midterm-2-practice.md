@@ -69,7 +69,9 @@ Isomorphism; isomorphic (Linear trasforms)
 
 Change of coordinate matrix
 
-: XXX
+: Let $\beta$ and $\beta'$ be bases for a finite dimentsional vector space $V$
+  Then $[I_v]^\beta_beta'$ is called the change of coordinate matrix.
+
 
 Similar matrices
 
