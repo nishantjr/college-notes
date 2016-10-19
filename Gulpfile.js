@@ -1,8 +1,7 @@
 'use strict'
 
 const gulp = require('gulp'),
-      connect = require('gulp-connect'),
-      markdown = require('gulp-markdown-it')
+      connect = require('gulp-connect')
 
 function applyTemplate(templateFile) {
     const fs = require('fs')
@@ -19,15 +18,15 @@ function applyTemplate(templateFile) {
 }
 
 gulp.task('build', function() {
-    const mdOpts = {
-        plugins: [
-            'markdown-it-katex',
-            'markdown-it-deflist'
-        ]
-    }
+    const mdAdapter = require('gulp-markdown-it-adapter'),
+          markdownIt = require('markdown-it')
+    const md = new markdownIt('commonmark')
+    md.use(require('markdown-it-katex'))
+    md.use(require('markdown-it-deflist'))
+
     return gulp
         .src('src/**/*')
-        .pipe(markdown(mdOpts))
+        .pipe(mdAdapter(md))
         .pipe(connect.reload())
         .pipe(applyTemplate('template.html'))
         .pipe(gulp.dest('.build/www/'))

@@ -13,10 +13,12 @@
   "dependencies": {
     "gulp": "^3.x",
     "gulp-connect": "^5.x",
-    "gulp-markdown-it": "^0.1.x",
+    "gulp-markdown-it-adapter": "^0.1.x",
     "gulp-tap": "^0.1.x",
     "gulp-watch": "^4.x",
     "katex": "^0.x",
+    "markdown-it": "^8.x",
+    "markdown-it-deflist": "^2.x",
     "markdown-it-katex": "^2.x"
   }
 }
