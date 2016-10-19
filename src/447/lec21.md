@@ -1,9 +1,9 @@
 Uniform continuity
 
 : $f:(S, d) \to (S',d')$ is uniformly continous
-if $\forall \epsilon > 0, \exists \del > 0$
-so that $\forall x, y \in S: $
-$d(x, y) < \del \Rightarrow d'(f(x), f(y)) < \epsilon$
+if $\forall \epsilon > 0, \exists \delta > 0$
+so that $\forall x, y \in S:
+d(x, y) < \delta \Rightarrow d'(f(x), f(y)) < \epsilon$
 
 : Informally(?):
   * derivative is bounded.
@@ -21,6 +21,6 @@ Theorem 19.2 if $f:[a, b] \to \Bbb R$ is  continuous, it is uniformly continuous
 Proof: Suppose it is not uniformly continuous.
 
 Then $\exists \epsilon_0: \forall \delta > 0, \exists x_d, y_d \in [a, b]$,
-with $\x_d -y_d| < \del$ and $|f(x_d, y_d) \ge \epsilon_0$
+with $\x_d -y_d| < \delta$ and $|f(x_d, y_d) \ge \epsilon_0$
 
 Take $\delta = \frac 1 n$, Let $x_n = x(\frac 1 n), y_n = y(\frac 1 n)$
