@@ -14,7 +14,7 @@ Product of gourp subsets
 Normal subgroup ($N \trianglelefteq G$)
 : $\forall g \in G \Longrightarrow gNg ^{-1} = N$
 
-Index of a group $|G : H|
+Index of a group $|G : H|$
 : The number of cosets of $H$ in $G$
 
 ## First Isomorpism Theorem (aka: an image is a quotient)
@@ -24,16 +24,6 @@ Index of a group $|G : H|
 > Then, $\hat\varphi: G/N \to H,\quad \hat\varphi(gN) := \varphi(g)$ is an isomorphism  
 > and $G/N \cong H$
 
-### Show tha t $\hat\varphi$ is well defined.
-If $gN = hN$, show,  
-
-$$\begin{aligned} 
-Show && \hat\varphi(gN) &= \hat\varphi(hN)      &\ldots&\text{ given}\\ 
- i.e && \varphi(g) &= \varphi(h)                &\ldots&\text{ by definition of } \hat\varphi \\   
- i.e && h ^{-1} g  &\in N
-\end{aligned}$$
-
---- 
 Alternately,
 
 > If $\varphi: G \to H$ is a homomorphism,  
@@ -48,4 +38,20 @@ Alternately,
 > * $N \le AN \le G$
 > * $AN/_N \cong \varphi(A) \cong A/_{A\cap N}$
 
+## Third Isomorphism Theorem (aka: Cancel like it's division, yo)
 
+> $\varphi: G \to \bar G$ is a surjective homomorphism with kernel $N$.  
+> Let $\bar K \trianglelefteq \bar G$ and $K = \varphi ^{-1}(\bar K)$.
+>
+> Then: $\bar G / \bar K \cong G/K \cong (G/N)/_{(K/N)}$
+
+## Lattice Isomorphism Theorem (Correspondence threorem)
+
+The subgroups of $G$ that contain $N$ have the same lattice as $G/N$'s subgroup
+lattice.
+
+> $\varphi: G \to \bar G$ is a homomorphism, and $N$ is it's kernel.  
+>
+> * $\bar B \to \varphi ^{-1} (\bar B)$ is a  bijection between the
+>   subgroups of $\bar G$ and subgroups of $G$ containing $N$
+> * normal subgroups go to normal subgroups
