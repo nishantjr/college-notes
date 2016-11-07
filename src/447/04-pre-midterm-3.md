@@ -78,3 +78,26 @@ Local Minimum, mimima
 1. Take $h(x)$ so that $h(a) = f(a), h(b) = f(b)$, constance slope.
 2. Consider the function $f(x) - h(x)$, apply Rolle's thoerem.
 
+XXX Rest of lecture 27
+
+---
+
+#### Theorem N28.1: $f:(a, b) \to \mathbb R$ is differentiable, $f'(x) \ge 0$ $\Longleftrightarrow$ $f$ is non-decreasing
+
+$\Rightarrow$: Use mean value theorem on any $x, y \in (a, b)$, definition of $f'(x)$ to get $f(x) \ge f(y)$  
+$\Leftarrow$: Definition of non-decreasing ($\frac {f(y) - f(x)}{y - x} \ge 0$), apply limit
+
+#### Theorem 29.9: Inverse funciton theorem
+> Suppose:
+> * $f:(a, b) \to (c, d)$ is continuous (NOTE domain and codomain MUST be open)
+> * $f$ is differentiable at $x_0 \in (a, b)$
+> * $f'(x_0 \ne 0)$
+> Then,
+> * $f^{-1}$ is differentiable at $y_0 = f(x_0)$
+> * $(f^{-1}(y_0) = f'(x_0) = 1$\
+
+1. Assume $f^{-1}$ is continuous (we prove this later, using Theorem N28.1)
+2. Since $f'(x_0)$ exists, $\ne 0$, use any sequence: $\{y_n\} = \{ f(x_n) \} \to Y, definition of limit, to show $\lim_{n\to\infty} \frac {f^{-1}(y_n) - f^{-1}(Y)} {y_n - Y} = \lim \frac {x_n - x_0} { f(x_n) - X } = \lim \frac {1} { \frac { f(x_n) - X } {x_n - x_0}  } = \frac 1 {f'(X)}$
+
+#### Theorem 18.6: $f:(a, b) \to (c, d)$ is a continuous bijection then $f$ is strictly monotonic
+#### Theorem N28.1: $f:(a, b) \to (c, d)$ is a continuous bijection then $f^{-1}$ is continuous
