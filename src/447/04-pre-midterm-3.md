@@ -101,3 +101,20 @@ $\Leftarrow$: Definition of non-decreasing ($\frac {f(y) - f(x)}{y - x} \ge 0$),
 
 #### Theorem 18.6: $f:(a, b) \to (c, d)$ is a continuous bijection then $f$ is strictly monotonic
 #### Theorem N28.1: $f:(a, b) \to (c, d)$ is a continuous bijection then $f^{-1}$ is continuous
+
+---
+
+## Lecture 29: Integration
+
+Notation:
+1. $M(f, S):= \sup \{f(x) | \forall x \in S \}$
+1. $m(f, S):= \inf \{f(x) | \forall x \in S \}$
+
+Partition $P$ pf $[a, b]$
+: set of points $t_0, t_1, t_2 \ldots t_n \in [a, b]$, s.t. $a = t_0 < t_1 < t_2 \ldots  < t_n = b$
+
+Upper sum w.r.t partition $P$
+: $U(f, P) := \sum_{i=1} M(f, [t_{i-1}, t_i])\cdot(t_i - t_{i-1})$
+
+Lower sum w.r.t partition $P$
+: $L(f, P) := \sum_{i=1} m(f, [t_{i-1}, t_i])\cdot(t_i - t_{i-1})$
