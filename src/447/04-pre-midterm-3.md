@@ -118,3 +118,27 @@ Upper sum w.r.t partition $P$
 
 Lower sum w.r.t partition $P$
 : $L(f, P) := \sum_{i=1} m(f, [t_{i-1}, t_i])\cdot(t_i - t_{i-1})$
+
+
+## Lecture 31
+
+#### Theorem 33.4 (i): $f(x) \le g(x) \Rightlongarrow \int_a^b f \le\int_a^b g$
+(where $f, g: [a, b] \to \mathbb R$ are integrable)
+
+$$\begin{aligned}
+            &&        f(x) &\le g(x)  \\
+\Rightarrow && g(x) - f(x) &\ge 0 \\
+\Rightarrow && L(g - f, P) &= \sum_P m(g - f, [t_{i-1}, t_i])\cdot(t_i - t_{i-1}) \\
+            &&             &\ge 0 \\
+\Rightarrow && \int_a^b g - \int_a^b &= \int_a^b g - f \\ && &= \sup_P\{ L(g - f, P) \} \ge 0
+\end{aligned}$$
+
+#### Theorem 33.4 (ii): $g$ is continuous, $g(x) \ge 0$, $\int g = 0$ implies $g(x) = 0
+(all on the interval $[a, b]$)
+
+Proof by contradiction at $x_0$
+1. Definition of continuity at $x_0$: Since one point $x_0$ has non-zero value, it's locality has non zero value
+  * $I$ is CLOSED, so $x \in (x_0 - \delta,x_0 + \delta) \cap [a, b]$
+  * ... $ \int_{\text{locality}} = XXX \ge \text{length}(\text{locality})  \frac 1 2 g(x_0) $
+2. Since $g(x) \ge 0$, $\int_a^b \ge \int_{\text{locality of }x_0} > 0$
+
