@@ -142,3 +142,30 @@ Proof by contradiction at $x_0$
   * ... $ \int_{\text{locality}} = XXX \ge \text{length}(\text{locality})  \frac 1 2 g(x_0) $
 2. Since $g(x) \ge 0$, $\int_a^b \ge \int_{\text{locality of }x_0} > 0$
 
+#### Theorem 34.1 Fundamental Theorem of Calculus I
+
+> Suppose $g: [a, b] \to \mathbb R$ is continuous, differentiable on $(a, b)$
+> and $g'$ is itegrable on $[a, b]$, then $\int_a^b g' = g(b) - g(a)
+
+1. Use mean value theorem on any point in $(t_{k-1}, t_k)$ of a partition of size $n$  
+   $g(t_k) - g(t_{k-1}) = g'(t_k)(t_k - t_{k-1}) \forall k, 0 < k \le n$
+2. Show:
+   * $m(g', [t_{k-1}, t_k])(t_k - t_{k-1}) \le g(t_k) - g(t_{k-1}) = g'(t_k)(t_k - t_{k-1})Z$
+   * $M(g', [t_{k-1}, t_k])(t_k - t_{k-1}) \ge g(t_k) - g(t_{k-1}) = g'(t_k)(t_k - t_{k-1})Z$
+3. Continue using definition $L(g', P)$ and $U(g', P)$
+
+#### Theorem 34.2: Integration by parts
+> $f, g: [a, b] \to \mathbb R$ are contiuius diffrentiable on $(a, b)$, $f', g'$ are integrable,  
+> then $\int_a^b f g'  = \int_a^b (fg)' - \int_a^b f' g = f(b)g(b) - f(a)g(a) - \int_a^b f' g$
+
+1. $(fg)' = f'g + fg'$, all terms of which are integrable. So can apply Fundamental theorem to $(fg)'$.
+
+#### Fundamental Theorem of Calculus II
+> $f:[a,b] \to \mathbb R$ is integrable. then, $F(x) := \int_a^x f$ is continiuous.  
+> If $f$ is contiuous at $x_0$ and $F'(x_0) = f(x_0)$.
+
+1. $f$ is contiuous, so bounded by say $M$.
+2. $|F(y) - F(x)| = | \int _a^y f - \int _a^x f | = | \int _a^x f + \int _x^y f - \int _a^x f |  = |\int_x^y f| \le  \int_x^y |f|$
+3. Choose $\delta = \epsilon / M$, definition of uniform continuous.
+
+XXX: $F'(x_0) = f(x_0)$.
