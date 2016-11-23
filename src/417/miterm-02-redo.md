@@ -1,5 +1,3 @@
-Nishant Rodrigues
-
 ### 5
 
 All elements of $\mathbb Z_2\times \mathbb Z_2 \times \mathbb Z_2$ are either
