@@ -5,17 +5,17 @@ paradoxically this procedure itself is neither random nor variable."
 
 Bournelli Random Variable
 
-: XXX
+: Single trial of probability $p$
 
 Binomial(n, p)
 
 : $k$ successes in $n$ independent trials
 
-  $P(X = k) \binom n k p^k (1-p)^{k-1}$
+  $P(X = k) = \binom n k p^k (1-p)^{k-1}$
 
 Poisson
 
-: XXX
+: Approximation of the Binomial
 
 Geometric(p)
 
