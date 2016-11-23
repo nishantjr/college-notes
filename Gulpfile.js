@@ -17,7 +17,7 @@ function applyTemplate(templateFile) {
     })
 }
 
-gulp.task('build', function() {
+gulp.task('render-markdown', function() {
     const mdAdapter = require('gulp-markdown-it-adapter'),
           markdownIt = require('markdown-it')
     const md = new markdownIt('commonmark')
@@ -31,6 +31,14 @@ gulp.task('build', function() {
         .pipe(applyTemplate('template.html'))
         .pipe(gulp.dest('.build/www/'))
 })
+
+gulp.task('copy-katex-dist', function() {
+    return gulp
+        .src('node_modules/katex/dist/katex.min.css')
+        .pipe(gulp.dest('.build/www/katex/'))
+})
+
+gulp.task('build', ['copy-katex-dist', 'render-markdown'])
 
 gulp.task('serve', ['build'], function() {
     const watch = require('gulp-watch')
