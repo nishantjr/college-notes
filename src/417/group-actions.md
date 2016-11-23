@@ -70,3 +70,17 @@ Here too, we can use $b^{-1}a \in G$:
 
 $$\begin{aligned}
 ba^{-1}.(aH) = 
+
+## Example: $G$ "acts" on itself, by conjugation
+
+XXX
+
+conjugate ($x, y \in G)
+: $x$ and %y$ are conjugate iff for some $g \in G$, $gxg ^{-1} = y$
+
+## Example: $G$ "acts" on it's subgroups, by conjugation
+
+XXX
+
+conjugate ($X, Y \le G)
+: $x$ and %y$ are conjugate iff for some $g \in G$, $gXg ^{-1} = Y$
