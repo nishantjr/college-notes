@@ -21,7 +21,8 @@ gulp.task('render-markdown', function() {
     const mdAdapter = require('gulp-markdown-it-adapter'),
           markdownIt = require('markdown-it')
     const md = new markdownIt('commonmark')
-    md.use(require('markdown-it-katex'))
+    md.use(require('markdown-it-katex'),
+        {"throwOnError" : false, "errorColor" : " #cc0000"})
     md.use(require('markdown-it-deflist'))
 
     return gulp
