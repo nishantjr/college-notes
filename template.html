@@ -13,6 +13,18 @@
         }
         @media print { max-width: none; }
 
+        header {
+            border-bottom: 1px solid black;
+            display: flex;
+            justify-content: space-between;
+        }
+        header h1, address {
+            font-size: 12pt;
+            font-weight: normal;
+            font-style: normal;
+            margin: 0px;
+        }
+
         dt { font-weight: bold; }
         blockquote {
             background-color: #f8f8f8;
@@ -24,13 +36,6 @@
         .katex-display {
             text-align: left;
             padding-left: 20px;
-        }
-
-        header { border-bottom: 1px solid black; }
-        header h1, address {
-            font-size: 12pt;
-            font-weight: normal;
-            display: inline;
         }
 
         h2 { font-size: 18px;  }
