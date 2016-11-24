@@ -2,7 +2,16 @@
 
 const gulp = require('gulp'),
       connect = require('gulp-connect'),
-      wrap = require('gulp-wrap')
+      wrap = require('gulp-wrap'),
+      path = require('path'),
+      tap = require('gulp-tap')
+
+
+function titleFromPath() {
+    return tap(function(vinyl) {
+        vinyl.title = path.basename(vinyl.path, '.md')
+    })
+}
 
 gulp.task('render-markdown', function() {
     const mdAdapter = require('gulp-markdown-it-adapter'),
@@ -14,6 +23,7 @@ gulp.task('render-markdown', function() {
 
     return gulp
         .src('src/**/*')
+        .pipe(titleFromPath())
         .pipe(mdAdapter(md))
         .pipe(wrap({src: 'template.html'}))
         .pipe(connect.reload())

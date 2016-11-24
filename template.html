@@ -27,8 +27,12 @@
         }
 
         header { border-bottom: 1px solid black; }
+        header h1, address {
+            font-size: 12pt;
+            font-weight: normal;
+            display: inline;
+        }
 
-        h1 { font-size: 20px; }
         h2 { font-size: 18px;  }
         h3 { font-size: 15px;  }
         h4 { font-size: 14px;  }
@@ -41,7 +45,7 @@
 <body>
 <div id='content'>
 <header>
-Nishant Rodrigues
+<h1><%= file.title %></h1> <address>Nishant Rodrigues</address>
 </header>
 <%= contents %>
 </div>
