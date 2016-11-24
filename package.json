@@ -16,6 +16,7 @@
     "gulp-markdown-it-adapter": "^0.1.x",
     "gulp-tap": "^0.1.x",
     "gulp-watch": "^4.x",
+    "gulp-wrap": "^0.13.0",
     "katex": "^0.x",
     "markdown-it": "^8.x",
     "markdown-it-deflist": "^2.x",

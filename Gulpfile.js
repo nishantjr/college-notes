@@ -1,21 +1,8 @@
 'use strict'
 
 const gulp = require('gulp'),
-      connect = require('gulp-connect')
-
-function applyTemplate(templateFile) {
-    const fs = require('fs')
-    const tap = require('gulp-tap')
-
-    return tap(function(vinyl) {
-        if (!vinyl.contents) return     // Ignore directories
-        const template = fs.readFileSync(templateFile)
-                           .toString().split('@@CONTENT@@')
-        const begin = template[0], end = template[1]
-        vinyl.contents = Buffer.concat([
-            new Buffer(begin), vinyl.contents, new Buffer(end)])
-    })
-}
+      connect = require('gulp-connect'),
+      wrap = require('gulp-wrap')
 
 gulp.task('render-markdown', function() {
     const mdAdapter = require('gulp-markdown-it-adapter'),
@@ -28,8 +15,8 @@ gulp.task('render-markdown', function() {
     return gulp
         .src('src/**/*')
         .pipe(mdAdapter(md))
+        .pipe(wrap({src: 'template.html'}))
         .pipe(connect.reload())
-        .pipe(applyTemplate('template.html'))
         .pipe(gulp.dest('.build/www/'))
 })
 
