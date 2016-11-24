@@ -2,6 +2,7 @@
 
 const
     connect = require('gulp-connect'),
+    gulpFrontMatter = require('gulp-front-matter'),
     gulp = require('gulp'),
     gulpTap = require('gulp-tap'),
     gulpWatch = require('gulp-watch'),
@@ -14,7 +15,8 @@ const
 
 function titleFromPath() {
     return gulpTap(function(vinyl) {
-        vinyl.title = path.basename(vinyl.path, '.md')
+        vinyl.title = (vinyl.frontMatter && vinyl.frontMatter.title)
+                      || path.basename(vinyl.path, '.md')
     })
 }
 
@@ -26,6 +28,7 @@ gulp.task('render-markdown', function() {
 
     return gulp
         .src('src/**/*')
+        .pipe(gulpFrontMatter({property: "frontMatter", remove: true }))
         .pipe(titleFromPath())
         .pipe(mdAdapter(md))
         .pipe(gulpWrap({src: 'template.html'}))
