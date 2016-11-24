@@ -32,7 +32,7 @@ gulp.task('render-markdown', function() {
 
 gulp.task('copy-katex-dist', function() {
     return gulp
-        .src('node_modules/katex/dist/katex.min.css')
+        .src('node_modules/katex/dist/**/*')
         .pipe(gulp.dest('.build/www/katex/'))
 })
 
