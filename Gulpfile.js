@@ -16,7 +16,9 @@ const
 function titleFromPath() {
     return gulpTap(function(vinyl) {
         vinyl.title = (vinyl.frontMatter && vinyl.frontMatter.title)
-                      || path.basename(vinyl.path, '.md')
+            || path.basename(vinyl.path, '.md').split('-').map((s) =>
+                (s.slice(0, 1).toUpperCase() + s.slice(1).toLowerCase())
+            ).join(' ')
     })
 }
 
@@ -25,6 +27,7 @@ gulp.task('render-markdown', function() {
     md.use(mdKatex,
         {"throwOnError" : false, "errorColor" : " #cc0000"})
     md.use(mdDeflist)
+    md.enable('table')
 
     return gulp
         .src('src/**/*')
