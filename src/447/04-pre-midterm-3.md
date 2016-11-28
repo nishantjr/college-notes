@@ -169,3 +169,59 @@ Proof by contradiction at $x_0$
 3. Choose $\delta = \epsilon / M$, definition of uniform continuous.
 
 XXX: $F'(x_0) = f(x_0)$.
+
+
+---
+
+Pointwise convergence of sequence of functions
+: $\{g_n : D \to \mathbb R\}$ converges pointwise to $g: D \to \mathbb R$  
+  iff $forall x \in D, g_k(x) = g(x)$
+
+Uniform convergence of sequence of functions
+: iff $\forall \epsilon > 0, \exists N: \foral n > N \Longrightarrow |g_n(x) - g(x)| < \epsilon, \forall x \in D$
+
+http://math.stackexchange.com/questions/597765/pointwise-vs-uniform-convergence
+
+---
+
+# Lecture 33
+
+### Lemma N33.1
+$g_k, g: D \to \mathbb R$ and  $g_k \to g$ uniformly \Longrightleftarrow \sup_{x\in D} |g_k(x) - g(x)| \to 0$
+
+### Theorem 24.3: Uniform limit of continuous funciton is continuous
+### Theorem 25.2: If $\{f_n: [a, b] \to \mathbb R \}$ continuous, converges uni. to $f$ then $\int^b_a f_n = \int^b_a f$
+
+
+XXX
+
+# Lecture 34
+
+Power series
+: $$\sum^\infty_{n=0} a_n(x - c)^n$$
+
+Theorem 23.1:
+> For  $\sum_{k} a_k(x - x_0)^k$, leg $\beta = \limsup|a_k|^{\frac 1 k }$. Let
+> $$R = \begin{cases}
+0 				& \text{if} \beta = \infty \\
+\frac 1 \beta 	& \text{if} 0 < \beta < \infty \\
+\infty 			& \text{if} \beta = 0
+\end{cases}$$
+> Then,
+> 1. The series converges for  $|x - x_0| < R$
+> 1. The series diverges for  $|x - x_0| > R$
+
+#### $R$ is the radius of convergence
+
+Interval of convergence
+: $(x - x_0, x+x_0)$
+
+Theorem 26.1: if radius of convergence, $R > 0$, then for $0 < R_1 < R$, the series convverges uniformly in $[x_0 - R_1, x_0 + R_1]$
+
+> Goal: Can we integrate a  convergent power series and get a convergent power series?
+
+#### Theorem 25.2:
+>$\{f+n: [a, b] \to \mathbb R\}$, continuous, uni converges to $f$  
+> then $\lim_{n\to\infty} \int_a^b f_n = \int_a^b \lim_{n\to\infty} f_n \quad (= \int_a^b f)
+
+#### Lemma 26.3 $\sum^\infty_{n=0} na_n(x)^{n-1}$ and $\sum^\infty_{n=0} \frac{a_{n+1}}{n+1} x^{n+1}$ have the same radius of c.
