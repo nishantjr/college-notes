@@ -1,4 +1,4 @@
-### 5
+# 5
 
 All elements of $\mathbb Z_2\times \mathbb Z_2 \times \mathbb Z_2$ are either
 the identity, or have order 2. Since, if $(a, b, c) \in  \mathbb Z_2\times \mathbb Z_2 \times \mathbb Z_2 \ne e,$ atleast one of $a, b, c$ must equal $1$ and the others must be $0$.
@@ -10,7 +10,7 @@ So, for any homomorphism $\varphi$, $\varphi(2) = \varphi(1+1) =  \varphi(1) + \
 Since $\varphi(0) = \varphi(2)$ for any homomorphism, there can be no bijections
 between $\mathbb Z_2\times \mathbb Z_2 \times \mathbb Z_2$ and $\mathbb Z_8$
 
-### 6
+# 6
 
 We need to show that $A/N$ is normal in $G/N$  
 i.e $\forall g \in G, (gN)(A/N)(gN)^{-1} = A/N$ 

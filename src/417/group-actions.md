@@ -70,17 +70,34 @@ Here too, we can use $b^{-1}a \in G$:
 
 $$\begin{aligned}
 ba^{-1}.(aH) = 
+\end{aligned}$$
 
 ## Example: $G$ "acts" on itself, by conjugation
 
 XXX
 
-conjugate ($x, y \in G)
+conjugate (of elements; $x, y \in G$)
 : $x$ and %y$ are conjugate iff for some $g \in G$, $gxg ^{-1} = y$
+
+conjugacy class
+: Orbits of this action atr conjugacy class.
+: Classes of element conjugate to each other.
+: $\{g \in G : \exists\, a \in G: g = aga ^{-1} \}$
+
+Centeralizer (of $S \subseteq G$)
+: $C_G(S) =\{ g \in G : gs = sg, \forall s \in S \} =  \{ g \in G : sgs^{-1} =g, \forall s \in S \}$
+: Set of all elements that commute with elements of $S$
+: (?) Largest subgroup that $S$ is a subset of the center of.
 
 ## Example: $G$ "acts" on it's subgroups, by conjugation
 
 XXX
 
-conjugate ($X, Y \le G)
-: $x$ and %y$ are conjugate iff for some $g \in G$, $gXg ^{-1} = Y$
+Normalizer  (of $S \subseteq G$)
+: $N_G(S) = \{ g \in G : gS = Sg \}= \{ g \in G : gSg ^{-1} = S \}$ 
+: (?) Largest subgroup that $S$ is a subset of a normal subgroup of.
+
+Note: 
+
+conjugate (of subgroups; $X, Y \le G$)
+: $x$ and $y$ are conjugate iff for some $g \in G$, $gXg ^{-1} = Y$
