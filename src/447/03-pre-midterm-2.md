@@ -3,35 +3,42 @@ Metric in $S$
 
   1. Non-negative: $d(x, y) \ge 0$
   2. Symmetric: $d(x, y) = d(y, x)$
-  3. Non-degenerate: $d(x, y) = 0 \Rightleftarrow x = y$
+  3. Non-degenerate: $d(x, y) = 0 \Longleftrightarrow x = y$
   4. Triangle in-equality: $d(x, z) \le d(x, y) + d(y, z)$
 
-Cauchy-Schwarz (Used for proving euclidian distance's triangle lay)
-: $|\text{inner product}| \le \prod (\text{distance from origin})$  
-  i.e $|\langle x, y \rangle| \le \prod \|x\|\|y\|$
+Cauchy-Schwarz (Used for proving euclidian distance's triangle law)
+: $|\langle x, y \rangle| \le \|x\|\|y\|$
+
+Convergence
+: A sequence $\{ a_n \} \to a \in S$ if $\forall \epsilon > 0, \exists N : \forall n > N, d(a_n, a) < \epsilon$
 
 #### Theorem N13.1: $\frac 1 k d_1 \le d_\infty \le d_2 \le d_1$
 #### Corollary N13.2: Sequences converge to the same value in all those metrics.
-#### Corollary N13.2: Those metrics have the same cauch sequences
+#### Corollary N13.3: Those metrics have the same cauch sequences
 
 Completeness  (Metric Space)
 : A metric space $(S, d)$ is complete is every Cauchy Sequence converges in $S$
 
 Cauchy Sequence
-: A sequence $S_n$ is Cauchy, iff $\forall \epsilon > 0, \exists N(\epsilon): \forall m, n > N, |d(S_n, S_m)| = 0$
+: A sequence $S_n$ is Cauchy, iff $\forall \epsilon > 0, \exists N(\epsilon):
+  \forall m, n > N, |d(S_n, S_m)| = 0$
 
 Open Ball of radius $R$, centered at $y$
 : $B_R(y) = \{ x \in S | d(x, y) < R \}$
 
 Open (Metric space)
-: Let $(S, d)$ be a metric space, $C \subseteq S$. Then $C$ is closed iff $\forall x \in C, \exists r > 0, B_r(x) \subseteq C$
+: Metric space $(S, d); O \subset S$ is open if $\forall s \in S, \exists r:
+  B_r(s) \subseteq S$
 
 Closed (Metric Space)
 : A set is closed if it's complement is open.
 
+Bounded
+: $\exists R > 0: B \subseteq B_R(o)$
+
 ### Propeties of open sets
 * Finite intersections: if $O_1, O_2$ are open, then $O_1\cap O_2$ is too
-* in/finite unions: if $\{O_\alpha\}, \alpha \in A$ are open then
+* Infinite unions: if $\{O_\alpha\}, \alpha \in A$ are open then
   $\bigcap_{\alpha\in A}O_\alpha$ is also open
 
 Note: $\phi$ and $S$ are both open and closed.
@@ -45,8 +52,9 @@ Topology on set $S$
 NOTE: Metrics $d_1, d_2, d_\infty$ define the same open sets - they define the
 same topology, called the standard topology on $\mathbb R^k$
 
-Open cover of a set $E \subseteq S$ with topoplogy $T$
-: is a collection of open sets $\{O_\alpha\}$ so that $E \subseteq \bigcup O_\alpha$
+#### Lemma N14.2: $A d_1(x, y) < d_2(x, y) < B d_1(x, y) \Longrightarrow$ they have the same topology (open sets)
+
+Open cover of a set $E \subseteq S$ with topoplogy $T$ : is a collection of open sets $\{O_\alpha\}$ so that $E \subseteq \bigcup O_\alpha$
 
 Sub-cover
 : is a subcollection of an open-subcover

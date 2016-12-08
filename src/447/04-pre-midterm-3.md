@@ -3,7 +3,7 @@ Connected spaces
   * $U, V$ are open
   * $X= U \cup V$
   * $U\cap V \ne \phi$
-  implies $U = \phi$ or $V = \phi$
+$\Longrightarrow U = \phi$ or $V = \phi$
 
 Path Connected
 : ... if forall $x, y \ion S, \exists f:[a, b] \to S$ continuous, so that $f(a) = x, f(b) = y$
