@@ -4,11 +4,128 @@ TODO:
 * 5.4.4, 5.4.5
 * Practice finding GCD, finding $s, t$
 * 1.12.1
-* Sylow theorem proofs
+* sYLOW THEOREM PROOfs
 
 Proof of bijection
  1. invertable
  2. injective and surjective 
+
+conjugate (of elements; $x, y \in G$)
+: $x$ and %y$ are conjugate iff for some $g \in G$, $gxg ^{-1} = y$
+
+conjugacy class
+: Orbits of this action atr conjugacy class.
+: Classes of element conjugate to each other.
+: $\{g \in G : \exists\, a \in G: g = aga ^{-1} \}$
+
+Centeralizer (of $S \subseteq G$)
+: $C_G(S) =\{ g \in G : gs = sg, \forall s \in S \} =  \{ g \in G : sgs^{-1} =g, \forall s \in S \}$
+: Set of all elements that commute with elements of $S$
+: (?) Largest subgroup that $S$ is a subset of the center of.
+
+conjugate (of elements; $x, y \in G$)
+: $x$ and %y$ are conjugate iff for some $g \in G$, $gxg ^{-1} = y$
+
+conjugacy class
+: Orbits of this action atr conjugacy class.
+: Classes of element conjugate to each other.
+: $\{g \in G : \exists\, a \in G: g = aga ^{-1} \}$
+
+Centeralizer (of $S \subseteq G$)
+: $C_G(S) =\{ g \in G : gs = sg, \forall s \in S \} =  \{ g \in G : sgs^{-1} =g, \forall s \in S \}$
+: Set of all elements that commute with elements of $S$
+: (?) Largest subgroup that $S$ is a subset of the center of.
+
+conjugate (of elements; $x, y \in G$)
+: $x$ and %y$ are conjugate iff for some $g \in G$, $gxg ^{-1} = y$
+
+conjugacy class
+: Orbits of this action atr conjugacy class.
+: Classes of element conjugate to each other.
+: $\{g \in G : \exists\, a \in G: g = aga ^{-1} \}$
+
+Centeralizer (of $S \subseteq G$)
+: $C_G(S) =\{ g \in G : gs = sg, \forall s \in S \} =  \{ g \in G : sgs^{-1} =g, \forall s \in S \}$
+: Set of all elements that commute with elements of $S$
+: (?) Largest subgroup that $S$ is a subset of the center of.
+
+conjugate (of elements; $x, y \in G$)
+: $x$ and %y$ are conjugate iff for some $g \in G$, $gxg ^{-1} = y$
+
+conjugacy class
+: Orbits of this action atr conjugacy class.
+: Classes of element conjugate to each other.
+: $\{g \in G : \exists\, a \in G: g = aga ^{-1} \}$
+
+Centeralizer (of $S \subseteq G$)
+: $C_G(S) =\{ g \in G : gs = sg, \forall s \in S \} =  \{ g \in G : sgs^{-1} =g, \forall s \in S \}$
+: Set of all elements that commute with elements of $S$
+: (?) Largest subgroup that $S$ is a subset of the center of.
+
+conjugate (of elements; $x, y \in G$)
+: $x$ and %y$ are conjugate iff for some $g \in G$, $gxg ^{-1} = y$
+
+conjugacy class
+: Orbits of this action atr conjugacy class.
+: Classes of element conjugate to each other.
+: $\{g \in G : \exists\, a \in G: g = aga ^{-1} \}$
+
+Centeralizer (of $S \subseteq G$)
+: $C_G(S) =\{ g \in G : gs = sg, \forall s \in S \} =  \{ g \in G : sgs^{-1} =g, \forall s \in S \}$
+: Set of all elements that commute with elements of $S$
+: (?) Largest subgroup that $S$ is a subset of the center of.
+
+conjugate (of elements; $x, y \in G$)
+: $x$ and %y$ are conjugate iff for some $g \in G$, $gxg ^{-1} = y$
+
+conjugacy class
+: Orbits of this action atr conjugacy class.
+: Classes of element conjugate to each other.
+: $\{g \in G : \exists\, a \in G: g = aga ^{-1} \}$
+
+Centeralizer (of $S \subseteq G$)
+: $C_G(S) =\{ g \in G : gs = sg, \forall s \in S \} =  \{ g \in G : sgs^{-1} =g, \forall s \in S \}$
+: Set of all elements that commute with elements of $S$
+: (?) Largest subgroup that $S$ is a subset of the center of.
+
+conjugate (of elements; $x, y \in G$)
+: $x$ and %y$ are conjugate iff for some $g \in G$, $gxg ^{-1} = y$
+
+conjugacy class
+: Orbits of this action atr conjugacy class.
+: Classes of element conjugate to each other.
+: $\{g \in G : \exists\, a \in G: g = aga ^{-1} \}$
+
+Centeralizer (of $S \subseteq G$)
+: $C_G(S) =\{ g \in G : gs = sg, \forall s \in S \} =  \{ g \in G : sgs^{-1} =g, \forall s \in S \}$
+: Set of all elements that commute with elements of $S$
+: (?) Largest subgroup that $S$ is a subset of the center of.
+
+conjugate (of elements; $x, y \in G$)
+: $x$ and %y$ are conjugate iff for some $g \in G$, $gxg ^{-1} = y$
+
+conjugacy class
+: Orbits of this action atr conjugacy class.
+: Classes of element conjugate to each other.
+: $\{g \in G : \exists\, a \in G: g = aga ^{-1} \}$
+
+Centeralizer (of $S \subseteq G$)
+: $C_G(S) =\{ g \in G : gs = sg, \forall s \in S \} =  \{ g \in G : sgs^{-1} =g, \forall s \in S \}$
+: Set of all elements that commute with elements of $S$
+: (?) Largest subgroup that $S$ is a subset of the center of.
+
+conjugate (of elements; $x, y \in G$)
+: $x$ and %y$ are conjugate iff for some $g \in G$, $gxg ^{-1} = y$
+
+conjugacy class
+: Orbits of this action atr conjugacy class.
+: Classes of element conjugate to each other.
+: $\{g \in G : \exists\, a \in G: g = aga ^{-1} \}$
+
+Centeralizer (of $S \subseteq G$)
+: $C_G(S) =\{ g \in G : gs = sg, \forall s \in S \} =  \{ g \in G : sgs^{-1} =g, \forall s \in S \}$
+: Set of all elements that commute with elements of $S$
+: (?) Largest subgroup that $S$ is a subset of the center of.
 
 * relativly prime $\Longrightarrow gcd(m, n) = 1$
 * a, b relativly prime $\Longrightarrow a\cdot s + b\cdot t = 1; s, t \in \mathbb Z$
@@ -79,11 +196,11 @@ Group of order $p^n$ has non-trivial center.
 
 Sylow theorems
 * $p^n$ divides $|G|$, then $G$ has a subgroup of size $p^n$
-* 
+* $p$-sylow groups are conjugate 
+* Number of p-sylow subgroups divides $|G|/p^n$, $# = 1 mod p$.
 
 ---
 
+
 unit of a ring
 : invertable element
-
-

@@ -6,7 +6,7 @@ Connected spaces
 $\Longrightarrow U = \phi$ or $V = \phi$
 
 Path Connected
-: ... if forall $x, y \ion S, \exists f:[a, b] \to S$ continuous, so that $f(a) = x, f(b) = y$
+: ... if forall $x, y \in S, \exists f:[a, b] \to S$ continuous, so that $f(a) = x, f(b) = y$
 
 #### Theorem N24.1: Continuous functions  map connected sets to connected sets.
 
