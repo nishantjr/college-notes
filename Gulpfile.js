@@ -28,6 +28,7 @@ gulp.task('render-markdown', function() {
         {"throwOnError" : false, "errorColor" : " #cc0000"})
     md.use(mdDeflist)
     md.enable('table')
+    md.enable('strikethrough')
 
     return gulp
         .src('src/**/*')
