@@ -2,10 +2,10 @@ $T$
 : equational thoery
 
 $\mathcal R$
-: Cannonical term rewriting system 
+: Canonical term rewriting system 
 
 $\mathcal R(M)$
-: cannonical form of a term $M$
+: Canonical form of a term $M$
 
 Two terms are $T$-equal if their canonical form is identical.
 This is decidable.
@@ -26,13 +26,16 @@ $M \to_{\mathcal R} N$, ($M$ $\mathcal R$-rewrites to $N$)
 $\exists$ position $u$, such that $M|u = \sigma(\gamma)$ and $N = M[u \gets
 \sigma(\delta)]$ ($M$ with position $u$ replaced by $\sigma(\delta)$
 
-Cannonical term re-writing system
+Canonical term re-writing system
 : Confluent, terminating
 
 Narrowing
-: ?? Applyign to a a term the minimum substitution such that the resulting term
-is not in normal from, and then reducing it oen step
-  See: [Narrowing FAQ](http://web.cecs.pdx.edu/~antoy/research/narrowing/FAQ.html)
+: Let $M$ be a term with variables $\mathcal V(M) \subset V$ . Assume $\exists$ subterm $M'$ at position
+$u$ in $M$, and rewrite rule $\gamma \to\delta$ such that $\gamma$ and $M'$ are
+unifiable. Let $\sigma$ be a minimum unifier of $M'$ and $\gamma$. $\sigma$ is
+called a "narrowing substitution of $M$ away from $V$".
+
+    See: [Narrowing FAQ](http://web.cecs.pdx.edu/~antoy/research/narrowing/FAQ.html)
 
   ~~~
   add(U, succ(zero))
