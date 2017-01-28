@@ -64,8 +64,11 @@ $k$-peridodic sink
 Dynamic systems of the form $g_a: [0, 1] \to [0, 1]; g_a(x) = ax(1-x)$
 
 Properties:
-  - If $0 < a < 1$, then $0$ is a sink with basin of attraction $\forall x_0 \in
+* If $0 < a < 1$,
+  -  then $0$ is a sink with basin of attraction $\forall x_0 \in
   [0, 1]$. State will converge at $0$.
-  - Since $g_a(0) = 0$, $0$ is a fixed point. $g'_a(0) = a - 2ax | _{x = 0} = a$, so
-  $0$ is a sink.
+  - Since $g_a(0) = 0$, $0$ is a fixed point. $g'_a(0) = a - 2ax | _{x = 0} =
+    a$, so $0$ is a sink.
   - Graph is parabola with vertex $(\frac 1 2, \frac a 4)$
+* If $1 < a < 3$, then 
+  - $x = 0$ is a source, $x = \frac {a-1} a$ is a sink.
