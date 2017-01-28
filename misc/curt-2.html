@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="/katex/katex.min.css">
+    <style>
+        * { margin-top: 0px; }
+        #content {
+            max-width: 600px;
+            margin: auto;
+        }
+        @media print { #content { max-width: none; } }
+
+        header {
+            border-bottom: 1px solid black;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 1em;
+        }
+        header h1, address {
+            font-size: 12pt;
+            font-weight: normal;
+            font-style: normal;
+            margin: 0px;
+        }
+
+        dt { font-weight: bold; }
+        blockquote {
+            background-color: #f8f8f8;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 0px;
+        }
+
+        .katex-display {
+            text-align: left;
+            padding-left: 20px;
+        }
+
+        h2 { font-size: 18px;  }
+        h3 { font-size: 16px;  }
+        h4 { font-size: 14px;  }
+        h5 { font-size: 13px;  }
+        h6 { font-size: 12px;  }
+
+        table td {
+            border: solid black 1px;
+            padding: 6px;
+        }
+
+        * { border-collapse: collapse; }
+
+    </style>
+    <title>Curt 2</title>
+</head>
+<body>
+<div id='content'>
+<header>
+<h1>Curt 2</h1> <address>Nishant Rodrigues</address>
+</header>
+<p>Not commutative (hmmm... but this is associative....):</p>
+<pre><code>Config + Config -&gt; config
+
+  { times = 1, input = stdin, munge = no }
++ { times = 2, input =      , munge =    } 
+= { times = 2, input = stdin, munge = no } 
+</code></pre>
+<p>Has identity:</p>
+<pre><code>  { times = 1, input = stdin, munge = no }
++ { times =  , input =      , munge =    } 
+= { times = 1, input = stdin, munge = no } 
+</code></pre>
+<p>let e = { times =  , input =      , munge =    }
+then e + x = x</p>
+<p>Can you have a single operation with different identites?</p>
+<p>equivalance relations:</p>
+<ul>
+<li>transitive</li>
+<li>reflexive</li>
+<li>symmetric</li>
+</ul>
+<p>Order relations:</p>
+<ol>
+<li>Anti-symmetric: <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>A</mi><mo>&gt;</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">A &gt; B</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.72243em;vertical-align:-0.0391em;"></span><span class="base textstyle uncramped"><span class="mord mathit">A</span><span class="mrel">&gt;</span><span class="mord mathit" style="margin-right:0.05017em;">B</span></span></span></span> and <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>B</mi><mo>&gt;</mo><mi>A</mi><mo>⇒</mo><mi>A</mi><mo>=</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">B &gt; A \Rightarrow A = B</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.72243em;vertical-align:-0.0391em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.05017em;">B</span><span class="mrel">&gt;</span><span class="mord mathit">A</span><span class="mrel">⇒</span><span class="mord mathit">A</span><span class="mrel">=</span><span class="mord mathit" style="margin-right:0.05017em;">B</span></span></span></span></li>
+<li>Non-?! Anti-symmetric:
+<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi mathvariant="normal">∃</mi><mi>A</mi><mo separator="true">,</mo><mi>B</mi><mo>:</mo><mi>A</mi><mo>&gt;</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">\exists A, B: A &gt; B</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="base textstyle uncramped"><span class="mord mathrm">∃</span><span class="mord mathit">A</span><span class="mpunct">,</span><span class="mord mathit" style="margin-right:0.05017em;">B</span><span class="mrel">:</span><span class="mord mathit">A</span><span class="mrel">&gt;</span><span class="mord mathit" style="margin-right:0.05017em;">B</span></span></span></span> and $B &gt; A $ but $ A \ne B$</li>
+<li>Reflexive: <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>A</mi><mo>&gt;</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">A &gt; A</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.72243em;vertical-align:-0.0391em;"></span><span class="base textstyle uncramped"><span class="mord mathit">A</span><span class="mrel">&gt;</span><span class="mord mathit">A</span></span></span></span></li>
+<li>Transitive: <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>A</mi><mo>&gt;</mo><mi>B</mi><mo separator="true">,</mo><mi>B</mi><mo>&gt;</mo><mi>C</mi><mo>⇒</mo><mi>A</mi><mo>&gt;</mo><mi>C</mi></mrow><annotation encoding="application/x-tex">A &gt; B, B &gt; C \Rightarrow A &gt; C</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.8777699999999999em;vertical-align:-0.19444em;"></span><span class="base textstyle uncramped"><span class="mord mathit">A</span><span class="mrel">&gt;</span><span class="mord mathit" style="margin-right:0.05017em;">B</span><span class="mpunct">,</span><span class="mord mathit" style="margin-right:0.05017em;">B</span><span class="mrel">&gt;</span><span class="mord mathit" style="margin-right:0.07153em;">C</span><span class="mrel">⇒</span><span class="mord mathit">A</span><span class="mrel">&gt;</span><span class="mord mathit" style="margin-right:0.07153em;">C</span></span></span></span></li>
+</ol>
+<p>Posets don't have a totalling ordering</p>
+<p>Huh. Never heard or pre-orders before</p>
+<p>What is the motivation for preorders?
+`</p>
+
+</div>
+<script src="//localhost:35729/livereload.js?snipver=1"></script>
+</body>
+</html>

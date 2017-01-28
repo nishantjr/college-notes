@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="/katex/katex.min.css">
+    <style>
+        * { margin-top: 0px; }
+        #content {
+            max-width: 600px;
+            margin: auto;
+        }
+        @media print { #content { max-width: none; } }
+
+        header {
+            border-bottom: 1px solid black;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 1em;
+        }
+        header h1, address {
+            font-size: 12pt;
+            font-weight: normal;
+            font-style: normal;
+            margin: 0px;
+        }
+
+        dt { font-weight: bold; }
+        blockquote {
+            background-color: #f8f8f8;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 0px;
+        }
+
+        .katex-display {
+            text-align: left;
+            padding-left: 20px;
+        }
+
+        h2 { font-size: 18px;  }
+        h3 { font-size: 16px;  }
+        h4 { font-size: 14px;  }
+        h5 { font-size: 13px;  }
+        h6 { font-size: 12px;  }
+
+        table td {
+            border: solid black 1px;
+            padding: 6px;
+        }
+
+        * { border-collapse: collapse; }
+
+    </style>
+    <title>Curt</title>
+</head>
+<body>
+<div id='content'>
+<header>
+<h1>Curt</h1> <address>Nishant Rodrigues</address>
+</header>
+<p>Modular arithmatic works fine, even for negative number, since</p>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>−</mo><mn>1</mn><mo>≡</mo><mi>n</mi><mo>−</mo><mn>1</mn><mo>(</mo><mi>m</mi><mi>o</mi><mi>d</mi><mo>−</mo><mi>n</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">-1 \equiv n - 1 (mod -n) 
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1em;vertical-align:-0.25em;"></span><span class="base displaystyle textstyle uncramped"><span class="mord">−</span><span class="mord mathrm">1</span><span class="mrel">≡</span><span class="mord mathit">n</span><span class="mbin">−</span><span class="mord mathrm">1</span><span class="mopen">(</span><span class="mord mathit">m</span><span class="mord mathit">o</span><span class="mord mathit">d</span><span class="mbin">−</span><span class="mord mathit">n</span><span class="mclose">)</span></span></span></span></span></p>
+<p>Also, even if <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">-1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.64444em;"></span><span class="strut bottom" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="base textstyle uncramped"><span class="mord">−</span><span class="mord mathrm">1</span></span></span></span> was a prime number, <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>−</mo><mi>n</mi></mrow><annotation encoding="application/x-tex">-n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.58333em;"></span><span class="strut bottom" style="height:0.66666em;vertical-align:-0.08333em;"></span><span class="base textstyle uncramped"><span class="mord">−</span><span class="mord mathit">n</span></span></span></span> where <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi><mo>≠</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">n \ne 1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.716em;"></span><span class="strut bottom" style="height:0.9309999999999999em;vertical-align:-0.215em;"></span><span class="base textstyle uncramped"><span class="mord mathit">n</span><span class="mrel">≠</span><span class="mord mathrm">1</span></span></span></span> is not.</p>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>(</mo><mi>p</mi><mo>−</mo><mn>1</mn><mo>)</mo><mo>(</mo><mi>q</mi><mo>−</mo><mn>1</mn><mo>)</mo></mrow><annotation encoding="application/x-tex">(p - 1)(q - 1)
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1em;vertical-align:-0.25em;"></span><span class="base displaystyle textstyle uncramped"><span class="mopen">(</span><span class="mord mathit">p</span><span class="mbin">−</span><span class="mord mathrm">1</span><span class="mclose">)</span><span class="mopen">(</span><span class="mord mathit" style="margin-right:0.03588em;">q</span><span class="mbin">−</span><span class="mord mathrm">1</span><span class="mclose">)</span></span></span></span></span></p>
+<p>RSA needs more bits to be as strong as other encryption, because there are only
+so few primes below 2^2048</p>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>l</mi><mi>o</mi><msub><mi>g</mi><mn>2</mn></msub><mo>(</mo><msup><mn>2</mn><mi>n</mi></msup><mo>∗</mo><mi>n</mi><mo>)</mo><mo>=</mo><mi>l</mi><mi>o</mi><msub><mi>g</mi><mn>2</mn></msub><mo>(</mo><msup><mn>2</mn><mi>n</mi></msup><mo>)</mo><mo>+</mo><mi>l</mi><mi>o</mi><msub><mi>g</mi><mn>2</mn></msub><mo>(</mo><mi>n</mi><mo>)</mo><mo>=</mo><mi>n</mi><mo>+</mo><mi>l</mi><mi>o</mi><msub><mi>g</mi><mn>2</mn></msub><mo>(</mo><mi>n</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">log_2(2^n *n) = log_2(2^n) + log_2(n) = n + log_2(n)
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1em;vertical-align:-0.25em;"></span><span class="base displaystyle textstyle uncramped"><span class="mord mathit" style="margin-right:0.01968em;">l</span><span class="mord mathit">o</span><span class="mord"><span class="mord mathit" style="margin-right:0.03588em;">g</span><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:-0.03588em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord mathrm">2</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="mopen">(</span><span class="mord"><span class="mord mathrm">2</span><span class="vlist"><span style="top:-0.413em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped"><span class="mord mathit">n</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="mbin">∗</span><span class="mord mathit">n</span><span class="mclose">)</span><span class="mrel">=</span><span class="mord mathit" style="margin-right:0.01968em;">l</span><span class="mord mathit">o</span><span class="mord"><span class="mord mathit" style="margin-right:0.03588em;">g</span><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:-0.03588em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord mathrm">2</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="mopen">(</span><span class="mord"><span class="mord mathrm">2</span><span class="vlist"><span style="top:-0.413em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped"><span class="mord mathit">n</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="mclose">)</span><span class="mbin">+</span><span class="mord mathit" style="margin-right:0.01968em;">l</span><span class="mord mathit">o</span><span class="mord"><span class="mord mathit" style="margin-right:0.03588em;">g</span><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:-0.03588em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord mathrm">2</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="mopen">(</span><span class="mord mathit">n</span><span class="mclose">)</span><span class="mrel">=</span><span class="mord mathit">n</span><span class="mbin">+</span><span class="mord mathit" style="margin-right:0.01968em;">l</span><span class="mord mathit">o</span><span class="mord"><span class="mord mathit" style="margin-right:0.03588em;">g</span><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:-0.03588em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord mathrm">2</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="mopen">(</span><span class="mord mathit">n</span><span class="mclose">)</span></span></span></span></span></p>
+<p>Trying to find an
+<img src="too-big.png" alt="" /></p>
+<p>16 bits of RSA = 65,536 keys
+65,536
+The 65,536th prime is 821,641.</p>
+<p>https://docs.google.com/spreadsheets/d/1hT71cO98pv2QIDPxXYllDTcd_fIvH8HfFAsKQEevMEk/edit?ts=57dc7b95#gid=0</p>
+
+</div>
+<script src="//localhost:35729/livereload.js?snipver=1"></script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="/katex/katex.min.css">
+    <style>
+        * { margin-top: 0px; }
+        #content {
+            max-width: 600px;
+            margin: auto;
+        }
+        @media print { #content { max-width: none; } }
+
+        header {
+            border-bottom: 1px solid black;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 1em;
+        }
+        header h1, address {
+            font-size: 12pt;
+            font-weight: normal;
+            font-style: normal;
+            margin: 0px;
+        }
+
+        dt { font-weight: bold; }
+        blockquote {
+            background-color: #f8f8f8;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 0px;
+        }
+
+        .katex-display {
+            text-align: left;
+            padding-left: 20px;
+        }
+
+        h2 { font-size: 18px;  }
+        h3 { font-size: 16px;  }
+        h4 { font-size: 14px;  }
+        h5 { font-size: 13px;  }
+        h6 { font-size: 12px;  }
+
+        table td {
+            border: solid black 1px;
+            padding: 6px;
+        }
+
+        * { border-collapse: collapse; }
+
+    </style>
+    <title>Hw 09</title>
+</head>
+<body>
+<div id='content'>
+<header>
+<h1>Hw 09</h1> <address>Nishant Rodrigues</address>
+</header>
+<h3>1. Prove if <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>A</mi></mrow><annotation encoding="application/x-tex">A</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.68333em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">A</span></span></span></span> and <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>B</mi></mrow><annotation encoding="application/x-tex">B</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.68333em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.05017em;">B</span></span></span></span> are similar matrices, then <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>A</mi></mrow><annotation encoding="application/x-tex">A</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.68333em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">A</span></span></span></span> and <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>B</mi></mrow><annotation encoding="application/x-tex">B</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.68333em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.05017em;">B</span></span></span></span> have the same characteristeic polynomial</h3>
+<p>Since <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>A</mi></mrow><annotation encoding="application/x-tex">A</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.68333em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit">A</span></span></span></span> and <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>B</mi></mrow><annotation encoding="application/x-tex">B</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.68333em;"></span><span class="strut bottom" style="height:0.68333em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathit" style="margin-right:0.05017em;">B</span></span></span></span> are similar, <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi mathvariant="normal">∃</mi><mi>Q</mi></mrow><annotation encoding="application/x-tex">\exists Q</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="base textstyle uncramped"><span class="mord mathrm">∃</span><span class="mord mathit">Q</span></span></span></span> such that <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mi>Q</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup><mi>A</mi><mi>Q</mi><mo>=</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">Q^{-1}AQ = B</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.8141079999999999em;"></span><span class="strut bottom" style="height:1.008548em;vertical-align:-0.19444em;"></span><span class="base textstyle uncramped"><span class="mord"><span class="mord mathit">Q</span><span class="vlist"><span style="top:-0.363em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle uncramped"><span class="mord scriptstyle uncramped"><span class="mord">−</span><span class="mord mathrm">1</span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="mord mathit">A</span><span class="mord mathit">Q</span><span class="mrel">=</span><span class="mord mathit" style="margin-right:0.05017em;">B</span></span></span></span></p>
+
+</div>
+<script src="//localhost:35729/livereload.js?snipver=1"></script>
+</body>
+</html>
