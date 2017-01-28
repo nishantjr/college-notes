@@ -3,9 +3,11 @@
 
 For $F: x \to y$
 * **one-to-one**, **injective**: "in-to"
+  - $f$ is a __left__ inverse: $\exits g: f;g = g \circ f = \text{identity}$
   - preserves distintiveness
   - every y may not have a x.
 * **surjective**, **onto**
+  - $f$ is a __right__ inverse: $\exits g: g;f = f \circ g =\text{identity}$
   - to everything mapping
   - every y has a x, maybe more than one
 
