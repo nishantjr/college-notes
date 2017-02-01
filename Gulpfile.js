@@ -61,3 +61,19 @@ gulp.task('serve', ['build'], function() {
         })
     gulpWatch(['./template.html*', 'src/**/*'], function() { gulp.start('build') } )
 })
+
+gulp.task('insta', function() {
+    const insta = require('instant-markdown-d/index.js')
+    const md = new markdownIt('commonmark')
+    md.use(mdKatex,
+        {"throwOnError" : false, "errorColor" : " #cc0000"})
+    md.use(mdDeflist)
+    md.enable('table')
+    md.enable('strikethrough')
+
+    insta({ md: md,
+      interface: '127.0.0.1',
+      allow_unsafe_content: false,
+      block_external: false,
+    })
+})
