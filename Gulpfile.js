@@ -40,16 +40,21 @@ gulp.task('render-markdown', function() {
         .pipe(gulp.dest('.build/www/'))
 })
 
+gulp.task('copy-static-files', function() {
+    return gulp
+        .src('static/**/*')
+        .pipe(gulp.dest('.build/www/'))
+})
+
 gulp.task('copy-katex-dist', function() {
     return gulp
         .src('node_modules/katex/dist/**/*')
         .pipe(gulp.dest('.build/www/katex/'))
 })
 
-gulp.task('build', ['copy-katex-dist', 'render-markdown'])
+gulp.task('build', ['copy-katex-dist', 'render-markdown', 'copy-static-files'])
 
 gulp.task('serve', ['build'], function() {
-
     connect.server({
         root: '.build/www',
         livereload: true
