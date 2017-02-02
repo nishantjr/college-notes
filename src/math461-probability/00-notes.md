@@ -30,9 +30,9 @@ eg: 2 fair couns: X = # of heads
 
 | n | Outcomes    | $P(n) = P{X=n}$       | $F(n) = P(X \le m)$                |
 |---|-------------|:---------------------:|:----------------------------------:|
-| 1 | TT          | $\frac 1 4 $          | $\frac 1 4$                        |
-| 2 | TH, HT      | $\frac 1 2 $          | $\frac 3 4$                        |
-| 3 | HH          | $\frac 1 4 $          | 1                                  |
+| 1 | TT          | $\frac 1 4$           | $\frac 1 4$                        |
+| 2 | TH, HT      | $\frac 1 2$           | $\frac 3 4$                        |
+| 3 | HH          | $\frac 1 4$           | 1                                  |
 
 
 If X is a discrete random variable, having a probability mass function.

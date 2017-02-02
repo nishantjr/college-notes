@@ -1,4 +1,3 @@
-
 ## Functions
 
 For $F: x \to y$
