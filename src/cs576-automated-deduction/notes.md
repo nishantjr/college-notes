@@ -79,5 +79,12 @@ and efficiency...
 
 SMT solvers?
 
+---
 
+Computing $u \to_{R/B} v$ is difficult since we need to explore all the terms in
+$[u]_{B}$ and $[v]_B$, and these can be large or even infinite. So a more
+efficient relatiln $B$-matching is used.
 
+$B$-matching
+: Let $R = (\Sigma, B, R)$ be a rewrite theory and $u, v \in T_{\Sigma(X)}$.
+Then $u \to_{R,B} v \Longleftrightarrow \exists$ position $p$, rule
