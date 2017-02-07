@@ -1,4 +1,6 @@
-# Discrete-time Dynamical Systems
+---
+title: Discrete-time Dynamical Systems
+---
 
 Dynamical Syatem 
 : Set $S$ of states, and a deterministic rule that determines the present state
@@ -7,10 +9,10 @@ Dynamical Syatem
 Source, Sink
 : Let $p$ be a fixed point ($f: \mathbb R \to \mathbb R, p \in \mathbb R, f(p) = p$).
 
-  If  $\exists \epsilon > 0 : \forall x \in B_\epsilon(p), \lim_{k\to\infty}
+  If  $\exists \epsilon > 0 : \forall x \in N_\epsilon(p) \cap S, \lim_{k\to\infty}
   f^k(x) = p$, then $p$ is a sink / attracting fixed point.   
-  If  $\exists \epsilon > 0 : \forall x \ne p \in B_\epsilon(p), \lim_{k\to\infty}
-  f^k(x) \notin B_\epsilon$, then $p$ is a source / repelling fixed point.
+  If  $\exists \epsilon > 0 : \forall x \ne p \in N_\epsilon(p) \cap S, \lim_{k\to\infty}
+  f^k(x) \notin N_\epsilon$, then $p$ is a source / repelling fixed point.
 
 ## Theorem 1.5: Source / Sink based on slope of map
 
@@ -72,3 +74,89 @@ Properties:
   - Graph is parabola with vertex $(\frac 1 2, \frac a 4)$
 * If $1 < a < 3$, then 
   - $x = 0$ is a source, $x = \frac {a-1} a$ is a sink.
+
+---
+
+$G(x) = g_4(x) = 4x(1 - x)$
+
+Fixed points are $x = 4x(1 - x) \Longrightarrow 0 = 3x - 4x^2 \Longrightarrow x
+= 0, \frac 3 4$
+
+$$\begin{aligned}
+g_4^2(x) &= 4g(x)(1 - g(x)) = 4(4x)(1 - x)(1 - 4x(1 -x)) \\
+         &= 4*4*x*(1 - x)(1 - 4x + 4x^2)
+\end{aligned}$$
+
+$2$-periodic points at
+
+---
+
+## Sharkovski's theorem
+if $G: S \to S, S \subset \mathbb R$ interval, continuous and has a
+$3$-periodic orbit for all periods.
+
+In general if a system has an orbit of period $n$ then if $n \prec m$ then
+it has an orbit of order $m$ where $\prec$ is defined as:
+
+$$\begin{aligned}
+    3 \prec 5 \prec 7 \prec \cdots  \prec \\
+    2\cdot 3 \prec 2\cdot 5 \prec 2\cdot 7 \prec \cdots  \prec \\
+    2^2\cdot 3 \prec 2^2\cdot 5 \prec 2^2\cdot 7 \prec \cdots  \prec \\
+    2^3\cdot 3 \prec 2^3\cdot 5 \prec 2^3\cdot 7 \prec \cdots  \prec \\
+    \vdots \\
+    \cdots 2^2 \prec 2 \prec 1
+\end{aligned}$$
+
+> Proof as final project?
+
+Sensitive dependence of initial condition
+: $f: S \to S, S \subseteq \mathbb R$ then $x_0 \in S$ has sensitive dependence
+  on initial conditions if $\exists d > 0, \forall N_\epsilon(x), \exists x_1 \in
+  N_\epsilon(x_0), \exists k \in \mathbb N |f^k(x_1) - f^k(x_0)|$
+
+eg: $f(x) = 3x \mod 1$. Choose $d < \frac 1 2$
+We can write $x$ in base $3$ as $x = x_1 \frac 1 3 + x_2 \frac 1 3^2 \cdots x_i
+\frac 1 3 ^ i \cdots, x_i \in \{0, 1, 2\}$
+
+---
+
+## Two dimensional maps
+
+$f: S \to S$ where $S \subset \mathbb R^n$. $f$ is a function on a vector with
+$m$ elements -- equivalent to $m$ equations from $\mathbb R^m \to \mathbb R$
+
+### Theorem: If $p$ fixed point, $f$ is differentiable at $p$
+
+$$
+Df(p) = \begin{bmatrix}
+\frac {\partial f_1} {\partial x_1} \cdots \frac{\partial f_1} {\partial  x_m } \\
+\frac {\partial f_2} {\partial x_1} \cdots \frac{\partial f_2} {\partial  x_m } \\
+\vdots \\
+\frac {\partial f_m} {\partial x_1} \cdots \frac{\partial f_m} {\partial  x_m } \\
+\end{bmatrix}$$
+* If all e-values of $Df(p)$ has absolute value $< 1$ then $p$ is a sink.
+* If all e-values of $Df(p)$ has absolute value $> 1$ then $p$ is a source.
+
+Hyperbolic point
+: All e-values $\ne 1$ then $p$ is a hyperbolic point. in addition if some
+e-values are greater than $1$ and others are lower, you call the point a saddle
+point.
+
+Linear map
+: $f: \mathbb R^n \to \mathbb R^n$ is linear iff $\forall u, v \in \mathbb R^n$j
+    * $f(u + v) = f(u) + f(v)$
+    * $f(c x) = cf(x)$
+
+  Equivalantly: $f(au + bv) = af(x) + bf(y)$
+
+$f: \mathbb R^2 \to \mathbb R^2$ linear, $\exists A \in M_{2\times 2}, f(x) =
+Ax$
+
+For $x \in S$ orbit is $\{x, f(x), f^2(x) \cdots \} = \{x, Ax, A^2x, A^3x \cdots
+\}$
+
+Case 1: $A$ has $2$ distinct eigen-values $\lambda_1, \lambda_2. Then $S ^{-1} A S =
+\begin{bmatrix}\lambda_1 & 0 \\ 0 & \lambda_2\end{bmatrix}$. $S =
+[\text{e-vector}_1,  \text{e-vector}_2]$.
+
+Then $A^n = S \begin{bmatrix}\lambda_1^n& 0 \\ 0 & \lambda_2^n\end{bmatrix} S ^{-1}$
