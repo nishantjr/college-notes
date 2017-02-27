@@ -60,6 +60,11 @@ Unique Factorization Domain
 
 ## Irreducability Criteria
 
+Gauss' Lemma
+: $R$ UFD, $F$ it's FoF then $p(x)$ factorizable in $F[x] \Longrightarrow$
+  factorizable in $R[x]$
+
+
 * $p(x)$ of degree 2/3 over field $F$ irreducible $\Longleftrightarrow$ has root
   in $F$.
 * $p(x) \in \mathbb Z[x]$, monic. then the roots of $p(x)$ in $\mathbb Q$ must be integers
@@ -67,7 +72,10 @@ Unique Factorization Domain
 * ID R, Ideal I, $p(x)$ non-constant monic polynomial. Then if $p(x)$ cannot be
   reduced into polynomials of a smaller degree, then $p(x)$ is irreducible in
   $R[x]$
-* Eisenstiens Criterion: XXX
+* Eisenstien's Criterion: $P$ prime ideal of $R$ Integral domain. $f(x) = x^n +
+  a_{n-1}x^{n-1} + \cdots a_1 x + a_0 \in R[x]$. $a_{n-1}, \ldots, a_1, a_0 \in
+  P, a_0 \notin P^2 \Longrightarrow f(x)$ is irreducible.
+
 
 ## Field Extensions
 
@@ -76,6 +84,7 @@ $\Longrightarrow F(\alpha) \cong F[x]/(p(x))$
 
 ---
 
+<<<<<<< HEAD
 ## Modules
 An element $m$ of an $R$-module $M$ is called a torsion element if $rm = 0$
 for some non-zero element $r \in R$. The set of torsion elements is denoted
@@ -91,3 +100,5 @@ Module
 Submodule Criterion
 : Non empty, $u + cv \in N$ ($N$ submodule)
 
+=======
+>>>>>>> Math418, Math489 notes and also CMN112 stuff
