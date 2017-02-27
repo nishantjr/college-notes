@@ -1,3 +1,58 @@
+## 9.3 #2
+
+Let $f(x), g(x) \in \mathbb Q[x]$. $f(x)g(x) \in  \mathbb Z[x]$.  
+
+Show that $\forall i, j: f_i g_i \in Z$
+
+let $f(x)g(x) = p(x)$
+
+We know that $\mathbb Z$ is a UFD and that $\mathbb Q$ is it's field of
+fractions. We also know that $p(x) = f(x)g(x)$. That is, $p(x)$ is reducable in
+$\mathbb Q[x]$. By Gauss' lemma, we know that there exists $F, G \in \mathbb Q$
+such that $Ff(x), Gg(x) \in \mathbb Z[x]$ and $p(x) = (Ff(x)(Gg(x))$
+
+Let $f_i, g_j$ be coeffients of two terms in $f(x)$ and $g(x)$. Then
+
+XXX
+
+## 9.4 #2
+
+Since $\mathbb Z$ is an ID, we can use Eisenstien's Criterion.
+
+$x^4 - 4x^3$: Eisenstien's Criterion for $p = 2$
+
+$x^6 + 30 x^5 - 15x^3 + 6x - 120$: Eisenstien's Criterion for $p = 3$
+
+$x^4 + 4x^3 + 6x^2 + 2x + 1$. Substituting $x \mapsto x - 1$, we get
+$x^4 + 0 +  0 -2x +2$. By Eisenstien's Criterion ($p = 2$) this is irreducible.
+
+$\frac { (x + 2)^p - 2^p}{x}$, $p$ odd.
+By binomial expansion, the coefficient for the $k$th term is $\binom {p} {k+1} = \frac {p!}{(k+1)!(p -k -1)!}$.
+This is a monomial since $\binom p {p+1} = 0$, and $\binom {p} {p} = 1$. 
+For $p - 1 > k > 0$, $k < p$ and $p - k - 1 < p$ and since $p$ is prime, each of
+these coefficients are multiples of $p$. The constant term is $\binom p 1 = p$
+which is not a multiple of $p^2$. By Eisenstien's Criterion, $p$ is irreducible.
+
+## 9.4 #4
+
+Suppose it is reducible: $p(x) = f(x)g(x)$.
+
+Now when evaluated at $x \le n$, $p(x) = f(x)g(x) = 1$ so $f(x)$ and $g(x)$ must
+evaluate to units in $\mathbb Z$. That is, they must both be either $1$ or $-1$.
+So $f(x) - g(x)$ has solutions $1, \cdots n$. So $f(x) - g(x)$ must either be
+the zero polynomial or have $n$ different roots. But the degree of $f(x) - g(x)$
+is less than $n$ since $f(x)$ and $g(x)$ both have degree less than $n$. So
+$f(x) = g(x)$. So the degree of $p(x) = f(x)^2$ must be even.
+
+If $n = 2$, $p(x) = x^2 -3x +3$ and by Eisenstien's Criterion is not reducible.
+
+Let the degree of $f(x)$ be $k$. Now $p(x) - 1 = f(x)^2 - 1 = (f(x) - 1)(f(x) +
+1)$ has $n = 2k$ roots ($\{1\cdots n\}$). For $k$ of these roots $f(x) - 1 = 0$
+and $f(x) = 1$. Each of these must be of degree $1$ and so of the form $
+
+## 9.4 #9
+
+Show that $x^2 - \sqrt 2$ is irreducible in $b$
 ## 13.1 #2
 
 We know that since $p(x) = x^3 - 2x - 2$ has integer co-efficients and degree 3 is
@@ -87,5 +142,4 @@ By example 2 on page 526, we know that $[\mathbb Q(\sqrt 2, \sqrt 3)] = 4$
 $x^4 - 10x^2 + 1$ is a 4th degree polynomial with roots $\sqrt 2 + \sqrt 3, -
 \sqrt 2 - \sqrt 3, \sqrt 2 - \sqrt 3, - \sqrt 2 + \sqrt 3$ and so is
 irreducible.
-
 
