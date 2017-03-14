@@ -8,11 +8,11 @@ title: Survey, Audience and Rhetoric Analysis
 The pace of automation is accelerating and it’s already costing people their
 jobs. Cashiers have been replaced by self-checkout counters, factory workers
 with robotic arms. In the next decade or so, self-driving cars are poised to
-replace the 4m workers in the US, roughly 3 percent of the labour force. We must
-confront the problem of how we deal with the unemployment created by automation.
-To do this, Bill Gates has proposed that the US government taxing the use of
-automation in companies, to help pay for retraining employees . (Morris, D.,
-2017)
+replace the 4 million workers in the US, roughly 3 percent of the labour force.
+We must confront the problem of how we deal with the unemployment created by
+automation. To do this, Bill Gates has proposed that the US government taxing
+the use of automation in companies, to help pay for retraining employees .
+(Morris, 2017)
 
 In this vein, our group's proposal is that "Should the US Government Tax
 automation". I will take a negative stance, arguing against the proposal.
@@ -51,14 +51,14 @@ Ever since the industrial revolution, automation has been replacing jobs with
 machines. Skilled workers and Artisans such as weavers were replaced by
 factories. In recent years the pace of automation has been accelerating and
 broadening in scope. Cashiers have been replaced by self-checkout counters,
-factory workers with robotic arms. 4M drivers in the US are predicted to be
-replaced by self-driving cars in the next decade. Even doctors are being
+factory workers with robotic arms. 4 million drivers in the US are predicted to
+be replaced by self-driving cars in the next decade. Even doctors are being
 replaced by computers that can perform diagnosis and even surgery. People are
 worried about their jobs, and rightly so.
 
 Microsoft's founder Bill gates proposes that we tax automation to slow down the
-pace of it's adoption and to fund retraining of workers. (Morris, D., 2017) In
-that vein, our group has chosen to debate whether the US government should tax
+pace of it's adoption and to fund retraining of workers. (Morris, 2017) In that
+vein, our group has chosen to debate whether the US government should tax
 automation. The idea behind this tax is to reduce the incentive for companies to
 utilize automation. Use of automation will be taxed at a similar level to the
 income tax that the employees it would replaces would pay. This money would then
@@ -95,14 +95,14 @@ that complements humans and new technology that replaces them. This is
 especially true over the long term. Power looms replaced human weavers back in
 the Industrial Revolution, but people eventually became more productive, by
 learning to operate those looms. If taxes had slowed the development of power
-looms, the eventual improvements would have come later." (Smith, N., 2017) Where
-do we draw the line between automation that should be taxed and automation that
+looms, the eventual improvements would have come later." (Smith, 2017) Where do
+we draw the line between automation that should be taxed and automation that
 shouldn't?
 
-Besides meeting the "need" component of Monroe's Motivated Sequence, I
-will also use it to meet the "visualization" component, putting the audience in
-the shoes of the companies that have to deal with this regulation. When looked
-at from that point of view, the tax seems almost foolish to me.
+Besides meeting the "need" component of Monroe's Motivated Sequence, I will also
+use it to meet the "visualization" component, putting the audience in the shoes
+of the companies that have to deal with this regulation. When looked at from
+that point of view, the tax seems almost foolish to me.
 
 Third, I will acknowledge that there is a real and worrying that needs to be
 dealt with. Bill Gates says, "business can’t [adequately handle such problems].
@@ -112,42 +112,41 @@ that you can amp up social services for old people and handicapped people and
 you can take the education sector and put more labor in there. Yes, some of it
 will go to, ‘Hey, we’ll be richer and people will buy more things.’ But the
 inequity-solving part, absolutely government’s got a big role to play there."
-(Ernst, D. 2017).
+(Ernst, 2017).
 
-I will explain alternate solutions such as wage subsidies (Pethokoukis, J.,
-2015) and universal basic income (Sodha, S., 2017.), essentially a stipend given
-to all citizens in order to reduce inequity and allow them to train themselves
-in new skills. A wage subsidy is a type of welfare -- adding dollars-per-hour to
-the worker’s wage out of tax payer money. According to James Pethokoukis of
-American Enterprise Institute, "wage supports thus offer a unique opportunity to
-break America’s negative cycle of poverty, family and community breakdown".
-Another idea is to redistribute the profits of automation more evenly. This
-could be implemented as "sovereign-wealth fund", where the government makes
-investments in stocks and real-estate and distributes the profits to the public.
-According to Sodha of the Guardian, in 2016/17 Finland carried out an experiment
-of a similar concept -- Universal Basic Income. The government would pay
-unemployed people between the age of 25 and 58 a "basic income" of 560 Euros
-every month. This replaced unemployment benefit, but would be payed regardless
-of whether the person is employed. (Sodha, S., 2017) This is an important part
-of my essay. I will explain that besides the obvious empathic motivations for
-keeping most of the population employed, businesses also have selfish reasons to
-make sure that humans are employed -- robots do not spend money and neither do
-unemployed humans.It's in the best interest of businesses themselves to make
-sure that humans are employed and have money to spend and promote growth in the
-market. It is intended to assuage the fears of the audience that the
-unemployment cause by automation is inevitable, and so meet the "satisfaction"
-component of Monroe's Motivated Sequence.
+I will explain alternate solutions such as wage subsidies (Pethokoukis, 2015)
+and universal basic income (Sodha, 2017.), essentially a stipend given to all
+citizens in order to reduce inequity and allow them to train themselves in new
+skills. A wage subsidy is a type of welfare -- adding dollars-per-hour to the
+worker’s wage out of tax payer money. According to James Pethokoukis of American
+Enterprise Institute, "wage supports thus offer a unique opportunity to break
+America’s negative cycle of poverty, family and community breakdown". Another
+idea is to redistribute the profits of automation more evenly. This could be
+implemented as "sovereign-wealth fund", where the government makes investments
+in stocks and real-estate and distributes the profits to the public. According
+to Sodha of the Guardian, in 2016/17 Finland carried out an experiment of a
+similar concept -- Universal Basic Income. The government would pay unemployed
+people between the age of 25 and 58 a "basic income" of 560 Euros every month.
+This replaced unemployment benefit, but would be payed regardless of whether the
+person is employed. (Sodha, 2017). This is an important part of my essay. I will
+explain that besides the obvious empathic motivations for keeping most of the
+population employed, businesses also have selfish reasons to make sure that
+humans are employed -- robots do not spend money and neither do unemployed
+humans.It's in the best interest of businesses themselves to make sure that
+humans are employed and have money to spend and promote growth in the market. It
+is intended to assuage the fears of the audience that the unemployment cause by
+automation is inevitable, and so meet the "satisfaction" component of Monroe's
+Motivated Sequence.
 
 During the transition between the "need" component and the "satisfaction"
-component, I will spend some time explaining why automation is inevitable.
-I will use sources such as the documentary "Humans need not apply", and the
-fears that industry and science leaders like Stephen Hawking, Elon Musk and
-Bill Gates are worried about the changes that artificial intelligence will cause
-and how it will be a paradigm shift of greater magnitude that the industrial
-revolution. This section, too, is important since the audience doesn't seem
-convinced that automation can do a lot of tasks (large portions aren't
-comfortable with self driving cars, feel that self-driving truck won't be as
-inefficient).
+component, I will spend some time explaining why automation is inevitable. I
+will use sources such as the documentary "Humans need not apply", and the fears
+that industry and science leaders like Stephen Hawking, Elon Musk and Bill Gates
+are worried about the changes that artificial intelligence will cause and how it
+will be a paradigm shift of greater magnitude that the industrial revolution.
+This section, too, is important since the audience doesn't seem convinced that
+automation can do a lot of tasks (large portions aren't comfortable with self
+driving cars, feel that self-driving truck won't be as inefficient).
 
 The fact of the matter is that automation is inevitable. History has shown that
 when large economic forces have a stake, they tend to win. Implementing this tax
