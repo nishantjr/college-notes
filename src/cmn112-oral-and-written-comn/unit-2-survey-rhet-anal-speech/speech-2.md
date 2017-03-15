@@ -114,9 +114,15 @@ carried out, so we don't know how effective it is.
 Smith, N. (2017 February 28) What's Wrong With Bill Gates' Robot Tax.
 *Bloomberg.* Retrieved from
 https://www.bloomberg.com/view/articles/2017-02-28/what-s-wrong-with-bill-gates-robot-tax
+Primary source. Talks about problems with Bill Gates' proposal, and possible
+alternative. Doesn't go into detail about solutions.
 
 Sodha, S. (2017 February 19) Is Finland’s basic universal income a solution to
 automation, fewer jobs and lower wages? *The Guardian.* Retrieved from
+https://www.theguardian.com/society/2017/feb/19/basic-income-finland-low-wages-fewer-jobs
+Report about the implementation of Universal Basic Income in Finland. Talks
+about motivation for universal income, as well as sources of moeny for such an
+implmentation.
 
 
 ## Keyword outline
