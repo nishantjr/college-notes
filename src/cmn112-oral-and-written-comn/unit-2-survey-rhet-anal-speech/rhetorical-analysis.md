@@ -8,7 +8,7 @@ title: Survey, Audience and Rhetoric Analysis
 The pace of automation is accelerating and it’s already costing people their
 jobs. Cashiers have been replaced by self-checkout counters, factory workers
 with robotic arms. In the next decade or so, self-driving cars are poised to
-replace the 4 million workers in the US, roughly 3 percent of the labour force.
+replace the 4 million workers in the US, roughly 3 percent of the labor force.
 We must confront the problem of how we deal with the unemployment created by
 automation. To do this, Bill Gates has proposed that the US government taxing
 the use of automation in companies, to help pay for retraining employees .
@@ -86,7 +86,7 @@ other economies that don't have such regulations. It may even cause US companies
 to move factories abroad to sidestep the tax and make themselves more
 competitive. This could make the tax back fire and reduce unemployment further.
 We've already seen this happen with jobs being outsources to countries with
-cheaper labour such as Mexico and India. Interestingly as the income from these
+cheaper labor such as Mexico and India. Interestingly as the income from these
 outsourcing jobs raised wages in these countries, the jobs moved to even cheaper
 markets. Another issue with this idea is that it's difficult to define what
 automation is. Bloomberg's Noah Smith writes "The problem with Gates’ basic
