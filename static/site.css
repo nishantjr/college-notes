@@ -1,7 +1,7 @@
-* { margin-top: 0px; }
 #content {
     max-width: 600px;
     margin: auto;
+    font-family: serif;
 }
 @media print { #content { max-width: none; } }
 
@@ -44,4 +44,6 @@ table td {
 
 * { border-collapse: collapse; }
 
-
+.speech-formal-outline li       { list-style-type: upper-roman; }
+.speech-formal-outline li li    { list-style-type: upper-alpha; }
+.speech-formal-outline li li li { list-style-type: unset;       }

@@ -19,6 +19,7 @@ function titleFromPath() {
             || path.basename(vinyl.path, '.md').split('-').map((s) =>
                 (s.slice(0, 1).toUpperCase() + s.slice(1).toLowerCase())
             ).join(' ')
+        vinyl.style = (vinyl.frontMatter && vinyl.frontMatter.style)
     })
 }
 
