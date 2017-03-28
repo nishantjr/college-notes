@@ -53,4 +53,23 @@ Unique Factorization Domain
 : 0. *Integral Domain*
   1. If $r\in R$ not a unit, there exists unique (upto associates)...
 
----
+
+> If $R/(p(x))$ is the equivalence classes mod $p(x)$ -- $f(x) = g(x)p(x) + r(x)
+> \mapsto r(x)$
+> 
+
+## Irreducability Criteria
+
+* $p(x)$ of degree 2/3 over field $F$ irreducible $\Longleftrightarrow$ has root
+  in $F$.
+* $p(x) \in \mathbb Z[x]$, monic. then the roots of $p(x)$ in $\mathbb Q$ must be integers
+  dividing the constant term.
+* ID R, Ideal I, $p(x)$ non-constant monic polynomial. Then if $p(x)$ cannot be
+  reduced into polynomials of a smaller degree, then $p(x)$ is irreducible in
+  $R[x]$
+* Eisenstiens Criterion: XXX
+
+## Field Extensions
+
+Field $F$, $p(x) \in F[x]$ irreducible. $\alpha \in K$ (extension) is a root
+$\Longrightarrow F(\alpha) \cong F[x]/(p(x))$

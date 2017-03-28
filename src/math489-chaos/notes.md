@@ -155,8 +155,72 @@ Ax$
 For $x \in S$ orbit is $\{x, f(x), f^2(x) \cdots \} = \{x, Ax, A^2x, A^3x \cdots
 \}$
 
-Case 1: $A$ has $2$ distinct eigen-values $\lambda_1, \lambda_2. Then $S ^{-1} A S =
+Case 1: $A$ has $2$ distinct eigen-values $\lambda_1, \lambda_2$. Then $S ^{-1} A S =
 \begin{bmatrix}\lambda_1 & 0 \\ 0 & \lambda_2\end{bmatrix}$. $S =
 [\text{e-vector}_1,  \text{e-vector}_2]$.
 
 Then $A^n = S \begin{bmatrix}\lambda_1^n& 0 \\ 0 & \lambda_2^n\end{bmatrix} S ^{-1}$
+
+## Theorem: Normal Jordan form
+
+$\forall A \in M_{m\times m} \exists S \in M_{m\times m}$ invertible, such that
+$D = S ^{-1} A S$ with $D$ diagonal blocks:
+
+$$D = \begin{bmatrix}
+\lambda & 1 & 0 & 0 \cdots \\
+0 &\lambda & 1 & 0 \cdots \\
+\vdots & \vdots & \vdots &\vdots \\
+0 & 0&  \cdots  &\lambda
+\end{bmatrix}$$
+
+$$D^n = \begin{bmatrix}
+\lambda^n & \binom n 1 \lambda^{n-1} &  \cdots \\
+0 &\lambda & 1 & 0 \cdots \\
+\vdots & \vdots & \vdots &\vdots \\
+0 & 0&  \cdots  &\lambda
+\end{bmatrix}$$
+
+----
+
+For an $n$ dimensional map
+
+case 1 : distinct roots $m_1 = m_2 = m_3 = \cdots = 1$, $\text{Null}(A - \lambda 
+
+---
+
+If $f$ is differentiable at poing $p$ and 
+ 1. $Df(p)$ has $e$-values with magnitude $> 1\Longrightarrow p$ is a
+    sink
+ 1. $Df(p)$ has $e$-values with magnitude  $< 1 \Longrightarrow p$ is a
+    source
+
+$p$ is $k$-periodic for $f$ then it is a $k$-periodic if 
+1. a sink if $Df^k(p) = Df(p)Df(f^{1}(p))\cdots Df(f^k(p))$
+
+---
+
+Lyopunov' Number at $x_0$
+: $$L = \lim_{x\to \infty} | f'(x_0)f'(x_1)f'(x_2)\cdots f'(x_m)| ^{\frac 1 n}$$
+: $$h = \lim_{x\to \infty} \ln |f'(x_0)| \ln|f'(x_1)| \ln|f'(x_2)|\cdots \ln| f'(x_m)| ^{\frac 1 n}$$
+
+
+If $p\in S$ isa fixed point. THen $L = |f'(p)|$ if less than 1 then sink,
+grerater than one source.
+
+Similarly $h$ >/< 0.
+
+$P \in S$ is periodic with period $k$ the limit converges to $L = |f'(x_0)
+\cdots f'(x_{k-1})|^{\frac 1 k}$
+
+If the $k$-orbit of $x_0$ under $f$ has Lyopunov # of $L$ then under $f^k$ it
+has an L-number of $L^k$
+
+Asymptotically periodic orbit
+: orbit $\{x_0, x_1, \cdots, x_n \}$ is Asymptotically periodic if $\exists ???$
+: iterations converge to a $k$-orbit.
+
+If an orbit is asymptotically periodc then the $L$ of the orbit is the same as
+it's periodic orbit.
+
+If $\{ x_0, x_1\cdots \}$ is asymptotically periodic and the has $h>0 / L>1$ then the orbit is eventually periodic. (otherwise it's not possible for a asymptotic repulsive point).
+

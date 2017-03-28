@@ -5,7 +5,7 @@ style: speech-formal-outline
 * Introduction
   - I'm sure you've all had that moment, say during your public speech
     assignment in class, where you stumble, seize up and panic, haven't you?
-  - [Thesis] In the speech I'm analyzing Chris Hadfield's talk about exactly
+  - [Thesis] In the speech I'm analyzing Chris Hadfield's talks about exactly
     this -- dealing with fear.
 * Context
   - From an evolutionary standpoint, fear is great when you're living in the
@@ -20,8 +20,8 @@ style: speech-formal-outline
     * Or a day before your finals when you realize you won't be able to get
       through the syllabus, do you?
 * Structure
-  - In the Ted Talk, Chris Hadfield talks to us about how he's learned to deal
-    with fear.
+  - In the Ted Talk, Chris Hadfield talks, a Canadian astronaut,  to us about
+    how he's learned to deal with fear.
   - And he's a very appropriate person to talk about this -- He's a Canadian
     astronaut who's flown two space shuttle missions and served as commander of
     the International Space Station.
@@ -51,18 +51,16 @@ style: speech-formal-outline
      * you think to yourself if he can get over his fears, of these crazy
        dangerous situations, then why can't I get over my little ones?
   - Why it's convincing?
+     * In his book "An astronaut's guide to Life on Earth", Hadfield call this
+       approach "Working the problem" - a NASA term for working through your available options, of trees of decisions and their possible consequences until you find a solution that works.
+     * He talks about practicing dealing with a situation until you've
+       overridden your natural instincts.
      * He walks us through rationalizing this --  most spiders aren't poisonous,
        the ones that are have bright marking letting you know, and even then
        most can't harm a human beyond a painful sting.
      * Once you've thought through it, it's not difficult to bring yourself to
        walk through one spider web, then another, building up your confidence
        and breaking down your fear. 
-     * In his book "An astronaut's guide to Life on Earth", Hadfield call this
-       approach "Working the problem" - a NASA term for working through your
-       available options, of trees of decisions and their possible consequences
-       until you find a solution that works.
-     * He talks about practicing dealing with a situation until you've
-       overridden your natural instincts.
 * Second Argument: Motivation
    - In his second argument to get over our fears -- one of motivation -- He
      tells us of the whole new world of opportunities that opens up once we've
@@ -87,10 +85,11 @@ style: speech-formal-outline
     friendly and caring, as he almost hand-holds you though dealing with your
     fears.
 
-Works cited:
-
-  Buzz Aldrin, the second man on the moon, speaks of piloting of the lunar lander
-  "A mind concerned about danger is a clouded mind. It's paralyzing." 
+## Works cited:
+  
+  Clash, Jim (2011). "Buzz Aldrin: The Right Stuff."
   https://buzzaldrin.com/the-right-stuff-interview/
 
-https://www.siskar.co/blog/2016/1/27/work-the-problem-advice-from-an-astronaut-chris-hadfield
+  Hadfield, Chris (2014). "Astronaut Chris Hadfield on Simulating Death"
+  (Excrept from "An Astronauts Guide to Life on Earth")
+  http://www.pbs.org/wgbh/nova/blogs/secretlife/blogposts/how-do-you-overcome-fear/
