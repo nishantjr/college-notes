@@ -11,7 +11,8 @@ const
     mdAdapter = require('gulp-markdown-it-adapter'),
     mdDeflist = require('markdown-it-deflist'),
     mdKatex = require('markdown-it-katex'),
-    path = require('path')
+    path = require('path'),
+    concat = require('gulp-concat') // XXX
 
 function titleFromPath() {
     return gulpTap(function(vinyl) {
@@ -23,6 +24,10 @@ function titleFromPath() {
     })
 }
 
+const test = {
+
+}
+
 gulp.task('render-markdown', function() {
     const md = new markdownIt('commonmark')
     md.use(mdKatex,
@@ -31,14 +36,16 @@ gulp.task('render-markdown', function() {
     md.enable('table')
     md.enable('strikethrough')
 
-    return gulp
+    const stream = gulp
         .src('src/**/*')
         .pipe(gulpFrontMatter({property: "frontMatter", remove: true }))
         .pipe(titleFromPath())
         .pipe(mdAdapter(md))
         .pipe(gulpWrap({src: 'template.html'}))
-        .pipe(connect.reload())
         .pipe(gulp.dest('.build/www/'))
+        .pipe(concat('/dev/null'))
+        .pipe(connect.reload())
+    return stream;
 })
 
 gulp.task('copy-static-files', function() {

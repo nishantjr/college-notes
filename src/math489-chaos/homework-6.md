@@ -5,7 +5,6 @@ $f: \mathbb R^m \to \mathbb R^m$ has $|Df(x)| = D$.
 The axes of the ellipse formed by applying $f^n$ will be the square roots of the
 eigenvalues ${s_i}^2$ of $J_nJ_n^T$ where $J_n = Df(x)$. Let $v_i$ be the
 corresponding eigenvectors.
-
 By diagonalizing, $J_nJ_n^T = S ^{-1} AS$. Taking determinant:
 
 $$\begin{aligned}
@@ -60,15 +59,32 @@ corresponding Lyapunov numbers are exactly double.
 ## 5.3
 
 Since the matrix used in the cat map is invertible, it is sufficient to show
-that the image (transformed via the matrix) of the area outside of $[0, 1) \times [0, 1)$ does not 
+that the intersection of the image of $[0, 1) \times [0, 1)$ in each $[m, m+1) \times [n,
+n+1)$ are disjoint when taken $(\text{mod} 1)$.
+The Cat map can be written as: $(x, y) \mapsto (2x + y, x + y)$.
+So these regions are: 
+$$\begin{aligned}
+    &x + y < 1, &   &2x + y < 1                 \quad \text{(A)}\\
+    &x + y < 1, & 1 <& 2x + y < 2               \quad \text{(B)}\\
+1 < &x + y < 2, &1 <& 2x + y < 2                \quad \text{(C)}\\
+1 < &x + y < 2, & 2 < &2x + y < 3               \quad \text{(D)}
+\end{aligned}$$
 
-Can be restated as:
-
-(x, y) \mapsto (2x + y, x + y    )          x + y < 1,     2x + y < 1
-NULL                                    1 < x + y < 2,     2x + y < 1
-(x, y) \mapsto (2x + y - 1, x + y)          x + y < 1, 1 < 2x + y < 2
-(x, y) \mapsto (2x + y - 1, x + y - 1)  1 < x + y < 2, 1 < 2x + y < 2
-(x, y) \mapsto (2x + y - 1, x + y - 1)  1 < x + y < 2, 1 < 2x + y < 2
+These are the triangles bounded by the vertices, and whose images are bounded by:
+$$\begin{aligned}
+    (0, 0), (\frac 1 2, 0), (0, 1) &\mapsto (0, 0), (1, \frac 1 2), (1,1) &\quad \text{(A)}\\
+    (1, 0), (\frac 1 2, 0), (0, 1) &\mapsto (2, 1), (1, \frac 1 2), (1,1) &\quad \text{(B)}\\
+   (1, 0), (0, 1), (\frac 1 2, 1)  &\mapsto (2, 1), (1, 1), (2, \frac 3 2)&\quad \text{(B)}\\
+   (1, 0), (1, 1), (\frac 1 2, 1)  &\mapsto (2, 1), (3, 2), (2, \frac 3 2)&\quad \text{(B)}\\
+   \\
+   \\
+   \\
+   \\
+   \\
+   \\
+   \\
+   \\
+\end{aligned}$$
 
 ## 5.7 (a)
 
@@ -96,4 +112,5 @@ $0$
 
 All points outside of the unit circle have Lyapunov exponent greater than 0.
 Since $r^2$ diverges to infinity for $r>1$, it's not possible to have an
-asymptotically periodic orbit.
+asymptotically periodic orbit. So all points outsite of the unit circle are
+chaotic.
