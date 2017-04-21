@@ -31,10 +31,14 @@ blockquote {
     padding-left: 20px;
 }
 
-h2 { font-size: 18px;  }
-h3 { font-size: 16px;  }
-h4 { font-size: 14px;  }
-h5 { font-size: 13px;  }
+h1 { font-size: 22px; font-weight: normal;
+     border-bottom: 1px solid black; 
+     text-align: center;
+   }
+h2 { font-size: 16px;  }
+h3 { font-size: 14px;  }
+h4 { font-size: 13px;  }
+h5 { font-size: 12px; font-weight: bold; }
 h6 { font-size: 12px;  }
 
 table td {
@@ -49,3 +53,17 @@ table td {
 .speech-formal-outline li li    { list-style-type: upper-alpha; }
 .speech-formal-outline li li li { list-style-type: unset;       }
 .double-line-space              { line-height: 2em; }
+
+/* Automatically number sections */
+body {counter-reset: h2}
+  h2 {counter-reset: h3}
+  h3 {counter-reset: h4}
+  h4 {counter-reset: h5}
+  h5 {counter-reset: h6}
+.number-sections h2:before {counter-increment: h2; content: counter(h2) ". "}
+.number-sections h3:before {counter-increment: h3; content: counter(h2) "." counter(h3) ". "}
+.number-sections h4:before {counter-increment: h4; content: counter(h2) "." counter(h3) "." counter(h4) ". "}
+.number-sections h5:before {counter-increment: h5; content: counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) ". "}
+.number-sections h6:before {counter-increment: h6; content: counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) "." counter(h6) ". "}
+h2.nocount:before, h3.nocount:before, h4.nocount:before,
+h5.nocount:before, h6.nocount:before { content: ""; counter-increment: none } 
