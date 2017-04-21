@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="/katex/katex.min.css">
+    <link rel="stylesheet" href="/site.css">
+    <title>Token.maude</title>
+</head>
+<body>
+<div id='content' class=''>
+<header>
+<h1>Token.maude</h1> <address>Nishant Rodrigues</address>
+</header>
+<p>set include BOOL off .</p>
+<p>mod 2TOKEN is
+sorts Name Proc Token Conf State .
+subsorts Proc Token &lt; Conf .
+op {<em>}      : Conf      -&gt; State [ctor] .
+op none     :           -&gt; Conf  [ctor] .
+ops * $     :           -&gt; Token [ctor] .
+ops a b     :           -&gt; Name  [ctor] .
+op __       : Conf Conf -&gt; Conf  [assoc comm id: none] .
+op [</em>,wait] : Name      -&gt; Proc  [ctor] .
+op [_,crit] : Name      -&gt; Proc  [ctor] .
+var C : Conf .
+rl [a-enter] : { $ [a,wait] C } =&gt; { [a,crit]   C } .
+rl [b-enter] : { * [b,wait] C } =&gt; { [b,crit]   C } .
+rl [a-exit]  : {   [a,crit] C } =&gt; { [a,wait] * C } .
+rl [b-exit]  : {   [b,crit] C } =&gt; { [b,wait] $ C } .
+endm</p>
+
+</div>
+<script src="//localhost:35729/livereload.js?snipver=1"></script>
+</body>
+</html>

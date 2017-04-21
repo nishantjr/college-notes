@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="/katex/katex.min.css">
+    <link rel="stylesheet" href="/site.css">
+    <title>Irregular2.maude</title>
+</head>
+<body>
+<div id='content' class=''>
+<header>
+<h1>Irregular2.maude</h1> <address>Nishant Rodrigues</address>
+</header>
+<p>--- <code>op x</code> claims to be associative but isn't
+fmod IRREGULAR2 is
+sorts A B C .
+subsorts A B &lt; C .
+op x : A B -&gt; A [assoc] .
+op x : B A -&gt; B [assoc] .</p>
+<p>var a : A .
+var b : B .
+eq x(a, b) = a .
+eq x(b, a) = b .</p>
+<p>endfm</p>
+
+</div>
+<script src="//localhost:35729/livereload.js?snipver=1"></script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="/katex/katex.min.css">
+    <link rel="stylesheet" href="/site.css">
+    <title>Dinphil.maude</title>
+</head>
+<body>
+<div id='content' class=''>
+<header>
+<h1>Dinphil.maude</h1> <address>Nishant Rodrigues</address>
+</header>
+<p>fmod NAT/4 is
+protecting NAT .
+sort Nat/4 .
+op [_] : Nat -&gt; Nat/4 .
+op <em>+</em> : Nat/4 Nat/4 -&gt; Nat/4 .
+op <em>*</em> : Nat/4 Nat/4 -&gt; Nat/4 .
+op p : Nat/4 -&gt; Nat/4 .
+vars N M : Nat .
+ceq [N] = [N rem 4] if N &gt;= 4 .
+eq [N] + [M] = [N + M] .
+eq [N] * [M] = [N * M] .
+ceq p([0]) = [N] if s(N) := 4 .
+ceq p([s(N)]) = [N] if N &lt; 4 .
+endfm</p>
+<p>mod DIN-PHIL is
+protecting NAT/4 .
+sorts Oid Cid Attribute AttributeSet Configuration Object Msg .
+sorts Phil Mode .
+subsort Nat/4 &lt; Oid .
+subsort Attribute &lt; AttributeSet .
+subsort Object &lt; Configuration .
+subsort Msg &lt; Configuration .
+subsort Phil &lt; Cid .</p>
+<p>op __ : Configuration Configuration -&gt; Configuration
+[ assoc comm id: none ] .
+op <em><code>,_ : AttributeSet AttributeSet -&gt; AttributeSet [ assoc comm id: null ] . op null : -&gt; AttributeSet . op none : -&gt; Configuration . op mode</code>:</em> : Mode -&gt; Attribute [ gather ( &amp; ) ] .
+op holds`:_ : Configuration -&gt; Attribute [ gather ( &amp; ) ] .
+op &lt;<em>:</em>|_&gt; : Oid Cid AttributeSet -&gt; Object .
+op Phil : -&gt; Phil .</p>
+<p>ops t h e : -&gt; Mode .
+op chop : Nat/4 Nat/4 -&gt; Msg [comm] .
+op init : -&gt; Configuration .
+op make-init : Nat/4 -&gt; Configuration .</p>
+<p>vars N M K : Nat .
+var C : Configuration .</p>
+<p>ceq init = make-init([N]) if s(N) := 4 .
+ceq make-init([s(N)])
+= &lt; [s(N)] : Phil | mode : t , holds : none &gt;  make-init([N])  (chop([s(N)],[N]))
+if N &lt; 4 .
+ceq make-init([0]) =
+&lt; [0] : Phil | mode : t , holds : none &gt; chop([0],[N]) if  s(N) := 4 .</p>
+<p>rl [t2h] : &lt; [N] : Phil | mode : t , holds : none &gt; =&gt;
+&lt; [N] : Phil | mode : h , holds : none &gt; .
+crl [pickl] :  &lt; [N] : Phil | mode : h , holds : none &gt; chop([N],[M])
+=&gt; &lt; [N] : Phil | mode : h , holds :  chop([N],[M]) &gt; if [M] = [s(N)] .
+rl [pickr] :  &lt; [N] : Phil | mode : h , holds : chop([N],[M]) &gt;
+chop([N],[K]) =&gt;
+&lt; [N] : Phil | mode : h , holds :  chop([N],[M]) chop([N],[K]) &gt; .
+rl [h2e] :  &lt; [N] : Phil | mode : h , holds :  chop([N],[M])
+chop([N],[K]) &gt; =&gt; &lt; [N] : Phil | mode : e ,
+holds :  chop([N],[M]) chop([N],[K]) &gt; .
+rl [e2t] :  &lt; [N] : Phil | mode : e , holds :  chop([N],[M])
+chop([N],[K]) &gt;  =&gt;   chop([N],[M]) chop([N],[K])<br />
+&lt; [N] : Phil | mode : t , holds :  none &gt; .
+endm</p>
+
+</div>
+<script src="//localhost:35729/livereload.js?snipver=1"></script>
+</body>
+</html>

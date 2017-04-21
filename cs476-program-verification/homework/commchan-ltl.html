@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="/katex/katex.min.css">
+    <link rel="stylesheet" href="/site.css">
+    <title>Commchan Ltl.maude</title>
+</head>
+<body>
+<div id='content' class=''>
+<header>
+<h1>Commchan Ltl.maude</h1> <address>Nishant Rodrigues</address>
+</header>
+<p>mod COMM-CHANN is protecting NAT .  protecting QID .
+sorts Msg MsgMSet QidList CHState .
+subsort Msg &lt;  MsgMSet .
+subsort Qid &lt; QidList .</p>
+<p>op nil : -&gt; QidList [ctor] .
+op <em>;</em> : QidList QidList -&gt; QidList [ctor assoc id: nil] .
+op [<em>,</em>] : Qid Nat -&gt; Msg [ctor] .
+op null : -&gt; MsgMSet [ctor] .
+op _ _ :  MsgMSet MsgMSet -&gt; MsgMSet [ctor assoc comm id: null] .
+op [<em>:</em>|<em>|</em>:_] : QidList Nat MsgMSet Nat QidList -&gt; CHState [ctor] .</p>
+<p>vars N M I J : Nat . var MS : MsgMSet . vars L L' : QidList .
+vars A B : Qid .</p>
+<p>rl [send] : [A ; L : I | MS | J : L'] =&gt; [L : s(I) | [A,I] MS | J : L'] .
+rl [receive] : [L : I | MS [A,J] | J : L'] =&gt; [L : I | MS | s(J) : L' ; A] .
+endm</p>
+<p>load model-checker.maude</p>
+<p>mod COMM-CHANN-PREDS is protecting COMM-CHANN . including SATISFACTION .
+subsort CHState &lt; State .
+op in-order-reception : QidList -&gt; Prop .
+op received : QidList -&gt; Prop .</p>
+<p>vars N M I J : Nat . var MS : MsgMSet . vars L L' L'' : QidList .</p>
+<p>*** add your defining equations here</p>
+<p>endm</p>
+<p>mod COMM-CHANN-CHECK is
+protecting COMM-CHANN-PREDS .
+including MODEL-CHECKER .
+ops init1 init2 init3  : -&gt; CHState .
+eq init1 = ['a ; 'b ; 'c : 0 | null | 0 : nil ] .
+eq init2 = ['a ; 'b ; 'c ; 'd : 0 | null | 0 : nil ] .
+eq init3 = ['a ; 'b ; 'c ; 'd ; 'e : 0 | null | 0 : nil ] .
+endm</p>
+<p>*** add your LTL commands here</p>
+
+</div>
+<script src="//localhost:35729/livereload.js?snipver=1"></script>
+</body>
+</html>

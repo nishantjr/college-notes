@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="/katex/katex.min.css">
+    <link rel="stylesheet" href="/site.css">
+    <title>Exercise 5.maude</title>
+</head>
+<body>
+<div id='content' class=''>
+<header>
+<h1>Exercise 5.maude</h1> <address>Nishant Rodrigues</address>
+</header>
+<p>fmod NAT-MSET-MIN is
+sorts Nat NatMSet .
+subsort Nat &lt; NatMSet .
+op 0 : -&gt; Nat [ctor] .
+op s : Nat -&gt; Nat [ctor] .
+op _ _ : NatMSet NatMSet -&gt; NatMSet [assoc comm ctor] .
+op <em>&lt;</em> : Nat Nat -&gt; Bool .
+op min : NatMSet -&gt; Nat .
+vars N M : Nat .
+var  S : NatMSet .
+eq 0 &lt; s(N) = true .
+eq s(N) &lt; 0 = false .
+eq s(N) &lt; s(M) = N &lt; M .
+eq min(N N S) = min(N S) .
+ceq min(N M S) = min(N S) if N &lt; M .
+ceq min(N M) = N if N &lt; M .
+eq min(N) = N .</p>
+<p>*** Solution
+eq 0 &lt; 0 = false .
+ceq min(N M) = M if not N &lt; M .</p>
+<p>*** Unit tests
+op unitTest : -&gt; Bool .
+eq unitTest = true
+--- Expressions that didn't used to work
+and          0 &lt; 0          == false        --- Reduces to: result Bool: 0 &lt; 0
+and s(s(s(0))) &lt; s(s(s(0))) == false        --- Reduces to: result Bool: 0 &lt; 0</p>
+<p>and min(0 0) == 0
+and min(s(0) s(0)) == s(0)</p>
+<p>--- Did we break things?
+and    s(s(0)) &lt; s(s(s(0))) == true
+and s(s(s(0))) &lt; s(s(0))    == false</p>
+<p>and min(s(0) 0) == 0
+and min(0 s(0)) == 0
+and min(0 s(s(s(0))) s(0)) == 0
+.
+endfm</p>
+
+</div>
+<script src="//localhost:35729/livereload.js?snipver=1"></script>
+</body>
+</html>

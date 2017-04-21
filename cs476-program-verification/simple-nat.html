@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="/katex/katex.min.css">
+    <link rel="stylesheet" href="/site.css">
+    <title>Simple Nat.maude</title>
+</head>
+<body>
+<div id='content' class=''>
+<header>
+<h1>Simple Nat.maude</h1> <address>Nishant Rodrigues</address>
+</header>
+<p>fmod SIMPLE-NAT is</p>
+<pre><code>sort Nat .
+vars N M : Nat .
+
+op zero : -&gt; Nat .
+--- eq zero = zero .        --- cjs just wanted to show that they're the
+                            --- same value. Instead, infinite loop?
+                            --- Why would it actually run anything for this.
+                            --- N &lt;- zero; M &lt;- zero; M = N
+
+op id_ : Nat -&gt; Nat .       --- identity function
+eq id N = N .
+
+op s_ : Nat -&gt; Nat .        --- successor function
+
+op _+_ : Nat Nat -&gt; Nat [ prec 33  ] .
+eq zero + N = N .
+eq s M + N = s ( M + N ) .
+
+op _*_ : Nat Nat -&gt; Nat [ prec 31 ] .
+eq zero * N = zero .
+eq s M * N =  M * N + N  .
+
+op _&gt;_ : Nat Nat -&gt; Bool .
+eq zero &gt; zero = false .
+eq zero &gt; s N = false .
+eq s N &gt; zero = true .
+eq s N &gt; s M = N &gt; M .
+
+op _&gt;=_ : Nat Nat -&gt; Bool .
+eq zero &gt;= zero = true .
+eq zero &gt;= s N = false .
+eq s N &gt;= zero = true .
+eq s N &gt;= s M = N &gt;= M .
+
+op max : Nat Nat -&gt; Nat [comm] .
+eq max(zero, zero) = zero .
+eq max(zero, s M) = s M .
+eq max(s N, s M) = s max(N, M) .
+
+op min : Nat Nat -&gt; Nat [comm] .
+eq min(zero, zero) = zero .
+eq min(zero, s M) = zero .
+eq min(s N, s M) = s min(N, M) .
+
+op even : Nat -&gt; Bool .
+eq even(zero) = true .
+eq even(s N) = not even(N) .
+
+op _! : Nat -&gt; Nat .
+eq zero ! = 1 .
+eq (s N) ! = s(N) * (N !) .
+
+ops  0 1 2 3 : -&gt; Nat .
+eq 0 = zero .
+eq 1 = s 0 .
+eq 2 = s 1 .
+eq 3 = s 2 .
+</code></pre>
+<p>endfm</p>
+<p>---(
+id :: a -&gt; a
+id x = x
+)</p>
+
+</div>
+<script src="//localhost:35729/livereload.js?snipver=1"></script>
+</body>
+</html>

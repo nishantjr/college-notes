@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="/katex/katex.min.css">
+    <link rel="stylesheet" href="/site.css">
+    <title>Tree.maude</title>
+</head>
+<body>
+<div id='content' class=''>
+<header>
+<h1>Tree.maude</h1> <address>Nishant Rodrigues</address>
+</header>
+<p>---(Exercise from lecture 3</p>
+<pre><code>Continue playing with Maude. Define other functions
+on commonly used data types. For example, define
+binary trees that have natural numbers in their leaves,
+and define three functions: (i) tree reverse, (ii) max
+and min (give the biggest, resp. smallest, number
+stored in the tree), and (iii) insert, which inserts a
+number in the tree, so that numbers to its left in the
+tree will be smaller.
+</code></pre>
+<p>)
+fmod BINARY-TREE is protecting NAT .
+sorts NeTree Tree .
+subsorts Nat NeTree &lt; Tree .</p>
+<pre><code>op nil : -&gt; Tree .
+op (_ _ _) : Tree Nat Tree -&gt; NeTree .
+
+op reverse : Tree -&gt; Tree .
+op max : NeTree -&gt; Nat .
+op min : NeTree -&gt; Nat .
+
+vars L R : Tree .
+vars N : Nat .
+eq reverse(nil) = nil .
+eq reverse(N) = N .
+eq reverse((L N R)) = (reverse(R) N reverse(L)) .
+</code></pre>
+<p>endfm</p>
+
+</div>
+<script src="//localhost:35729/livereload.js?snipver=1"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="/katex/katex.min.css">
+    <link rel="stylesheet" href="/site.css">
+    <title>Listofnat.maude</title>
+</head>
+<body>
+<div id='content' class=''>
+<header>
+<h1>Listofnat.maude</h1> <address>Nishant Rodrigues</address>
+</header>
+<p>set include BOOL off .</p>
+<p>fmod LIST-of-NAT is protecting NAT .
+sort List .
+subsort Nat &lt; List .
+op nil : -&gt; List [ctor] .
+op <em>;</em> : List List -&gt; List [ctor assoc] .
+op length : List -&gt; Nat .
+var N : Nat .
+var L : List .
+eq nil ; L = L .
+eq L ; nil = L .
+eq length(nil) = 0 .
+eq length(N) = 1 .
+eq length(N ; L) = 1 + length(L) .
+endfm</p>
+<p>--- UNCOMMENT THIS GOAL TO USE IT
+--- (goal listlength : LIST-of-NAT
+|- A{L:List ; L':List}
+((length(L ; L')) = (length(L) + length(L'))) .)</p>
+
+</div>
+<script src="//localhost:35729/livereload.js?snipver=1"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="/katex/katex.min.css">
+    <link rel="stylesheet" href="/site.css">
+    <title>Listexample.maude</title>
+</head>
+<body>
+<div id='content' class=''>
+<header>
+<h1>Listexample.maude</h1> <address>Nishant Rodrigues</address>
+</header>
+<p>(fmod LIST-EXAMPLE is
+sorts Element List .
+subsorts Element &lt; List .
+op a : -&gt; Element [ctor] .
+op b : -&gt; Element [ctor] .
+op c : -&gt; Element [ctor] .
+op nil : -&gt; List [ctor] .
+op <em>;</em>  : List List -&gt; List .
+op <em>;</em>  : Element List -&gt; List [ctor] .
+vars L P Q : List .
+eq (L ; P) ; Q = L ; (P ; Q) .
+eq L ; nil = L .
+eq nil ; L = L .
+endfm)</p>
+
+</div>
+<script src="//localhost:35729/livereload.js?snipver=1"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="/katex/katex.min.css">
+    <link rel="stylesheet" href="/site.css">
+    <title>Tree.maude</title>
+</head>
+<body>
+<div id='content' class=''>
+<header>
+<h1>Tree.maude</h1> <address>Nishant Rodrigues</address>
+</header>
+<p>fmod TREE is
+protecting QID .
+sorts Natural Tree .
+subsort Qid &lt; Tree .
+op 0 : -&gt; Natural [ctor].
+op s : Natural -&gt; Natural [ctor].
+op <em>+</em> : Natural Natural -&gt; Natural [assoc comm].
+op <em>#</em> : Tree Tree -&gt; Tree [ctor] .
+ops leaves inner : Tree -&gt; Natural .
+var I : Qid .
+vars N M : Natural .
+vars T T' : Tree .
+eq N + 0 = N .
+eq N + s(M) = s(N + M) .
+*** add equations for leaves and inner here
+endfm</p>
+
+</div>
+<script src="//localhost:35729/livereload.js?snipver=1"></script>
+</body>
+</html>

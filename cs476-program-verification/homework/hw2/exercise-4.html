@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="/katex/katex.min.css">
+    <link rel="stylesheet" href="/site.css">
+    <title>Exercise 4.maude</title>
+</head>
+<body>
+<div id='content' class=''>
+<header>
+<h1>Exercise 4.maude</h1> <address>Nishant Rodrigues</address>
+</header>
+<p>fmod RELATION-APPLICATION is protecting RAT .
+sorts Pair NatSet RatSet Rel .
+subsort Pair &lt; Rel .
+subsort Nat &lt; NatSet &lt; RatSet .
+subsort Rat &lt; RatSet .
+op [<em>,</em>] : Nat Rat -&gt; Pair [ctor] .       *** Pair is cartesian product Nat x Rat
+op mt : -&gt; NatSet [ctor] .                *** empty set of naturals
+op null : -&gt; Rel [ctor] .                 *** empty relation
+op <em>,</em> : NatSet NatSet -&gt; NatSet [ctor assoc comm id: mt] .  *** union
+op <em>,</em> : RatSet RatSet -&gt; RatSet [ctor assoc comm id: mt] .  *** union
+op <em>,</em> : Rel Rel -&gt; Rel [ctor assoc comm id: null] .         *** union
+op <em>in</em> : Nat NatSet -&gt; Bool .           *** membership
+op <em>[</em>] : Nat Rel -&gt; RatSet .            *** relation application to a number
+op dom : Rel -&gt; NatSet .                 *** domain of a relation
+op pfun : Rel -&gt; Bool .                  *** partial function predicate
+vars n m : Nat .  var r : Rat .  var P : Pair . var S : NatSet . var R : Rel .
+eq n,n = n .                             *** idempotency
+eq P,P = P .                             *** idempotency
+eq n in mt = false .                     *** membership</p>
+<p>eq n in m,S = (n == m) or n in S .       *** membership</p>
+<p>*** your equations defining the functions  <em>[</em>], dom, and pfun here
+eq n [null] = mt .
+eq n [[n, r],R] = r, (n [R]) .
+eq n [[m, r],R] = n [R] .</p>
+<p>eq dom(null) = mt .
+eq dom([n, r], R) = n, dom(R) .</p>
+<p>eq pfun(null) = true .
+eq pfun([n, r], R) = if | n [R] | == 0 then pfun(R) else false fi .</p>
+<p>*** Helper functions</p>
+<p>var RS : RatSet .
+op |_| : RatSet -&gt; Nat .                 *** cardinality
+eq | mt   | = 0 .
+eq | r,RS | = 1 + | RS | .</p>
+<p>*** Unit tests and test helpers
+op testRelation : -&gt; Rel .
+eq testRelation = [2, 4], [3, 4], [5, 2], [5, 7], [6, 5] .</p>
+<p>op testFunction : -&gt; Rel .
+eq testFunction = [2, 4], [3, 4], [5, 2], [6, 5] .</p>
+<p>op unitTest : -&gt; Bool .
+eq unitTest = true
+and 2 [testRelation] == 4
+and 5 [testRelation] == 2,7
+and 99 [testRelation] == mt
+and 1 [null] == mt</p>
+<pre><code>  and dom(null) == mt
+  and dom(testRelation) == 2,3,5,6
+  and dom(testFunction) == 2,3,5,6
+
+  and | mt | == 0
+  and | 2,3,4 | == 3
+
+  and pfun(null) == true
+  and pfun(testRelation) == false
+  and pfun(testFunction) == true
+</code></pre>
+<p>.</p>
+<p>endfm</p>
+
+</div>
+<script src="//localhost:35729/livereload.js?snipver=1"></script>
+</body>
+</html>

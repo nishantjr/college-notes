@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="/katex/katex.min.css">
+    <link rel="stylesheet" href="/site.css">
+    <title>Rw.maude</title>
+</head>
+<body>
+<div id='content' class=''>
+<header>
+<h1>Rw.maude</h1> <address>Nishant Rodrigues</address>
+</header>
+<p>mod R&amp;W is
+sort Nat Config .
+op &lt;<em>,</em>&gt; : Nat Nat -&gt; Config [ctor] .  --- readers/writers
+op 0 : -&gt; Nat [ctor] .
+op s : Nat -&gt; Nat [ctor] .
+vars R W : Nat .</p>
+<p>rl &lt; 0, 0 &gt; =&gt; &lt; 0, s(0) &gt; .
+rl &lt; R, s(W) &gt; =&gt; &lt; R, W &gt; .
+rl &lt; R, 0 &gt; =&gt; &lt; s(R), 0 &gt; .
+rl &lt; s(R), W &gt; =&gt; &lt; R, W &gt; .
+endm</p>
+<p>mod R&amp;W-ABS is
+including R&amp;W-PREDS .
+eq &lt; s(s(N:Nat)),0 &gt; = &lt; s(0),0 &gt; .
+endm</p>
+
+</div>
+<script src="//localhost:35729/livereload.js?snipver=1"></script>
+</body>
+</html>

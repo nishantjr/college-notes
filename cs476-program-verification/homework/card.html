@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="/katex/katex.min.css">
+    <link rel="stylesheet" href="/site.css">
+    <title>Card.maude</title>
+</head>
+<body>
+<div id='content' class=''>
+<header>
+<h1>Card.maude</h1> <address>Nishant Rodrigues</address>
+</header>
+<p>fmod CARD is
+sorts Natural MSet .
+subsort Natural &lt; MSet .
+op 0 : -&gt; Natural [ctor] .
+op s : Natural -&gt; Natural [ctor] .
+op <em>+</em> : Natural Natural -&gt; Natural .
+op __ : MSet MSet -&gt; MSet [ctor assoc comm] .
+op card : MSet -&gt; Natural .
+vars N M : Natural .
+vars U V : MSet .
+eq N + 0 = N .
+eq N + s(M) = s(N + M) .
+eq card(N U) = s(card(U)) .
+endfm</p>
+
+</div>
+<script src="//localhost:35729/livereload.js?snipver=1"></script>
+</body>
+</html>

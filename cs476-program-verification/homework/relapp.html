@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="/katex/katex.min.css">
+    <link rel="stylesheet" href="/site.css">
+    <title>Relapp.maude</title>
+</head>
+<body>
+<div id='content' class=''>
+<header>
+<h1>Relapp.maude</h1> <address>Nishant Rodrigues</address>
+</header>
+<p>fmod RELATION-APPLICATION is protecting RAT .
+sorts Pair NatSet RatSet Rel .
+subsort Pair &lt; Rel .
+subsort Nat &lt; NatSet &lt; RatSet .
+subsort Rat &lt; RatSet .
+op [<em>,</em>] : Nat Rat -&gt; Pair [ctor] .       *** Pair is cartesian product Nat x Rat
+op mt : -&gt; NatSet [ctor] .                *** empty set of naturals
+op null : -&gt; Rel [ctor] .                 *** empty relation
+op <em>,</em> : NatSet NatSet -&gt; NatSet [ctor assoc comm id: mt] .  *** union
+op <em>,</em> : RatSet RatSet -&gt; RatSet [ctor assoc comm id: mt] .  *** union
+op <em>,</em> : Rel Rel -&gt; Rel [ctor assoc comm id: null] .         *** union
+op <em>in</em> : Nat NatSet -&gt; Bool .           *** membership
+op <em>[</em>] : Nat Rel -&gt; RatSet .            *** relation application to a number
+op dom : Rel -&gt; NatSet .                 *** domain of a relation
+op pfun : Rel -&gt; Bool .                  *** partial function predicate
+vars n m : Nat .  var r : Rat .  var P : Pair . var S : NatSet . var R : Rel .
+eq n,n = n .                             *** idempotency
+eq P,P = P .                             *** idempotency
+eq n in mt = false .                     *** membership</p>
+<p>eq n in m,S = (n == m) or n in S .       *** membership</p>
+<p>*** your equations defining the functions  <em>[</em>], dom, and pfun here
+*** if you need to declare any other variables or auxiliary
+*** functions besides those above, you can also do so</p>
+<p>endfm</p>
+
+</div>
+<script src="//localhost:35729/livereload.js?snipver=1"></script>
+</body>
+</html>

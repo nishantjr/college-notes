@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="/katex/katex.min.css">
+    <link rel="stylesheet" href="/site.css">
+    <title>Comm Chan.maude</title>
+</head>
+<body>
+<div id='content' class=''>
+<header>
+<h1>Comm Chan.maude</h1> <address>Nishant Rodrigues</address>
+</header>
+<p>set include BOOL off .</p>
+<p>mod COMM-CHAN is
+sorts Nat Msg MsgMSet Elt NeList List CHState .
+subsort Msg &lt;  MsgMSet .
+subsort Elt &lt; NeList &lt; List .</p>
+<p>op 0 : -&gt; Nat [ctor] .
+op s : Nat -&gt; Nat [ctor] .
+ops a b c d  : -&gt; Elt [ctor] .
+op <em>;</em> : NeList NeList -&gt; NeList [ctor assoc] .
+op <em>;</em> : List List -&gt; List [ctor assoc] .
+op nil : -&gt; List [ctor] .
+op [<em>,</em>] : Elt Nat -&gt; Msg [ctor] .
+op null : -&gt; MsgMSet [ctor] .
+op _ _ :  MsgMSet MsgMSet -&gt; MsgMSet [ctor assoc comm id: null] .
+op &lt;<em>@</em>:<em>|</em>|<em>:</em>&gt; : List List Nat MsgMSet Nat List -&gt; CHState [ctor] .</p>
+<p>vars N M I J : Nat . var MS : MsgMSet . vars L L' : NeList . var P Q : List .
+vars A B : Elt .</p>
+<p>eq Q ; nil = Q [variant] .
+eq nil ; Q = Q [variant] .</p>
+<p>rl [send] : &lt; P @ A ; L : I | null     | J : Q   &gt; =&gt; &lt; P @ L   : s(I) | [A,I] | J    : Q      &gt; .
+rl [send] : &lt; P @ A     : I | null     | J : Q   &gt; =&gt; &lt; P @ nil : s(I) | [A,I] | J    : Q      &gt; .
+rl [rec]  : &lt; P @ Q     : I | MS [A,J] | J : nil &gt; =&gt; &lt; P @ Q   : I    | MS    | s(J) : A      &gt; .
+rl [rec]  : &lt; P @ Q     : I | MS [A,J] | J : L'  &gt; =&gt; &lt; P @ Q   : I    | MS    | s(J) : L' ; A &gt; .
+endm</p>
+
+</div>
+<script src="//localhost:35729/livereload.js?snipver=1"></script>
+</body>
+</html>
