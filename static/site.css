@@ -44,6 +44,8 @@ table td {
 
 * { border-collapse: collapse; }
 
+/* CMN 112 Needed these */
 .speech-formal-outline li       { list-style-type: upper-roman; }
 .speech-formal-outline li li    { list-style-type: upper-alpha; }
 .speech-formal-outline li li li { list-style-type: unset;       }
+.double-line-space              { line-height: 2em; }
