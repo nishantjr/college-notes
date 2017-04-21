@@ -67,7 +67,8 @@ gulp.task('serve', ['build'], function() {
         root: '.build/www',
         livereload: true
         })
-    gulpWatch(['./template.html*', 'src/**/*'], function() { gulp.start('build') } )
+    gulpWatch(['./template.html*', 'src/**/*'], function() { gulp.start('render-markdown') } )
+    gulpWatch(['static/**/*'], function() { gulp.start('copy-static-files') } )
 })
 
 gulp.task('insta', function() {
