@@ -175,7 +175,7 @@ $p$ is $k$-periodic for $f$ then it is a $k$-periodic if
 
 ---
 
-Lyopunov' Number at $x_0$
+Lyapunov' Number at $x_0$
 : $$L = \lim_{x\to \infty} | f'(x_0)f'(x_1)f'(x_2)\cdots f'(x_m)| ^{\frac 1 n}$$
 : $$h = \lim_{x\to \infty} \ln |f'(x_0)| \ln|f'(x_1)| \ln|f'(x_2)|\cdots \ln| f'(x_m)| ^{\frac 1 n}$$
 
@@ -200,3 +200,24 @@ it's periodic orbit.
 
 If $\{ x_0, x_1\cdots \}$ is asymptotically periodic and the has $h>0 / L>1$ then the orbit is eventually periodic. (otherwise it's not possible for a asymptotic repulsive point).
 
+Chaotic orbit
+: $f: \mathbb R^m \to \mathbb R^m$, 
+  1. Not asymptotically periodic
+  2. No Lyapunov number is exactly one
+  3. $L_1(x_0) > 1$
+
+Skinny Baker Map
+: - Top half $\mapsto$ right one third
+  - Bottom half $\mapsto$ left one third
+  - Both stretch to fill vertically
+: $$B(x, y) = \begin{cases}
+  (\frac 1 3 x, 2 y)                           & 0 \le y \le \frac 1 2 \\
+  (\frac 1 3 x + \frac 2 3, 2 y - 1)      \quad& \frac 1 2 < y \le 1
+  \end{cases}$$
+
+Markov Partition
+: $\{ S_i \}$ set of rectangular regions ... $f$ stretches in one direction
+  shrinks in the other. If $f(S_i) \cap S_j \ne \emptyset \Longrightarrow$
+  (?) directions are preserved (x-axis mapped to x-axis...) .
+
+  Then $\{ S_i \}$ is a Markov partition of $S$ for $f$.

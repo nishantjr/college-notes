@@ -84,10 +84,7 @@ $\Longrightarrow F(\alpha) \cong F[x]/(p(x))$
 
 ---
 
-<<<<<<< HEAD
 ## Modules
-An element $m$ of an $R$-module $M$ is called a torsion element if $rm = 0$
-for some non-zero element $r \in R$. The set of torsion elements is denoted
 
 Module
 : Given ring (scalars) $R$, abelian group (~vectors) $M$, (scalar multiplication)
@@ -100,5 +97,8 @@ Module
 Submodule Criterion
 : Non empty, $u + cv \in N$ ($N$ submodule)
 
-=======
->>>>>>> Math418, Math489 notes and also CMN112 stuff
+Torsion element
+: An element $m$ of an $R$-module $M$ is called a torsion element if $rm = 0$
+  for some non-zero element $r \in R$. The set of torsion elements is denoted
+  $\mathrm{Tor}(M)$
+: $m \in M, r \in R \setminus \{0\}, r m = 0 \Longrightarrow$ $m$ is torsion 
