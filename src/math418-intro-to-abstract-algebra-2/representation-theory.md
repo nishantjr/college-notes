@@ -73,21 +73,85 @@ $\mathbb X / 3 \mathbb Z$
     \begin{bmatrix} 0 & 1 & 0 \\ 0 & 0 & 1 \\ 1 & 0 & 0 \end{bmatrix},
     \begin{bmatrix} 0 & 0 & 1 \\ 1 & 0 & 0 \\ 0 & 1 & 0 \end{bmatrix}$
 
-XXX
-
 ## Some more definitions...
 * Define:
-  - unitary, irreducible Representation, direct sum, inner product.
+  - unitary, irreducible Representation, inner product.
 
-### Big theorem
+Direct Sum
+: A vector space $V$ is a direct sum of subspaces $W$ and $W'$ if $\forall v \in
+  V$, \exists$ a unique $w \in W, w' \in W'$ such that $v = w + w'$. We write $V =
+  W \oplus W'$
+
+  e.g. $V = \mathbb C^2$, $W = \{(z_1, z_2)  : z_1 = z_2 \}, W' = \{ z_1, z_2  :
+  z_1 = -z_2 \}$
+
+  e.g. Given vector spaces $V, W$, $V \times \{0\} \oplus \{0\}\times W = V
+  \times W$
+
+  ?? Canonical Projections
+
+Invariant / stable subspace
+: Given a representation $\rho: G \to GL(V)$, a subspace $W \subset V$ is
+  invariant if $\forall w \in W, g \in G, \quad \rho(g) w \in W$
+
+  e.g.: For the trivial representation, any subspace is invariant.
+
+  e.g.: The representation $\phi$ of $\mathbb Z / 2 \mathbb Z \to \mathbb C^2$, such that $0
+  \mapsto \begin{bmatrix} 1 & 0 \\ 0 & 1\end{bmatrix}$, and $1 \mapsto
+  \begin{bmatrix} 0 & 1 \\ 1 & 0 \end{bmatrix}$.
+
+  This has a subspace $\begin{bmatrix}
+  \end{bmatrix}
+
+Irreducible representation
+: A representation $\rho: G \to GL(V)$ is irreducible if it's only invariant
+  subspaces are $\{0\}$ and $V$ itself.
+
 
 ## Lemma 1: Finite representation $\Longrightarrow$ $G$-invariant product
 
-Let $P: G \to GL(V)$ be a finite representation, then $\exists G$-invariant
+Let $P: G \to GL(V)$ be a finite representation, $V$ has a $G$-invariant inner
+product $\langle\langle \cdot, \cdot \rangle\rangle$.
 product $\langle\langle \rho(g) v, \rho(g)w\rangle\rangle = \langle\langle v, w
 \rangle\rangle, \forall v, w \in V$.
 
-## Lemma 2: 
+Proof:
 
-## Big Theorem
-## Corollary
+Pick a hermitian inner product $\langle\cdot, \cdot \rangle$ on
+$V$. Define $\langle\langle v, w \langle\langle = \frac 1 {|G|} \sum_{g\in G}
+\langle \rho(g) v, \rho(g)w\rangle$.
+
+### Show $\langle\langle \cdot , \cdot \rangle\rangle$ is an inner product.
+
+$\forall v \ne 0$, $\rho (g)v \ne 0 \Longrightarrow \langle \rho (g)v,
+\rho(g) v\rangle > 0$.
+$\Longrightarrow \langle\langle v, v \rangle\rangle > 0$.
+
+and $\langle\langle v, \lambda w \rangle\rangle
+= \frac 1 {|G|} \sum_{g \in G} \langle \rho (g) v, \rho (g) \lambda w \rangle 
+= \frac 1 {|G|} \sum_{g \in G} \langle \rho (g) v, \lambda \rho (g) w \rangle 
+= \lambda \langle\langle v, w \rangle\rangle$
+
+### $\langle\langle \cdot, \cdot \rangle\rangle$ is $G$-invariant.
+
+$\forall a \in G, G = \{ ga : g \in G \}$
+
+$\Longrightarrow \forall a \in G$,
+$$\begin{aligned}
+\langle\langle \rho (a) v, \rho(a) w \rangle\rangle
+&= \frac 1 {|G|} \sum_g \langle \rho (g) \rho (a)v, \rho (g) \rho(a) w\rangle \\
+&= \frac 1 {|G|} \sum_g \langle \rho (ga) v, \rho (ga) w\rangle \\
+&= \langle\langle v, w \rangle\rangle
+\end{aligned}$$
+
+
+
+##  Lemma 2: $W \subseteq V \Longrightarrow V = W \oplus W^{\perp}$
+
+
+
+## Theorem: Any unitary representation $\rho: G \to GL(V)$, is the direct sum of irreducible representations.
+
+## Corollary: The representation of a finite group is the direct sum of irreducible representations.
+
+XXX Walk through an example ($\rho S_n \to \mathbb C^2$?)
