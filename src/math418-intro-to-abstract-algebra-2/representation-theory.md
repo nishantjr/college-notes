@@ -75,11 +75,13 @@ In $\mathbb Z / 4 \mathbb Z$, for example, $2 \; \mathrm{mod } 4 \mapsto \begin{
 
 ## Some more definitions...
 
-Inner product
-: 1. Linear:
+(Hermitian) inner product
+: Given a vector space $V$, a function $\langle \cdot, \cdot \rangle: V \to \mathbb C$
+  is an inner product iff:
+  1. Linear:
      * $\langle u + v , w \rangle = \langle u, w \rangle + \langle v, w \rangle$
      * $\langle \alpha v, w \rangle =  \alpha \langle v, w \rangle$
-  2. Commutative: $\langle v, w\rangle = \langle w, v \rangle$
+  2. $\langle v, w\rangle = \overline{\langle w, v \rangle}$
   3. Positive-definite: $\langle v, v\rangle \ge 0$ and $\langle v, v \rangle =
      0 \Longleftrightarrow v = 0$
 
