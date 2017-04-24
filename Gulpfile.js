@@ -11,7 +11,8 @@ const
     mdAdapter = require('gulp-markdown-it-adapter'),
     mdDeflist = require('markdown-it-deflist'),
     mdKatex = require('markdown-it-katex'),
-    path = require('path')
+    path = require('path'),
+    concat = require('gulp-concat') // XXX
 
 function titleFromPath() {
     return gulpTap(function(vinyl) {
@@ -42,6 +43,7 @@ gulp.task('render-markdown', function() {
         .pipe(mdAdapter(md))
         .pipe(gulpWrap({src: 'template.html'}))
         .pipe(gulp.dest('.build/www/'))
+        .pipe(concat('/dev/null'))
         .pipe(connect.reload())
     return stream;
 })
