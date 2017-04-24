@@ -157,10 +157,10 @@ Consequently, $V=W\oplus W^{\perp}$.
 G$ $\rho(g)v\in W^{\perp}$. So for any $w\in W$
 
 $$\begin{aligned}
-<w,\rho(g)v>
-&=<\rho(g^{-1})w,\rho(g^{-1})\rho(g)v>\\
-&=<\rho(g^{-1})w, \rho(g^{-1}g)v>\\
-&=<\rho(g^{-1})w,v>\\
+\langle w,\rho(g)v\rangle
+&=\langle \rho(g^{-1})w,\rho(g^{-1})\rho(g)v\rangle \\
+&=\langle \rho(g^{-1})w, \rho(g^{-1}g)v\rangle \\
+&=\langle \rho(g^{-1})w,v\rangle \\
 &=0
 \end{aligned}$$
 
