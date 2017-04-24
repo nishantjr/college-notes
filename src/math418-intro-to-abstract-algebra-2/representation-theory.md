@@ -78,6 +78,10 @@ Inner product
   3. Positive-definite: $\langle v, v\rangle \ge 0$ and $\langle v, v \rangle =
      0 \Longleftrightarrow v = 0$
 
+Orthogonal Complement ($W^{\perp}$)
+: Given a vector subspace $W \subset V$, it's orthogonal complement,
+  $W^{\perp} = \{ x \in V: \langle x, w \rangle = 0, \forall w \in W \}$.
+
 Direct Sum
 : A vector space $V$ is a direct sum of subspaces $W$ and $W'$ if $\forall v \in
   V, \exists$ a unique $w \in W, w' \in W'$ such that $v = w + w'$. We write $V =
@@ -89,30 +93,22 @@ Direct Sum
   e.g. Given vector spaces $V, W$, $V \times \{0\} \oplus \{0\}\times W = V
   \times W$
 
-Unitary
+Unitary (invariant) inner product
 : $\rho : G \to \mathrm{GL} (v)$ is  unitary iff $\langle \rho(g) v, \rho (g) w\rangle \forall v, w \in V, g \in G$
 
-Invariant / stable subspace
+Stable (invariant) subspace
 : Given a representation $\rho: G \to \mathrm{GL}(V)$, a subspace $W \subset V$ is
-  invariant if $\forall w \in W, g \in G, \quad \rho(g) w \in W$
+  stable if $\forall w \in W, g \in G, \quad \rho(g) w \in W$
 
-  e.g.: For the trivial representation, any subspace is invariant.
-
-  e.g.: The representation $\phi$ of $\mathbb Z / 2 \mathbb Z \to \mathbb C^2$, such that $0
-  \mapsto \begin{bmatrix} 1 & 0 \\ 0 & 1\end{bmatrix}$, and $1 \mapsto
-  \begin{bmatrix} 0 & 1 \\ 1 & 0 \end{bmatrix}$.
-
-  This has a subspace $\begin{bmatrix}
-  \end{bmatrix}
+  e.g.: For the trivial representation, any subspace is stable.
 
 Irreducible representation
-: A representation $\rho: G \to \mathrm{GL}(V)$ is irreducible if it's only invariant
+: A representation $\rho: G \to \mathrm{GL}(V)$ is irreducible if it's only stable
   subspaces are $\{0\}$ and $V$ itself.
 
+## Lemma 1: Finite representation $\Longrightarrow$ $G$-unitary product
 
-## Lemma 1: Finite representation $\Longrightarrow$ $G$-invariant product
-
-Let $P: G \to \mathrm{GL}(V)$ be a finite representation, $V$ has a $G$-invariant inner
+Let $P: G \to \mathrm{GL}(V)$ be a finite representation, $V$ has a $G$-unitary inner
 product $\langle\langle \cdot, \cdot \rangle\rangle$.
 product $\langle\langle \rho(g) v, \rho(g)w\rangle\rangle = \langle\langle v, w
 \rangle\rangle, \forall v, w \in V$.
@@ -132,7 +128,7 @@ and $\langle\langle v, \lambda w \rangle\rangle
 = \frac 1 {|G|} \sum_{g \in G} \langle \rho (g) v, \lambda \rho (g) w \rangle 
 = \lambda \langle\langle v, w \rangle\rangle$
 
-### $\langle\langle \cdot, \cdot \rangle\rangle$ is $G$-invariant.
+### $\langle\langle \cdot, \cdot \rangle\rangle$ is $G$-unitary.
 
 $\forall a \in G, G = \{ g a : g \in G \}$
 
@@ -146,8 +142,8 @@ $$\begin{aligned}
 
 ##  Lemma 2: $W \subseteq V \Longrightarrow V = W \oplus W^{\perp}$
 
-Let $\rho: G \to \mathrm{GL}(V)$ be a representation with an invariant inner product.
-Then for any invariant product space $W$, $W^{\perp}$ is also invariant.
+Let $\rho: G \to \mathrm{GL}(V)$ be a representation with an unitary inner product.
+Then for any  stable subspace $W$, $W^{\perp}$ is also stable.
 Consequently, $V=W\oplus W^{\perp}$.
 
 **Proof:** It'll suffice to show that $\forall v \in W^{\perp}$ $\forall g \in
@@ -164,7 +160,7 @@ $$\begin{aligned}
 ## Theorem: Any unitary representation $\rho: G \to \mathrm{GL}(V)$, is the direct sum of irreducible representations.
 
 **Proof:** Assume we have a unitary representation $\rho: G \to \mathrm{GL}(V)$,
-that is an inner product that is invariant under $\rho$. To prove this, we use
+that is an inner product that is unitary under $\rho$. To prove this, we use
 induction on the dimension, $n$, of $V$.
 
 *Basis:* If $n=1$, then $V$ is irreducible (each subspace has to have dimension
@@ -173,7 +169,7 @@ $k\leq 1$, which just leaves the $0$ subspace and $V$ itself)
 *Induction:* Suppose that the claim holds
 for all vector spaces $W$ with $\mathrm{dim}W\leq n$ and $V$ is a vector space with
 $\mathrm{dim}V=n+1$. Now if $V$ is irreducible, then there's nothing to prove. If we have
-the case where $V$ is reducible, then there exists an invariant subspace
+the case where $V$ is reducible, then there exists an stable subspace
 $W\subset V$ such that $0<\mathrm{dim}W<n+1$. By the above Lemma, we know that $V=W\oplus
 W^{\perp}$. By inductive hypothesis, we know that $W$ and $W^{\perp}$ are both
 direct sums of irreducible representations, so $V$ must ultimately be a direct
