@@ -16,10 +16,9 @@ group of isomorphisms of $V$ to itself. i.e. $\mathrm{GL}(V)$ is the set of $n\t
 invertible matrices.
 
 Let $G$ be a finite group. The **linear representation** of $G$ in $V$ is a
-homomorphism $\rho: G \to \mathrm{GL}(V)$.
-
-In other words, $\rho$ associates each element of $G$ with an $n\times n$
-invertible matrix such that $\rho(st) = \rho(s)\rho(t) \forall s, t \in G$.
+homomorphism $\rho: G \to \mathrm{GL}(V)$. In other words, $\rho$ associates
+each element of $G$ with an $n\times n$ invertible matrix such that $\rho(st) =
+\rho(s)\rho(t) \forall s, t \in G$.
 
 ### Example: Unit / Trivial representation
 
@@ -44,7 +43,7 @@ x_{\sigma ^{-1}(2)} \\
 x_{\sigma ^{-1}(n)}
 \end{pmatrix}$.
 
-For example, with $S_3$ and the standard basis for $\mathbb R^n$ we get:
+For example, with $S_3$ and the standard basis for $\mathbb R^3$ we get:
 $e         \mapsto \begin{bmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{bmatrix},
  (1, 2)    \mapsto \begin{bmatrix} 0 & 1 & 0 \\ 1 & 0 & 0 \\ 0 & 0 & 1 \end{bmatrix},
  (3, 2, 1) \mapsto \begin{bmatrix} 0 & 1 & 0 \\ 0 & 0 & 1 \\ 1 & 0 & 0 \end{bmatrix}$
@@ -79,10 +78,9 @@ Inner product
   3. Positive-definite: $\langle v, v\rangle \ge 0$ and $\langle v, v \rangle =
      0 \Longleftrightarrow v = 0$
 
-
 Direct Sum
 : A vector space $V$ is a direct sum of subspaces $W$ and $W'$ if $\forall v \in
-  V$, \exists$ a unique $w \in W, w' \in W'$ such that $v = w + w'$. We write $V =
+  V, \exists$ a unique $w \in W, w' \in W'$ such that $v = w + w'$. We write $V =
   W \oplus W'$
 
   e.g. $V = \mathbb C^2$, $W = \{(z_1, z_2)  : z_1 = z_2 \}, W' = \{ z_1, z_2  :
@@ -91,9 +89,7 @@ Direct Sum
   e.g. Given vector spaces $V, W$, $V \times \{0\} \oplus \{0\}\times W = V
   \times W$
 
-  ?? Canonical Projections
-
-Unitart
+Unitary
 : $\rho : G \to \mathrm{GL} (v)$ is  unitary iff $\langle \rho(g) v, \rho (g) w\rangle \forall v, w \in V, g \in G$
 
 Invariant / stable subspace
@@ -138,13 +134,13 @@ and $\langle\langle v, \lambda w \rangle\rangle
 
 ### $\langle\langle \cdot, \cdot \rangle\rangle$ is $G$-invariant.
 
-$\forall a \in G, G = \{ ga : g \in G \}$
+$\forall a \in G, G = \{ g a : g \in G \}$
 
 $\Longrightarrow \forall a \in G$,
 $$\begin{aligned}
 \langle\langle \rho (a) v, \rho(a) w \rangle\rangle
 &= \frac 1 {|G|} \sum_g \langle \rho (g) \rho (a)v, \rho (g) \rho(a) w\rangle \\
-&= \frac 1 {|G|} \sum_g \langle \rho (ga) v, \rho (ga) w\rangle \\
+&= \frac 1 {|G|} \sum_g \langle \rho (g a) v, \rho (g a) w\rangle \\
 &= \langle\langle v, w \rangle\rangle
 \end{aligned}$$
 
@@ -158,7 +154,7 @@ Consequently, $V=W\oplus W^{\perp}$.
 G$ $\rho(g)v\in W^{\perp}$. So for any $w\in W$
 
 $$\begin{aligned}
-<w,\rho(g)v> \\
+<w,\rho(g)v>
 &=<\rho(g^{-1})w,\rho(g^{-1})\rho(g)v>\\
 &=<\rho(g^{-1})w, \rho(g^{-1}g)v>\\
 &=<\rho(g^{-1})w,v>\\
@@ -188,5 +184,3 @@ B_1\oplus\cdots\oplus B_s$.
 ## Corollary: The representation of a finite group is the direct sum of irreducible representations.
 
 XXX Walk through an example ($\rho S_n \to \mathbb C^2$?)
-
-
