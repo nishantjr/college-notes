@@ -11,14 +11,17 @@ applies to finite groups.
 
 ## Linear representation of a group
 
-Let $V$ be a vector space over the field $\mathbb C$, and let $\mathrm{GL}(V)$ be the
-group of isomorphisms of $V$ to itself. i.e. $\mathrm{GL}(V)$ is the set of $n\times n$
-invertible matrices.
+Let $V$ be a vector space over the field $\mathbb C$, and let $\mathrm{GL}(V)$
+be the group of isomorphisms of $V$ to itself. Let $G$ be a finite group. The
+**linear representation** of $G$ in $V$ is a homomorphism $\rho: G \to
+\mathrm{GL}(V)$.
 
-Let $G$ be a finite group. The **linear representation** of $G$ in $V$ is a
-homomorphism $\rho: G \to \mathrm{GL}(V)$. In other words, $\rho$ associates
-each element of $G$ with an $n\times n$ invertible matrix such that $\rho(st) =
-\rho(s)\rho(t) \forall s, t \in G$.
+If $V$ is an $n$-dimensional vector space, then by fixing a basis, we get
+$\mathrm{GL}(V) \cong \mathrm{GL}_n(F)$. Since we deal with linear
+representations of finite degree, we can use this isomorphism to pass freely
+between these *matrix representation* and the *linear representation*. In
+other words, $\rho$ associates each element of $G$ with an $n\times n$
+invertible matrix such that $\rho(st) = \rho(s)\rho(t) \forall s, t \in G$.
 
 ### Example: Unit / Trivial representation
 
@@ -29,9 +32,9 @@ called the trivial or unit representation.
 ### Example: The symmetric group $S_n$
 
 We can construct a representation of $S_n$, the symmetric group, in
-$\mathbb R^n$. Let $\sigma \in S_n$ act on the standard basis of $\mathbb R^n$,
+$\mathbb C^n$. Let $\sigma \in S_n$ act on the standard basis of $\mathbb C^n$,
 $\{e_1, e_2, \cdots e_n\}$, such that $\sigma\cdot e_i = e_{\sigma(i)}$.
-This defines a unique linear map $\rho_\sigma: \mathbb R^n \to \mathbb R^n$
+This defines a unique linear map $\rho_\sigma: \mathbb C^n \to \mathbb C^n$
 for each $\sigma$:
 
 $\rho_\sigma \begin{pmatrix} x_1 \\ x_2 \\ \vdots \\ x_n \end{pmatrix} =
@@ -43,7 +46,7 @@ x_{\sigma ^{-1}(2)} \\
 x_{\sigma ^{-1}(n)}
 \end{pmatrix}$.
 
-For example, with $S_3$ and the standard basis for $\mathbb R^3$ we get:
+For example, with $S_3$ and the standard basis for $\mathbb C^3$ we get:
 $e         \mapsto \begin{bmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{bmatrix},
  (1, 2)    \mapsto \begin{bmatrix} 0 & 1 & 0 \\ 1 & 0 & 0 \\ 0 & 0 & 1 \end{bmatrix},
  (3, 2, 1) \mapsto \begin{bmatrix} 0 & 1 & 0 \\ 0 & 0 & 1 \\ 1 & 0 & 0 \end{bmatrix}$
@@ -51,10 +54,12 @@ etc.
 
 This is called the canonical representation of $S_3$.
 
+---
+
 ### Example: $\mathbb Z / n \mathbb Z$, the cyclic group
 
 Similarly, we can construct a representation for $\mathbb Z / n\mathbb Z$.
-Let $i \in \mathbb Z / n\mathbb Z$ act on the standard basis of $\mathbb R^n$
+Let $i \in \mathbb Z / n\mathbb Z$ act on the standard basis of $\mathbb C^n$
 by $i \cdot e_j = e_{i+j_{\mathrm{mod }n}}$. This defines the unique map:
 
 $\rho_i\begin{pmatrix} x_1 \\ x_2 \\ \vdots \\ x_n \end{pmatrix}
@@ -80,8 +85,10 @@ In $\mathbb Z / 4 \mathbb Z$, for example, $2 \; \mathrm{mod } 4 \mapsto \begin{
   is an inner product iff:
   1. Linear:
      * $\langle u + v , w \rangle = \langle u, w \rangle + \langle v, w \rangle$
+     * $\langle u, v + w \rangle = \langle u, v \rangle + \langle u, w \rangle$
      * $\langle \alpha v, w \rangle =  \alpha \langle v, w \rangle$
-  2. $\langle v, w\rangle = \overline{\langle w, v \rangle}$
+  2. * $\langle v, w\rangle = \overline{\langle w, v \rangle}$
+     * $\langle v, \alpha w \rangle =  \overline\alpha \langle v, w \rangle$
   3. Positive-definite: $\langle v, v\rangle \ge 0$ and $\langle v, v \rangle =
      0 \Longleftrightarrow v = 0$
 
@@ -120,24 +127,20 @@ product $\langle\langle \cdot, \cdot \rangle\rangle$.
 product $\langle\langle \rho(g) v, \rho(g)w\rangle\rangle = \langle\langle v, w
 \rangle\rangle, \forall v, w \in V$.
 
-*Proof:* Pick a hermitian inner product $\langle\cdot, \cdot \rangle$ on
+**Proof:** Since all finite dimension vector spaces have a hermitian inner
+product, we can choose  $\langle\cdot, \cdot \rangle$ on
 $V$. Define $\langle\langle v, w \rangle\rangle = \frac 1 {|G|} \sum_{g\in G}
-\langle \rho(g) v, \rho(g)w\rangle$.
+\langle \rho(g) v, \rho(g)w\rangle$
 
-### Show $\langle\langle \cdot , \cdot \rangle\rangle$ is an inner product.
-
-$\forall v \ne 0$, $\rho (g)v \ne 0 \Longrightarrow \langle \rho (g)v,
-\rho(g) v\rangle > 0$.
-$\Longrightarrow \langle\langle v, v \rangle\rangle > 0$.
-
+*$\langle\langle \cdot , \cdot \rangle\rangle$ is an inner product:* $\forall v
+\ne 0$, $\rho (g)v \ne 0 \Longrightarrow \langle \rho (g)v, \rho(g) v\rangle >
+0$. $\Longrightarrow \langle\langle v, v \rangle\rangle > 0$
 and $\langle\langle v, \lambda w \rangle\rangle
-= \frac 1 {|G|} \sum_{g \in G} \langle \rho (g) v, \rho (g) \lambda w \rangle 
-= \frac 1 {|G|} \sum_{g \in G} \langle \rho (g) v, \lambda \rho (g) w \rangle 
-= \lambda \langle\langle v, w \rangle\rangle$
+= \frac 1 {|G|} \sum_{g \in G} \langle \rho (g) v, \rho (g) \lambda w \rangle
+= \frac 1 {|G|} \sum_{g \in G} \langle \rho (g) v, \lambda \rho (g) w \rangle
+= \lambda \langle\langle v, w \rangle\rangle$.
 
-### $\langle\langle \cdot, \cdot \rangle\rangle$ is $G$-unitary.
-
-$\forall a \in G, G = \{ g a : g \in G \}$
+*$\langle\langle \cdot, \cdot \rangle\rangle$ is $G$-unitary:* $\forall a \in G, G = \{ g a : g \in G \}$
 
 $\Longrightarrow \forall a \in G$,
 $$\begin{aligned}
@@ -147,6 +150,7 @@ $$\begin{aligned}
 &= \langle\langle v, w \rangle\rangle
 \end{aligned}$$
 
+---
 ##  Lemma 2: $W \subseteq V \Longrightarrow V = W \oplus W^{\perp}$
 
 Let $\rho: G \to \mathrm{GL}(V)$ be a representation with an unitary inner product.
@@ -186,4 +190,50 @@ B_1\oplus\cdots\oplus B_s$.
 
 ## Corollary: The representation of a finite group is the direct sum of irreducible representations.
 
-XXX Walk through an example ($\rho S_n \to \mathbb C^2$?)
+## An example
+
+Consider the representation $\phi: \mathbb Z / 2 \mathbb Z \to \mathbb C^2$,
+where $0 \mapsto \begin{bmatrix} 1 & 0 \\ 0 & 1\end{bmatrix}$, $1 \mapsto
+\begin{bmatrix} 0 & 1 \\ 1 & 0\end{bmatrix}$. $0$ acts on any vector by leaving
+it unchanged. $1$ acts on a vector by switching it's coordinates. i.e. $1 \cdot
+\begin{bmatrix} x \\ y \end{bmatrix} = \begin{bmatrix} 0 & 1 \\ 1 &
+0\end{bmatrix} \begin{bmatrix} x \\ y \end{bmatrix} = \begin{bmatrix} y \\ x
+\end{bmatrix}$. This means that the vector space, $\begin{bmatrix} x \\
+x\end{bmatrix}$ is not irreducible.
+
+Since one of it's invariant subspaces is $\begin{bmatrix} x \\ x\end{bmatrix}$,
+the other must be it's orthogonal complement, $\begin{bmatrix} x \\ -x\end{bmatrix}$.
+
+We can find two sub representations:
+  1. On the invariant subspace $x = y$:  
+     $\alpha: 0 \mapsto \frac 1 2\begin{bmatrix} 1 & 1 \\ 1 & 1\end{bmatrix}$  
+     $\alpha: 1 \mapsto \frac 1 2\begin{bmatrix} 1 & 1 \\ 1 & 1\end{bmatrix}$
+  2. On the invariant subspace $x = -y$:  
+     $\beta: 0 \mapsto \frac 1 2\begin{bmatrix} 1 & -1 \\ -1 & 1\end{bmatrix}$  
+     $\beta: 1 \mapsto \frac 1 2\begin{bmatrix} -1 & 1 \\ 1 & -1\end{bmatrix}$
+
+Now, you may say that those matrices aren't invertible, but when restricted to
+each invariant subspace they are! Taking their sum, we get the original
+representation:
+
+$$\begin{aligned}
+\alpha + \beta(0)
+        =   \frac 1 2\begin{bmatrix} 1 & 1 \\ 1 & 1\end{bmatrix}
+          + \frac 1 2\begin{bmatrix} 1 & -1 \\ -1 & 1\end{bmatrix}
+        =   \begin{bmatrix} 1 & 0 \\ 0 & 1\end{bmatrix} \\
+\alpha + \beta(1)
+        =   \frac 1 2\begin{bmatrix} 1 & 1 \\ 1 & 1\end{bmatrix}
+          + \frac 1 2\begin{bmatrix} -1 & 1 \\ 1 & -1\end{bmatrix}
+        =   \begin{bmatrix} 0 & 1 \\ 1 & 0\end{bmatrix}
+\end{aligned}$$
+
+## References
+
+* Prof. Eugene Lerman. Math 427 lecture notes (lectures 16, 32, 33 and 34)  
+  http://www.math.uiuc.edu/~lerman/427/f16/427f16hw.html
+* Redmond McNamara. Irreducible representations of the symmetric group.  
+  https://math.uchicago.edu/~may/REU2013/REUPapers/McNamara.pdf
+* Jean-Pierre Serre. Linear Representations of Finite Groups.  
+  (Available in the library)
+* Dummit and Foote. Abstract Algebra. (Chapter 18.1)  
+  (Available in the library)
