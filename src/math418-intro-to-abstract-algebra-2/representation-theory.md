@@ -26,16 +26,16 @@ Let $G$ be a finite group. Let $\rho: G \to \mathrm {GL}(V)$. Let $\rho(s) =
 \text{identity}$ for all $S$ in $G$ then $\rho$ is a representation of $G$
 called the trivial or unit representation.
 
-### Example: The Symmetric group $S_n$
+### Example: The symmetric group $S_n$
 
-Let $S_n$ be the symmetric group. We can construct an representation of $S_n$ in
-$\mathbb R^4$. Let $\sigma \in S_n$ act on the standard basis of $\mathbb R^n$,
+We can construct a representation of $S_n$, the symmetric group, in
+$\mathbb R^n$. Let $\sigma \in S_n$ act on the standard basis of $\mathbb R^n$,
 $\{e_1, e_2, \cdots e_n\}$, such that $\sigma\cdot e_i = e_{\sigma(i)}$.
+This defines a unique linear map $\rho_\sigma: \mathbb R^n \to \mathbb R^n$
+for each $\sigma$:
 
-This uniquely defines a linear map: $\rho_\sigma: \mathbb R^n \to \mathbb R^n$:
-
-$\rho(\sigma) \begin{pmatrix} x_1 \\ x_2 \\ \vdots \\ x_n \end{pmatrix} =
-\rho(\sigma) (\sum x_j e_j) = \sum\sigma(x_j e_{\sigma(j)}) =
+$\rho_\sigma \begin{pmatrix} x_1 \\ x_2 \\ \vdots \\ x_n \end{pmatrix} =
+\rho_\sigma (\sum x_j e_j) = \sum x_j e_{\sigma(j)} = \sum x_k e_{\sigma^{-1}(k)} =
 \begin{pmatrix}
 x_{\sigma ^{-1}(1)} \\
 x_{\sigma ^{-1}(2)} \\
@@ -53,20 +53,25 @@ This is called the canonical representation of $S_3$.
 
 ### Example: $\mathbb Z / n \mathbb Z$, the cyclic group
 
-2 Dimensional representations:
+Similarly, we can construct a representation for $\mathbb Z / n\mathbb Z$.
+Let $i \in \mathbb Z / n\mathbb Z$ act on the standard basis of $\mathbb R^n$
+by $i \cdot e_j = e_{i+j_{\mathrm{mod }n}}$. This defines the unique map:
 
- * $\begin{bmatrix}1 & 0 \\ 0 & 1\end{bmatrix},
-    \begin{bmatrix}0 &-1 \\ 1 &-1\end{bmatrix},
-    \begin{bmatrix}-1& 1 \\-1 & 0\end{bmatrix}$
- * $\begin{bmatrix}1 & 0 \\ 0 & 1\end{bmatrix},
-    \begin{bmatrix}-\frac 1 2 & \frac {-\sqrt 3} 2 \\ \frac {\sqrt 3} 2 & -\frac 1 2 \end{bmatrix},
-    \begin{bmatrix}-\frac 1 2 & \frac {\sqrt 3} 2 \\ \frac {-\sqrt 3} 2 & -\frac 1 2 \end{bmatrix}$
+$\rho_i\begin{pmatrix} x_1 \\ x_2 \\ \vdots \\ x_n \end{pmatrix}
+=\rho_i (\sum x_j e_j) = \sum x_j e_{i+j} = \sum x_k e_{-i + j}
+=\begin{pmatrix}
+x_{(1-i)} \\
+x_{(2-i)} \\
+\vdots            \\
+x_{(n-i)}
+\end{pmatrix}$.
 
-3-dimensional representation:
-
- * $\begin{bmatrix}1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1\end{bmatrix},
-    \begin{bmatrix} 0 & 1 & 0 \\ 0 & 0 & 1 \\ 1 & 0 & 0 \end{bmatrix},
-    \begin{bmatrix} 0 & 0 & 1 \\ 1 & 0 & 0 \\ 0 & 1 & 0 \end{bmatrix}$
+In $\mathbb Z / 4 \mathbb Z$, for example, $2 \; \mathrm{mod } 4 \mapsto \begin{bmatrix}
+0 & 0 & 1 & 0 \\
+0 & 0 & 0 & 1 \\
+1 & 0 & 0 & 0 \\
+0 & 1 & 0 & 0
+\end{bmatrix}$.
 
 ## Some more definitions...
 
