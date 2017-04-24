@@ -16,6 +16,7 @@ invertible matrices.
 
 Let $G$ be a finite group. The **linear representation** of $G$ in $V$ is a
 homomorphism $\rho: G \to GL(V)$.
+
 In other words, $\rho$ associates each element of $G$ with an $n\times n$
 invertible matrix such that $\rho(st) = \rho(s)\rho(t) \forall s, t \in G$.
 
@@ -23,17 +24,15 @@ invertible matrix such that $\rho(st) = \rho(s)\rho(t) \forall s, t \in G$.
 
 ### Example: Unit / Trivial representation
 
-Let $G$ be a finite group. Let $\rho: G \to \mathbb C^*$, where $\mathbb C^*$ is
-the multiplicative group of non-zero complex numbers.
-
-Let $\rho(s) = 1$ for all $S$ in $G$ then $\rho$ is a representation of $G$
+Let $G$ be a finite group. Let $\rho: G \to \mathrm {GL}(V)$. Let $\rho(s) =
+\text{identity}$ for all $S$ in $G$ then $\rho$ is a representation of $G$
 called the trivial or unit representation.
 
 ### Example: The Symmetric group $S_n$
 
 Let $S_n$ be the symmetric group. We can construct an representation of $S_n$ in
 $\mathbb R^4$. Let $\sigma \in S_n$ act on the standard basis of $\mathbb R^n$,
-$\{e_1, e_2, \cdots e_n\}$, such that $\sigma\cdot e_i = e_{\sigma(j)}$.
+$\{e_1, e_2, \cdots e_n\}$, such that $\sigma\cdot e_i = e_{\sigma(i)}$.
 
 This uniquely defines a linear map: $\rho_\sigma: \mathbb R^n \to \mathbb R^n$:
 
@@ -56,8 +55,6 @@ This is called the canonical representation of $S_3$.
 
 ### Example: $\mathbb Z / n \mathbb Z$, the cyclic group
 
-$\mathbb X / 3 \mathbb Z$
-
 2 Dimensional representations:
 
  * $\begin{bmatrix}1 & 0 \\ 0 & 1\end{bmatrix},
@@ -74,8 +71,15 @@ $\mathbb X / 3 \mathbb Z$
     \begin{bmatrix} 0 & 0 & 1 \\ 1 & 0 & 0 \\ 0 & 1 & 0 \end{bmatrix}$
 
 ## Some more definitions...
-* Define:
-  - unitary, irreducible Representation, inner product.
+
+Inner product
+: 1. Linear:
+     * $\langle u + v , w \rangle = \langle u, w \rangle + \langle v, w \rangle$
+     * $\langle \alpha v, w \rangle =  \alpha \langle v, w \rangle$
+  2. Commutative: $\langle v, w\rangle = \langle w, v \rangle$
+  3. Positive-definite: $\langle v, v\rangle \ge 0$ and $\langle v, v \rangle =
+     0 \Longleftrightarrow v = 0$
+
 
 Direct Sum
 : A vector space $V$ is a direct sum of subspaces $W$ and $W'$ if $\forall v \in
@@ -89,6 +93,9 @@ Direct Sum
   \times W$
 
   ?? Canonical Projections
+
+Unitart
+: $\rho : G \to GL (v)$ is  unitary iff $\langle \rho(g) v, \rho (g) w\rangle \forall v, w \in V, g \in G$
 
 Invariant / stable subspace
 : Given a representation $\rho: G \to GL(V)$, a subspace $W \subset V$ is
@@ -115,10 +122,8 @@ product $\langle\langle \cdot, \cdot \rangle\rangle$.
 product $\langle\langle \rho(g) v, \rho(g)w\rangle\rangle = \langle\langle v, w
 \rangle\rangle, \forall v, w \in V$.
 
-Proof:
-
-Pick a hermitian inner product $\langle\cdot, \cdot \rangle$ on
-$V$. Define $\langle\langle v, w \langle\langle = \frac 1 {|G|} \sum_{g\in G}
+*Proof:* Pick a hermitian inner product $\langle\cdot, \cdot \rangle$ on
+$V$. Define $\langle\langle v, w \rangle\rangle = \frac 1 {|G|} \sum_{g\in G}
 \langle \rho(g) v, \rho(g)w\rangle$.
 
 ### Show $\langle\langle \cdot , \cdot \rangle\rangle$ is an inner product.
@@ -144,14 +149,45 @@ $$\begin{aligned}
 &= \langle\langle v, w \rangle\rangle
 \end{aligned}$$
 
-
-
 ##  Lemma 2: $W \subseteq V \Longrightarrow V = W \oplus W^{\perp}$
 
+Let $\rho: G \to GL(V)$ be a representation with an invariant inner product.
+Then for any invariant product space $W$, $W^{\perp}$ is also invariant.
+Consequently, $V=W\oplus W^{\perp}$.
 
+**Proof:** It'll suffice to show that $\forall v \in W^{\perp}$ $\forall g \in
+G$ $\rho(g)v\in W^{\perp}$. So for any $w\in W$
+
+$$\begin{aligned}
+<w,\rho(g)v> \\
+&=<\rho(g^{-1})w,\rho(g^{-1})\rho(g)v>\\
+&=<\rho(g^{-1})w, \rho(g^{-1}g)v>\\
+&=<\rho(g^{-1})w,v>\\
+&=0
+\end{aligned}$$
 
 ## Theorem: Any unitary representation $\rho: G \to GL(V)$, is the direct sum of irreducible representations.
+
+**Proof:** Assume we have a unitary representation $\rho: G \to GL(V)$,
+that is an inner product that is invariant under $\rho$. To prove this, we use
+induction on the dimension, $n$, of $V$.
+
+*Basis:* If $n=1$, then $V$ is irreducible (each subspace has to have dimension
+$k\leq 1$, which just leaves the $0$ subspace and $V$ itself)
+
+*Induction:* Suppose that the claim holds
+for all vector spaces $W$ with $\mathrm{dim}W\leq n$ and $V$ is a vector space with
+$\mathrm{dim}V=n+1$. Now if $V$ is irreducible, then there's nothing to prove. If we have
+the case where $V$ is reducible, then there exists an invariant subspace
+$W\subset V$ such that $0<\mathrm{dim}W<n+1$. By the above Lemma, we know that $V=W\oplus
+W^{\perp}$. By inductive hypothesis, we know that $W$ and $W^{\perp}$ are both
+direct sums of irreducible representations, so $V$ must ultimately be a direct
+sum of irreducible representations. i.e. since $W=A_1\oplus\cdots\oplus A_r$ and
+$W^{\perp}=B_1\oplus\cdots\oplus B_s$, $V=A_1\oplus\cdots\oplus A_r \oplus
+B_1\oplus\cdots\oplus B_s$.
 
 ## Corollary: The representation of a finite group is the direct sum of irreducible representations.
 
 XXX Walk through an example ($\rho S_n \to \mathbb C^2$?)
+
+
