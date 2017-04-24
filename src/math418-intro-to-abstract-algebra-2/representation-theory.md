@@ -2,11 +2,12 @@
 style: number-sections
 ---
 
-# Representation of  Finite Groups
+# Representation of Finite Groups
 
 Representation theory studies algebraic structures by representing their
-elements as linear transformations of vector spaces (matrices), and their operations
-in terms of matrix addition and multiplication.
+elements as linear transformations of vector spaces and studies modules over
+these linear transformations. In this presentation, we talk about how this
+applies to finite groups.
 
 ## Linear representation of a group
 
@@ -19,8 +20,6 @@ homomorphism $\rho: G \to GL(V)$.
 
 In other words, $\rho$ associates each element of $G$ with an $n\times n$
 invertible matrix such that $\rho(st) = \rho(s)\rho(t) \forall s, t \in G$.
-
-?? When $\rho$ exists, we call $V$ a representation space of $G$.
 
 ### Example: Unit / Trivial representation
 
