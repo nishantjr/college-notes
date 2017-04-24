@@ -11,12 +11,12 @@ applies to finite groups.
 
 ## Linear representation of a group
 
-Let $V$ be a vector space over the field $\mathbb C$, and let $GL(V)$ be the
-group of isomorphisms of $V$ to itself. i.e. $GL(V)$ is the set of $n\times n$
+Let $V$ be a vector space over the field $\mathbb C$, and let $\mathrm{GL}(V)$ be the
+group of isomorphisms of $V$ to itself. i.e. $\mathrm{GL}(V)$ is the set of $n\times n$
 invertible matrices.
 
 Let $G$ be a finite group. The **linear representation** of $G$ in $V$ is a
-homomorphism $\rho: G \to GL(V)$.
+homomorphism $\rho: G \to \mathrm{GL}(V)$.
 
 In other words, $\rho$ associates each element of $G$ with an $n\times n$
 invertible matrix such that $\rho(st) = \rho(s)\rho(t) \forall s, t \in G$.
@@ -94,10 +94,10 @@ Direct Sum
   ?? Canonical Projections
 
 Unitart
-: $\rho : G \to GL (v)$ is  unitary iff $\langle \rho(g) v, \rho (g) w\rangle \forall v, w \in V, g \in G$
+: $\rho : G \to \mathrm{GL} (v)$ is  unitary iff $\langle \rho(g) v, \rho (g) w\rangle \forall v, w \in V, g \in G$
 
 Invariant / stable subspace
-: Given a representation $\rho: G \to GL(V)$, a subspace $W \subset V$ is
+: Given a representation $\rho: G \to \mathrm{GL}(V)$, a subspace $W \subset V$ is
   invariant if $\forall w \in W, g \in G, \quad \rho(g) w \in W$
 
   e.g.: For the trivial representation, any subspace is invariant.
@@ -110,13 +110,13 @@ Invariant / stable subspace
   \end{bmatrix}
 
 Irreducible representation
-: A representation $\rho: G \to GL(V)$ is irreducible if it's only invariant
+: A representation $\rho: G \to \mathrm{GL}(V)$ is irreducible if it's only invariant
   subspaces are $\{0\}$ and $V$ itself.
 
 
 ## Lemma 1: Finite representation $\Longrightarrow$ $G$-invariant product
 
-Let $P: G \to GL(V)$ be a finite representation, $V$ has a $G$-invariant inner
+Let $P: G \to \mathrm{GL}(V)$ be a finite representation, $V$ has a $G$-invariant inner
 product $\langle\langle \cdot, \cdot \rangle\rangle$.
 product $\langle\langle \rho(g) v, \rho(g)w\rangle\rangle = \langle\langle v, w
 \rangle\rangle, \forall v, w \in V$.
@@ -150,7 +150,7 @@ $$\begin{aligned}
 
 ##  Lemma 2: $W \subseteq V \Longrightarrow V = W \oplus W^{\perp}$
 
-Let $\rho: G \to GL(V)$ be a representation with an invariant inner product.
+Let $\rho: G \to \mathrm{GL}(V)$ be a representation with an invariant inner product.
 Then for any invariant product space $W$, $W^{\perp}$ is also invariant.
 Consequently, $V=W\oplus W^{\perp}$.
 
@@ -165,9 +165,9 @@ $$\begin{aligned}
 &=0
 \end{aligned}$$
 
-## Theorem: Any unitary representation $\rho: G \to GL(V)$, is the direct sum of irreducible representations.
+## Theorem: Any unitary representation $\rho: G \to \mathrm{GL}(V)$, is the direct sum of irreducible representations.
 
-**Proof:** Assume we have a unitary representation $\rho: G \to GL(V)$,
+**Proof:** Assume we have a unitary representation $\rho: G \to \mathrm{GL}(V)$,
 that is an inner product that is invariant under $\rho$. To prove this, we use
 induction on the dimension, $n$, of $V$.
 
