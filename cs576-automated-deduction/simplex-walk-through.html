@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="/katex/katex.min.css">
+    <link rel="stylesheet" href="/site.css">
+    <title>Simplex Walk Through</title>
+</head>
+<body>
+<div id='content' class=''>
+<h2>Step 1</h2>
+<p>Find a solution to:</p>
+<p>\begin{matrix}
+2 x_1 &amp;+   x_2 &amp;+   x_3   &amp;\le 14 \
+4 x_1 &amp;+ 2 x_2 &amp;+ 3 x_3   &amp;\le 28 \
+2 x_1 &amp;+ 5 x_2 &amp;+ 5 x_3   &amp;\le 30 \
+x_1 &amp;        &amp;          &amp;\ge 0  \
+&amp;   x_2  &amp;          &amp;\ge 0  \
+&amp;        &amp;   x_3    &amp;\ge 0
+\end{matrix}</p>
+<p>The first thing we need to do is put these equations in the general form:
+We need inputs as:</p>
+<ol>
+<li>Equalities: <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>a</mi><mn>1</mn></msub><msub><mi>x</mi><mn>1</mn></msub><mo>+</mo><mo>⋯</mo><mo>+</mo><msub><mi>a</mi><mi>n</mi></msub><msub><mi>x</mi><mi>n</mi></msub><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">a_1 x_1 + \cdots + a_n x_n = 0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.64444em;"></span><span class="strut bottom" style="height:0.79444em;vertical-align:-0.15em;"></span><span class="base textstyle uncramped"><span class="mord"><span class="mord mathit">a</span><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord mathrm">1</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="mord"><span class="mord mathit">x</span><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord mathrm">1</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="mbin">+</span><span class="minner">⋯</span><span class="mbin">+</span><span class="mord"><span class="mord mathit">a</span><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord mathit">n</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="mord"><span class="mord mathit">x</span><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord mathit">n</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="mrel">=</span><span class="mord mathrm">0</span></span></span></span></li>
+<li>Bounds on variables: <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>l</mi><mi>i</mi></msub><mo>≤</mo><msub><mi>x</mi><mi>i</mi></msub><mo>≤</mo><msub><mi>u</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">l_i \le x_i \le u_i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.69444em;"></span><span class="strut bottom" style="height:0.84444em;vertical-align:-0.15em;"></span><span class="base textstyle uncramped"><span class="mord"><span class="mord mathit" style="margin-right:0.01968em;">l</span><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:-0.01968em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord mathit">i</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="mrel">≤</span><span class="mord"><span class="mord mathit">x</span><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord mathit">i</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span><span class="mrel">≤</span><span class="mord"><span class="mord mathit">u</span><span class="vlist"><span style="top:0.15em;margin-right:0.05em;margin-left:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span><span class="reset-textstyle scriptstyle cramped"><span class="mord mathit">i</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">​</span></span>​</span></span></span></span></span></span></li>
+</ol>
+<p>That gives us:</p>
+<p>\begin{matrix}
+2 x_1 &amp;+   x_2 &amp;+   x_3  &amp; +s_1 &amp;       &amp;       &amp;=   0 \
+4 x_1 &amp;+ 2 x_2 &amp;+ 3 x_3  &amp;      &amp; +s_2  &amp;       &amp;=   0  \
+2 x_1 &amp;+ 5 x_2 &amp;+ 5 x_3  &amp;      &amp;       &amp; +s_3  &amp;=   0  \
+\end{matrix}</p>
+<p>\begin{matrix}
+s_1 &amp;\ge 14             &amp;\quad   x_1    \ge 0  \
+s_2 &amp;\ge 28             &amp;\quad   x_2    \ge 0  \
+s_3 &amp;\ge 3              &amp;\quad   x_3    \ge 0
+\end{matrix}</p>
+
+</div>
+<script src="//localhost:35729/livereload.js?snipver=1"></script>
+</body>
+</html>
