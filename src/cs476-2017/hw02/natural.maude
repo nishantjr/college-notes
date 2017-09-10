@@ -24,6 +24,12 @@ fmod NAT-ORDER is
 
     op _>=_ : Natural Natural -> Bool .
     eq M >= N = M == N or M > N .
+
+    op min : Natural Natural -> Natural .
+    eq min(M, N) = if M >= N then N else M fi .
+
+    op max : Natural Natural -> Natural .
+    eq max(M, N) = if M >= N then M else N fi .
 endfm
 
 fmod HW02 is
@@ -38,6 +44,7 @@ reduce s s 0 + s s 0        == s s s s 0 .
 
 --- Greater than
 reduce 0 > 0                == false .
+reduce 0 > s 0              == false .
 reduce s s 0 > s s s 0      == false .
 reduce s s s 0 > s s 0      == true  .
 reduce s s 0 > s s 0        == false .
@@ -52,6 +59,16 @@ reduce s s 0 >= s s 0       == true  .
 reduce s s 0 >= 0           == true  .
 reduce 0 >= s s 0           == false .
 
+--- Min / Max
+reduce min(0, 0)            == 0     .
+reduce min(0, s 0)          == 0     .
+reduce min(s 0, 0)          == 0     .
+reduce min(s 0, s s s 0)    == s 0   .
+
+reduce max(0, 0)            == 0     .
+reduce max(0, s 0)          == s 0   .
+reduce max(s 0, 0)          == s 0   .
+reduce max(s 0, s s s 0)    == s s s 0 .
 
 --- Maude stays in the interpreter if running this file
 --- from the command line. May be there's a nicer way of running tests
