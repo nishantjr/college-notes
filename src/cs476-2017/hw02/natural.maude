@@ -47,9 +47,22 @@ fmod NAT-EVEN-ODD is
     eq odd(N) = not even(N) .
 endfm
 
+fmod NAT-FACTORIAL is
+    protecting NAT-MIXFIX .
+
+    var M : Natural .
+    op _ ! : Natural -> Natural .
+    eq M ! = factorial(M) .
+
+    op factorial : Natural -> Natural .
+    eq factorial(0) = s 0 .
+    eq factorial(s M) = (s M) * factorial(M) .
+endfm
+
 fmod HW02 is
     protecting NAT-ORDER .
     protecting NAT-EVEN-ODD .
+    protecting NAT-FACTORIAL .
 endfm
 
 --- Tests
@@ -91,6 +104,11 @@ reduce even(0)              == true  .
 reduce even(s s s s s s 0)  == true  .
 reduce even(s 0)            == false .
 reduce even(s s s s s 0  )  == false .
+
+--- Factorial
+reduce factorial(0)         == s 0 .
+reduce factorial(s s 0)     == s s 0 .
+reduce factorial(s s s 0)   == s s s s s s 0 .
 
 --- Maude stays in the interpreter if running this file
 --- from the command line. May be there's a nicer way of running tests
