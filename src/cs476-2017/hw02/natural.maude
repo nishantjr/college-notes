@@ -1,6 +1,4 @@
 fmod NAT-MIXFIX is
-    protecting BOOL .
-
     sort Natural .
     op 0 : -> Natural [ctor] .
     op s_ : Natural -> Natural [ctor] .
@@ -11,6 +9,13 @@ fmod NAT-MIXFIX is
     eq N + s M = s(N + M) .
     eq N * 0 = 0 .
     eq N * s M = N + (N * M) .
+endfm
+
+fmod NAT-ORDER is
+    protecting NAT-MIXFIX .
+    protecting BOOL .
+
+    vars N M : Natural .
 
     op _>_ : Natural Natural -> Bool .
     eq 0 > M = false .
@@ -19,7 +24,10 @@ fmod NAT-MIXFIX is
 
     op _>=_ : Natural Natural -> Bool .
     eq M >= N = M == N or M > N .
+endfm
 
+fmod HW02 is
+    protecting NAT-ORDER.
 endfm
 
 --- Tests
