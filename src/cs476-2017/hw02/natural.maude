@@ -1,0 +1,21 @@
+fmod NATURAL is
+    sorts Natural NzNatural .
+    subsorts NzNatural < Natural .
+    op 0 : -> Natural [ctor] .
+    op s_ : Natural -> NzNatural [ctor] .
+    op p_ : NzNatural -> Natural .
+    op _+_ : Natural Natural -> Natural .
+    op _+_ : NzNatural NzNatural -> NzNatural .
+    vars N M : Natural .
+    eq p s N = N .
+    eq N + 0 = N .
+    eq N + s M = s(N + M) .
+endfm
+
+--- Tests
+--- =====
+
+--- Predecessor and successor
+reduce p((s s 0) + (s s 0)) == s s s 0 .
+
+quit
