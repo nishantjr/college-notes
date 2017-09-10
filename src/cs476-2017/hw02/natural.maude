@@ -16,6 +16,10 @@ fmod NAT-MIXFIX is
     eq 0 > M = false .
     eq s(N) > 0 = true .
     eq s(M) > s(N) = M > N .
+
+    op _>=_ : Natural Natural -> Bool .
+    eq M >= N = M == N or M > N .
+
 endfm
 
 --- Tests
@@ -24,13 +28,21 @@ endfm
 --- Addition
 reduce s s 0 + s s 0        == s s s s 0 .
 
---- Order
+--- Greater than
 reduce 0 > 0                == false .
 reduce s s 0 > s s s 0      == false .
 reduce s s s 0 > s s 0      == true  .
 reduce s s 0 > s s 0        == false .
 reduce s s 0 > 0            == true  .
 reduce 0 > s s 0            == false .
+
+--- Greater than or equal
+reduce 0 >= 0               == true  .
+reduce s s 0 >= s s s 0     == false .
+reduce s s s 0 >= s s 0     == true  .
+reduce s s 0 >= s s 0       == true  .
+reduce s s 0 >= 0           == true  .
+reduce 0 >= s s 0           == false .
 
 
 --- Maude stays in the interpreter if running this file
