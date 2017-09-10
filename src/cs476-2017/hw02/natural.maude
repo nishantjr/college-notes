@@ -14,7 +14,7 @@ endfm
 --- Tests
 --- =====
 
---- Predecessor and successor
-reduce p((s s 0) + (s s 0)) == s s s 0 .
+--- Addition
+reduce s s 0 + s s 0        == s s s s 0 .
 
 quit
