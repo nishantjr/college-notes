@@ -32,8 +32,24 @@ fmod NAT-ORDER is
     eq max(M, N) = if M >= N then M else N fi .
 endfm
 
+fmod NAT-EVEN-ODD is
+    protecting NAT-MIXFIX .
+    protecting BOOL .
+
+    var N : Natural .
+
+    op even : Natural -> Bool .
+    eq even(0)     = true .
+    eq even(s 0)   = false .
+    eq even(s s N) = even(N) .
+
+    op odd : Natural -> Bool .
+    eq odd(N) = not even(N) .
+endfm
+
 fmod HW02 is
-    protecting NAT-ORDER.
+    protecting NAT-ORDER .
+    protecting NAT-EVEN-ODD .
 endfm
 
 --- Tests
@@ -69,6 +85,12 @@ reduce max(0, 0)            == 0     .
 reduce max(0, s 0)          == s 0   .
 reduce max(s 0, 0)          == s 0   .
 reduce max(s 0, s s s 0)    == s s s 0 .
+
+--- Even / Odd
+reduce even(0)              == true  .
+reduce even(s s s s s s 0)  == true  .
+reduce even(s 0)            == false .
+reduce even(s s s s s 0  )  == false .
 
 --- Maude stays in the interpreter if running this file
 --- from the command line. May be there's a nicer way of running tests
