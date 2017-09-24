@@ -1,0 +1,46 @@
+fmod MULTISET-ALGEBRA is
+  protecting NAT .
+  sort Mult .
+  subsort Nat < Mult .
+  op mt : -> Mult [ctor] .                              *** empty multiset
+  op _,_ : Mult Mult -> Mult [ctor assoc comm id: mt] . *** multiset union
+  op _~_ : Nat Nat -> Bool [comm] .       *** equality predicate on naturals
+  op _\_  : Mult Mult -> Mult .           *** multiset difference
+  op _C=_ : Mult Mult -> Bool .           *** multiset containment
+  op _in_ : Nat Mult -> Bool .            *** multiset membership
+  op _~_  : Mult Mult -> Bool [comm] .    *** equality predicate on multisets
+  op _/\_ : Mult Mult -> Mult .           *** multiset intersection
+  op rem : Nat Mult -> Mult .             *** removes N everywhere in U
+  op |_| : Mult -> Nat .                  *** cardinality with repetitions
+  op [_] : Mult -> Nat .                  *** number of distinct elements
+
+  vars N M : Nat .  vars U V W : Mult .
+
+  *** write here your equations for all the undefined functions above
+
+endfm
+
+red 5 ~ 12 .                  *** should be false
+red 15 ~ 15 .                 *** should be true
+
+red (3,3,4,4,4,2,2,9) \ (3,3,3,4,2,7) .  *** should be 2,4,4,9
+
+red (3,3,4,4,4,2,2,9) C= (3,3,3,4,2,7) .  *** should be false
+
+red (3,3,4,4,2,2,9) C= (3,3,3,4,4,2,2,2,7,9) .  *** should be true
+
+red 3 in (3,3,4,4,7) .                      *** should be true
+
+red 9 in (3,3,4,4,7) .                      *** should be false
+
+red (3,3,4,4,4,2,2,7) ~ (3,3,3,4,2,7) .  *** should be false
+
+red (3,3,3,4,2,2,7) ~ (3,3,3,4,2,2,7) .  *** should be true
+
+red (3,3,3,4,4,4,2,2,7,9) /\ (3,3,3,3,4,4,2,7,7) . *** should be 2,3,3,3,4,4,7
+
+red rem(2,(3,3,2,2,2,4,4,4)) .  *** should be 3,3,4,4,4
+
+red | 3,3,4,4,4,2,2,9 | .       *** should be 8
+
+red [ 3,3,4,4,4,2,2,9 ] .       *** should be 4
