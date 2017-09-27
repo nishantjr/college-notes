@@ -1,0 +1,108 @@
+---
+title: HW04 - CS476 - FA2017
+author: Nishant Rodrigues
+---
+
+1.  $\Longleftarrow$: $t \downarrow_{\vec E} t'$ implies that there exists
+    a set of zero or more equations, $t \to_E^{*} w$ and $t' \to_E^{*} w$.
+    Orienting these equations, $t =_E \cdots =_E w =_E \cdots =_E t'$. Thus
+    $t =_E t'$.
+
+    $\Longrightarrow$: Suppose two terms $t =_E t'$ with an equational proof
+    of length 1. Then there must exists a directed equation $t \to_E t'$ or
+    $t' \to_E t$. In either case, $t \downarrow_{\vec E} t'$.
+
+    Assume that the equational proof is of size $n + 1$ and the hypothesis holds
+    for proofs of size $n$. Let $t = t_1 = t_2 \cdots t_{n+1} = t'$ be that equational proof.
+
+    By the inductive hypothesis, $\exists\, i$,
+    $t \to_{\vec E}^{*} t_i$ and $t_{n-1} \to_{\vec E}^{*} t_i$. Now, since
+    $t_{n-1} =_E t'$ in one step, either $t' \to_{\vec E} t_{n-1}$ or
+    $t_{n-1} \to_{\vec E} t'$. In the first case, we are done. In the second, since $\vec E$ is
+    confluent and $t_{n-1} \to_{\vec E}^{*} t_i$, and
+    $t_{n-1} \to_{\vec E} t'$, $\exists w, t_{n-1} \to_{\vec E}^{*} w$ and
+    $t' \to_{\vec E}^{*} w$. Thus,
+    $t \to_{\vec E}^{*} t_i\to_{\vec E}^{*} w$ and $t' \to_{\vec E}^{*} w$,
+    and so $t \downarrow_{\vec E} t'$.
+
+2.  ```
+    fmod MULTISET-ALGEBRA is
+      protecting NAT .
+      sort Mult .
+      subsort Nat < Mult .
+      op mt : -> Mult [ctor] .
+      op _,_ : Mult Mult -> Mult [ctor assoc comm id: mt] .
+      op _~_ : Nat Nat -> Bool [comm] .
+      op _\_  : Mult Mult -> Mult .
+      op _C=_ : Mult Mult -> Bool .
+      op _in_ : Nat Mult -> Bool .
+      op _~_  : Mult Mult -> Bool [comm] .
+    ***  op _/\_ : Mult Mult -> Mult .
+      op rem : Nat Mult -> Mult .
+      op |_| : Mult -> Nat .
+      op [_] : Mult -> Nat .
+    
+      vars N M : Nat .  vars U V W : Mult .
+    
+      *** write here your equations for all the undefined functions above
+      eq 0 ~ 0 = true .
+      eq (s N) ~ 0 = false .
+      eq (s N) ~ (s M) = N ~ M .
+    
+      eq N in mt = false .
+      eq N in M,U = if N ~ M then true else N in U fi .
+    
+      eq U \ mt = U .
+      eq (N,U) \ (N,V) = U \ V .
+      eq U \ (M,V) = if M in U then U \ (M, V) else U \ V fi . *** XXX: Ugly!
+    
+      eq (M,U) C= (M,V) = U C= V .
+      eq (M,U) C= (V)   = if M in V then (M,U) C= (V) else false fi .
+      eq mt C= U = true .
+    
+      eq U ~ V = (U C= V) and (V C= U) .
+    
+      *** We make multiset intersection commutative
+      op _/\_ : Mult Mult -> Mult [comm] .
+      eq mt /\ mt = mt . 
+      eq (M,U) /\ (M,V) = M, (U /\ V) .
+      eq (M,U) /\ V = if M in V then (M,U) /\ V else (U /\ V) fi .
+    
+      eq rem(N, (N,U)) = rem(N, U) .
+      eq rem(N, U) = if N in U then rem(N, U) else U fi .
+    
+      eq | N,U | = 1 + | U | .
+      eq | mt | = 0 .
+    
+      eq [ N,U ] = 1 + [ rem(N, U) ] .
+      eq [ mt ] = 0 .
+    endfm
+    
+    red 5 ~ 12 == false .
+    red 2 ~ 0 == false .
+    red 0 ~ 2 == false .
+    red 15 ~ 15 .
+    
+    red 3 in (3,3,4,4,7) == true .
+    red 4 in (3,3,4,4,7) == true .
+    red 9 in (3,3,4,4,7) == false .
+    
+    red (3,3,4,4,4,2,2,9) \ (3,3,3,4,2,7) == (2, 4, 4, 9) .
+    
+    red (3,3,4,4,2,2,9) C= (3,3,3,4,4,2,2,2,7,9) == true .
+    red (3,3,4,4,4,2,2,9) C= (3,3,3,4,2,7) == false .
+    red (3,3,3,3) C= (3,3,3) == false .
+    
+    red (3,3,4,4,4,2,2,7) ~ (3,3,3,4,2,7) == false .
+    red (3,3,3,4,2,2,7) ~ (3,3,3,4,2,2,7) == true .
+    
+    red (3,3,3,4,4,4,2,2,7,9) /\ (3,3,3,3,4,4,2,7,7) == (2,3,3,3,4,4,7) .
+    red (3,3,3,3,4,4,2,7,7) /\ (3,3,3,4,4,4,2,2,7,9) == (2,3,3,3,4,4,7) .
+    
+    red rem(2,(3,3,2,2,2,4,4,4)) == (3,3,4,4,4) .
+    
+    red | 3,3,4,4,4,2,2,9 | == 8 .
+    red [ 3,3,4,4,4,2,2,9 ] == 4 .
+    
+    quit
+    ```
