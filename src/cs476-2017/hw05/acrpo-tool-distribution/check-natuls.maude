@@ -1,0 +1,18 @@
+
+  red X:Natu + 0 >AvC X:Natu .
+  red X:Natu + s(Y:Natu) >AvC s(X:Natu + Y:Natu) .
+  red X:Natu * 0 >AvC (0).Natu .
+  red X:Natu * s(Y:Natu) >AvC (X:Natu * Y:Natu) + X:Natu .
+  red X:Natu ^ 0 >AvC (s(0)).Natu .
+  red S:NatuSet , S:NatuSet >AvC S:NatuSet .
+  red X:Natu ^ s(Y:Natu) >AvC X:Natu * (X:Natu ^ Y:Natu) .
+  red length((nil).NatuList) >AvC (0).Natu .
+  red length(X:Natu) >AvC (s(0)).Natu .
+  red length(X:Natu L:NatuList) >AvC s(length(L:NatuList)) .
+  red rev((nil).NatuList) >AvC (nil).NatuList .
+  red rev(X:Natu) >AvC X:Natu .
+  red rev(X:Natu L:NatuList) >AvC rev(L:NatuList) X:Natu .
+  red list2set((nil).NatuList) >AvC (mt).NatuSet .
+  red list2set(X:Natu) >AvC X:Natu .
+  red list2set(X:Natu L:NatuList) >AvC X:Natu , list2set(L:NatuList) .
+  

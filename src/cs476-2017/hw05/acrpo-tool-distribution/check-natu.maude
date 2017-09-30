@@ -1,0 +1,8 @@
+
+  red X:Natu + 0 >AC X:Natu .
+  red X:Natu + s(Y:Natu) >AC s(X:Natu + Y:Natu) .
+  red X:Natu * 0 >AC (0).Natu .
+  red X:Natu * s(Y:Natu) >AC (X:Natu * Y:Natu) + X:Natu .
+  red X:Natu ^ 0 >AC (s(0)).Natu .
+  red X:Natu ^ s(Y:Natu) >AC X:Natu * (X:Natu ^ Y:Natu) .
+  

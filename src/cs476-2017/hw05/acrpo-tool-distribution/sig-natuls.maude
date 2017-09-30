@@ -1,0 +1,21 @@
+set include BOOL off .
+
+--- NATU-LS
+fmod TEST is
+  sorts Natu NatuList NatuSet .
+  subsorts Natu < NatuList NatuSet .
+  sort U .
+  subsorts NatuList NatuSet < U .
+  op 0 : -> Natu [ctor metadata "1"] .
+  op mt : -> NatuSet [ctor metadata "2"] .
+  op nil : -> NatuList [ctor metadata "3"] .
+  op s : Natu -> Natu [ctor metadata "4"] .
+  op _+_ : Natu Natu -> Natu [comm metadata "5"] .
+  op _*_ : Natu Natu -> Natu [metadata "6"] .
+  op _^_ : Natu Natu -> Natu [metadata "7"] .
+  op _,_ : NatuSet NatuSet -> NatuSet [ctor assoc comm metadata "8"] .
+  op __ : NatuList NatuList -> NatuList [ctor assoc metadata "9"] .
+  op length : NatuList -> Natu [metadata "10"] .
+  op rev : NatuList -> NatuList [metadata "11"] .
+  op list2set : NatuList -> NatuSet [metadata "12"] .
+endfm
