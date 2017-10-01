@@ -1,0 +1,4 @@
+reduce X:Natu + 0           >AC X:Natu .
+reduce X:Natu + s(Y:Natu)   >AC s(X:Natu + Y:Natu) .
+reduce X:Natu * 0           >AC (0).Natu .
+reduce X:Natu * s(Y:Natu)   >AC (X:Natu * Y:Natu) + X:Natu .

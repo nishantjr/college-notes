@@ -1,0 +1,25 @@
+--- Disable Prelude's bool so that acrpo can define it's own.
+set include BOOL off .
+
+fmod TEST is   
+  sorts Element List .  
+  subsorts Element < List . 
+
+  sort U .
+  subsorts List < U .
+
+  op nil : -> List                           [ctor metadata "1"] . 
+  op a : -> Element                          [ctor metadata "2"] .
+  op b : -> Element                          [ctor metadata "3"] .
+  op c : -> Element                          [ctor metadata "4"] .
+
+  op _;_  : Element List -> List             [ctor metadata "5"] .   
+  op _;_  : List List -> List                [     metadata "5"] . 
+
+endfm
+
+load ../acrpo-tool-distribution/acrpo.maude
+
+reduce (L:List ; P:List) ; Q:List >AC L:List ; (P:List ; Q:List) .
+reduce L:List ; nil               >AC L:List .
+reduce nil ; L:List               >AC L:List .

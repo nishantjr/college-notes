@@ -1,0 +1,14 @@
+set include BOOL off .
+
+fmod TEST is
+    sort Natu .
+    sort U Universal .
+    subsorts Natu < U < Universal .
+
+    op 0 : -> Natu                  [ctor metadata "1"] .
+    op s : Natu -> Natu             [ctor metadata "2"] .
+    op _+_ : Natu Natu -> Natu      [comm metadata "3"] .
+    op _*_ : Natu Natu -> Natu      [metadata "4"] . 
+    op _^_ : Natu Natu -> Natu      [metadata "5"] .
+endfm
+
