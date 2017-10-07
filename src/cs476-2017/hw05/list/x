@@ -1,0 +1,1154 @@
+Warning: unrecognized symbol hook name emptyTermListSymbol.
+Warning: "prelude.maude", line 2039 (fmod META-LEVEL): failed to attach op-hook
+    emptyTermListSymbol empty to metaReduce.
+Warning: "prelude.maude", line 2039 (fmod META-LEVEL): bad special for operator
+    metaReduce.
+Warning: "prelude.mStarting the Maude Sufficient and Canonical Completeness Checker.
+
+Bye.
+elOpSymbol to metaDisjointUnify.
+Warning: "prelude.maude", line 2284 (fmod META-LEVEL): bad special for operator
+    metaDisjointUnify.
+Warning: "prelude.maude", line 2299 (fmod META-LEVEL): failed to attach id-hook
+    MetaLevelOpSymbol to metaNarrow.
+Warning: "prelude.maude", line 2299 (fmod META-LEVEL): bad special for operator
+    metaNarrow.
+Warning: "prelude.maude", line 2304 (fmod META-LEVEL): failed to attach id-hook
+    MetaLevelOpSymbol to metaNarrow.
+Warning: "prelude.maude", line 2304 (fmod META-LEVEL): bad special for operator
+    metaNarrow.
+Warning: "prelude.maude", line 2309 (fmod META-LEVEL): failed to attach id-hook
+    MetaLevelOpSymbol to metaGetVariant.
+Warning: "prelude.maude", line 2309 (fmod META-LEVEL): bad special for operator
+    metaGetVariant.
+Warning: "prelude.maude", line 2314 (fmod META-LEVEL): failed to attach id-hook
+    MetaLevelOpSymbol to metaGetIrredundantVariant.
+Warning: "prelude.maude", line 2314 (fmod META-LEVEL): bad special for operator
+    metaGetIrredundantVariant.
+Warning: "prelude.maude", line 2319 (fmod META-LEVEL): failed to attach id-hook
+    MetaLevelOpSymbol to metaVariantUnify.
+Warning: "prelude.maude", line 2319 (fmod META-LEVEL): bad special for operator
+    metaVariantUnify.
+Warning: "prelude.maude", line 2324 (fmod META-LEVEL): failed to attach id-hook
+    MetaLevelOpSymbol to metaVariantDisjointUnify.
+Warning: "prelude.maude", line 2324 (fmod META-LEVEL): bad special for operator
+    metaVariantDisjointUnify.
+Warning: "prelude.maude", line 2369 (fmod META-LEVEL): failed to attach id-hook
+    MetaLevelOpSymbol to metaCheck.
+Warning: "prelude.maude", line 2369 (fmod META-LEVEL): bad special for operator
+    metaCheck.
+Warning: "prelude.maude", line 2374 (fmod META-LEVEL): failed to attach id-hook
+    MetaLevelOpSymbol to metaSmtSearch.
+Warning: "prelude.maude", line 2374 (fmod META-LEVEL): bad special for operator
+    metaSmtSearch.
+Warning: "prelude.maude", line 2459 (fmod META-LEVEL): failed to attach id-hook
+    MetaLevelOpSymbol to upView.
+Warning: "prelude.maude", line 2459 (fmod META-LEVEL): bad special for operator
+    upView.
+Warning: "prelude.maude", line 1932 (fmod META-LEVEL): this module contains one
+    or more errors that could not be patched up and thus it cannot be used or
+    imported.
+Warning: "scc.maude", line 5 (fmod META-BASICS): unable to use module
+    META-LEVEL due to unpatchable errors.
+Warning: "scc.maude", line 14 (fmod META-BASICS): undeclared sort Kind.
+Warning: "scc.maude", line 14 (fmod META-BASICS): undeclared sort TypeList.
+Warning: "scc.maude", line 15 (fmod META-BASICS): undeclared sort NeTypeList.
+Warning: "scc.maude", line 23 (fmod META-BASICS): undeclared sort Constant.
+Warning: "scc.maude", line 23 (fmod META-BASICS): undeclared sort
+    GroundTermList.
+Warning: "scc.maude", line 24 (fmod META-BASICS): undeclared sort
+    EmptyCommaList.
+Warning: "scc.maude", line 25 (fmod META-BASICS): undeclared sort
+    NeGroundTermList.
+Warning: "scc.maude", line 31 (fmod META-BASICS): undeclared sort QidSet.
+Warning: "scc.maude", line 32 (fmod META-BASICS): undeclared sort EmptyTypeSet.
+Warning: "scc.maude", line 33 (fmod META-BASICS): undeclared sort NeQidSet.
+Warning: "scc.maude", line 38 (fmod META-BASICS): undeclared sort Variable.
+Warning: "scc.maude", line 44 (fmod META-BASICS): undeclared sort AttrSet.
+Warning: "scc.maude", line 45 (fmod META-BASICS): undeclared sort Equation.
+Warning: "scc.maude", line 46 (fmod META-BASICS): undeclared sort EquationSet.
+Warning: "scc.maude", line 47 (fmod META-BASICS): undeclared sort EqCondition.
+Warning: "scc.maude", line 48 (fmod META-BASICS): undeclared sort GroundTerm.
+Warning: "scc.maude", line 49 (fmod META-BASICS): undeclared sort Header.
+Warning: "scc.maude", line 51 (fmod META-BASICS): undeclared sort Import.
+Warning: "scc.maude", line 52 (fmod META-BASICS): undeclared sort ImportList.
+Warning: "scc.maude", line 53 (fmod META-BASICS): undeclared sort Module.
+Warning: "scc.maude", line 54 (fmod META-BASICS): undeclared sort MembAx.
+Warning: "scc.maude", line 55 (fmod META-BASICS): undeclared sort MembAxSet.
+Warning: "scc.maude", line 57 (fmod META-BASICS): undeclared sort NatList.
+Warning: "scc.maude", line 58 (fmod META-BASICS): undeclared sort NeNatList.
+Warning: "scc.maude", line 59 (fmod META-BASICS): undeclared sort OpDecl.
+Warning: "scc.maude", line 60 (fmod META-BASICS): undeclared sort OpDeclSet.
+Warning: "scc.maude", line 61 (fmod META-BASICS): undeclared sort Qid.
+Warning: "scc.maude", line 62 (fmod META-BASICS): undeclared sort RuleSet.
+Warning: "scc.maude", line 63 (fmod META-BASICS): undeclared sort Sort.
+Warning: "scc.maude", line 64 (fmod META-BASICS): undeclared sort SortSet.
+Warning: "scc.maude", line 65 (fmod META-BASICS): undeclared sort
+    SubsortDeclSet.
+Warning: "scc.maude", line 66 (fmod META-BASICS): undeclared sort Term.
+Warning: "scc.maude", line 67 (fmod META-BASICS): undeclared sort TermList.
+Warning: "scc.maude", line 68 (fmod META-BASICS): undeclared sort Type.
+Warning: "scc.maude", line 73 (fmod META-BASICS): undeclared sort String.
+Warning: "scc.maude", line 18 (fmod META-BASICS): declaration for __ uses ditto
+    without a previous declaration to refer to.
+Warning: "scc.maude", line 26 (fmod META-BASICS): declaration for _`,_ uses
+    ditto without a previous declaration to refer to.
+Warning: "scc.maude", line 34 (fmod META-BASICS): declaration for _;_ uses
+    ditto without a previous declaration to refer to.
+Warning: "scc.maude", line 82 (fmod META-BASICS): bad token substr.
+Warning: "scc.maude", line 81 (fmod META-BASICS): no parse for statement
+eq kind-name (St, N, Count) = if substr (St, N, 2) == "`]" then "" else if
+    substr (St, N, 2) == "`{" then substr (St, N, 2) + kind-name (St, N + 2, s
+    Count) else if substr (St, N, 2) == "`}" then substr (St, N, 2) + kind-name
+    (St, N + 2, Count monus 1) else if (substr (St, N, 2) == "`,") and (Count
+    == 0) then "" else substr (St, N, 1) + kind-name (St, s N, Count) fi fi fi
+    fi .
+Warning: "scc.maude", line 96 (fmod META-BASICS): bad token string.
+Warning: "scc.maude", line 96 (fmod META-BASICS): no parse for statement
+eq kind-name (K) = kind-name (string (K), 2, 0) .
+Warning: "scc.maude", line 100 (fmod META-BASICS): bad token getKind.
+Warning: "scc.maude", line 100 (fmod META-BASICS): no parse for statement
+eq get-kinds (M, Tp TpL) = getKind (M, Tp) get-kinds (M, TpL) .
+Warning: "scc.maude", line 105 (fmod META-BASICS): bad token getKind.
+Warning: "scc.maude", line 105 (fmod META-BASICS): no parse for statement
+eq get-kind (M, T) = getKind (M, getType (metaNormalize (M, T))) .
+Warning: "scc.maude", line 109 (fmod META-BASICS): didn't expect token T:
+eq get-kinds ( M , ( T <---*HERE*
+Warning: "scc.maude", line 109 (fmod META-BASICS): no parse for statement
+eq get-kinds (M, (T, TL)) = get-kind (M, T) get-kinds (M, TL) .
+Warning: "scc.maude", line 110 (fmod META-BASICS): bad token empty.
+Warning: "scc.maude", line 110 (fmod META-BASICS): no parse for statement
+eq get-kinds (M, empty) = nil .
+Warning: "scc.maude", line 114 (fmod META-BASICS): bad token op.
+Warning: "scc.maude", line 114 (fmod META-BASICS): no parse for statement
+eq identifier ((op Q : TpL -> Tp [AS] .)) = Q .
+Warning: "scc.maude", line 117 (fmod META-BASICS): bad token op.
+Warning: "scc.maude", line 117 (fmod META-BASICS): no parse for statement
+eq inputs ((op Q : TpL -> Tp [AS] .)) = TpL .
+Warning: "scc.maude", line 120 (fmod META-BASICS): bad token op.
+Warning: "scc.maude", line 120 (fmod META-BASICS): no parse for statement
+eq output ((op Q : TpL -> Tp [AS] .)) = Tp .
+Warning: "scc.maude", line 123 (fmod META-BASICS): bad token op.
+Warning: "scc.maude", line 123 (fmod META-BASICS): no parse for statement
+eq attrs ((op Q : TpL -> Tp [AS] .)) = AS .
+Warning: "scc.maude", line 126 (fmod META-BASICS): bad token op.
+Warning: "scc.maude", line 126 (fmod META-BASICS): no parse for statement
+eq is-special ((op Q : TpL -> Tp [special (HL:HookList) AS] .)) = true .
+Warning: "scc.maude", line 130 (fmod META-BASICS): bad token op.
+Warning: "scc.maude", line 130 (fmod META-BASICS): no parse for statement
+eq is-ctor? ((op Q : TpL -> Tp [ctor AS] .)) = true .
+Warning: "scc.maude", line 143 (fmod META-BASICS): didn't expect token N:
+eq list-to-set ( N <---*HERE*
+Warning: "scc.maude", line 143 (fmod META-BASICS): no parse for statement
+eq list-to-set (N NL) = N ; list-to-set (NL) .
+Warning: "scc.maude", line 144 (fmod META-BASICS): didn't expect token nil:
+eq list-to-set ( nil <---*HERE*
+Warning: "scc.maude", line 144 (fmod META-BASICS): no parse for statement
+eq list-to-set (nil) = none .
+Warning: "scc.maude", line 152 (fmod META-BASICS): bad token op.
+Warning: "scc.maude", line 152 (fmod META-BASICS): no parse for statement
+eq $mu ((op Q : TpL -> Tp [assoc strat (NeNL) AS] .), 0) = if occurs (1, NeNL)
+    or-else occurs (2, NeNL) then 1 ; 2 ; list-to-set (NeNL) else list-to-set (
+    NeNL) fi .
+Warning: "scc.maude", line 158 (fmod META-BASICS): bad token op.
+Warning: "scc.maude", line 158 (fmod META-BASICS): no parse for statement
+eq $mu ((op Q : TpL -> Tp [strat (NeNL) AS] .), 1) = list-to-set (NeNL) .
+Warning: "scc.maude", line 160 (fmod META-BASICS): bad token op.
+Warning: "scc.maude", line 160 (fmod META-BASICS): no parse for statement
+eq $mu ((op Q : TpL -> Tp [AS] .), 2) = nats-in-range (0, size (TpL) + 1) .
+Warning: "scc.maude", line 165 (fmod META-BASICS): didn't expect token eq:
+eq lhs ( eq <---*HERE*
+Warning: "scc.maude", line 165 (fmod META-BASICS): no parse for statement
+eq lhs (eq T = T' [AS] .) = T .
+Warning: "scc.maude", line 166 (fmod META-BASICS): didn't expect token ceq:
+eq lhs ( ceq <---*HERE*
+Warning: "scc.maude", line 166 (fmod META-BASICS): no parse for statement
+eq lhs (ceq T = T' if EqCond [AS] .) = T .
+Warning: "scc.maude", line 169 (fmod META-BASICS): didn't expect token eq:
+eq condition ( eq <---*HERE*
+Warning: "scc.maude", line 169 (fmod META-BASICS): no parse for statement
+eq condition (eq T = T' [AS] .) = nil .
+Warning: "scc.maude", line 170 (fmod META-BASICS): didn't expect token ceq:
+eq condition ( ceq <---*HERE*
+Warning: "scc.maude", line 170 (fmod META-BASICS): no parse for statement
+eq condition (ceq T = T' if EqCond [AS] .) = EqCond .
+Warning: "scc.maude", line 173 (fmod META-BASICS): didn't expect token eq:
+eq is-exec? ( eq <---*HERE*
+Warning: "scc.maude", line 173 (fmod META-BASICS): no parse for statement
+eq is-exec? (eq T = T' [nonexec AS] .) = false .
+Warning: "scc.maude", line 174 (fmod META-BASICS): didn't expect token ceq:
+eq is-exec? ( ceq <---*HERE*
+Warning: "scc.maude", line 174 (fmod META-BASICS): no parse for statement
+eq is-exec? (ceq T = T' if EqCond [nonexec AS] .) = false .
+Warning: "scc.maude", line 178 (fmod META-BASICS): didn't expect token mb:
+eq lhs ( mb <---*HERE*
+Warning: "scc.maude", line 178 (fmod META-BASICS): no parse for statement
+eq lhs (mb T : S [AS] .) = T .
+Warning: "scc.maude", line 179 (fmod META-BASICS): didn't expect token cmb:
+eq lhs ( cmb <---*HERE*
+Warning: "scc.maude", line 179 (fmod META-BASICS): no parse for statement
+eq lhs (cmb T : S if EqCond [AS] .) = T .
+Warning: "scc.maude", line 182 (fmod META-BASICS): didn't expect token mb:
+eq rhs ( mb <---*HERE*
+Warning: "scc.maude", line 182 (fmod META-BASICS): no parse for statement
+eq rhs (mb T : S [AS] .) = S .
+Warning: "scc.maude", line 183 (fmod META-BASICS): didn't expect token cmb:
+eq rhs ( cmb <---*HERE*
+Warning: "scc.maude", line 183 (fmod META-BASICS): no parse for statement
+eq rhs (cmb T : S if EqCond [AS] .) = S .
+Warning: "scc.maude", line 186 (fmod META-BASICS): didn't expect token mb:
+eq is-ctor? ( ( mb <---*HERE*
+Warning: "scc.maude", line 186 (fmod META-BASICS): no parse for statement
+eq is-ctor? ((mb T : S [metadata ("dfn") AS] .)) = false .
+Warning: "scc.maude", line 187 (fmod META-BASICS): didn't expect token cmb:
+eq is-ctor? ( ( cmb <---*HERE*
+Warning: "scc.maude", line 187 (fmod META-BASICS): no parse for statement
+eq is-ctor? ((cmb T : S if EqCond [metadata ("dfn") AS] .)) = false .
+Warning: "scc.maude", line 192 (fmod META-BASICS): didn't expect token cmb:
+eq has-condition? ( ( cmb <---*HERE*
+Warning: "scc.maude", line 192 (fmod META-BASICS): no parse for statement
+eq has-condition? ((cmb T : S if EqCond [AS] .) Mbs) = true .
+Warning: "scc.maude", line 198 (fmod META-BASICS): didn't expect token T:
+eq linear? ( T ) = $linear? ( T <---*HERE*
+Warning: "scc.maude", line 198 (fmod META-BASICS): no parse for statement
+eq linear? (T) = $linear? (T, none) .
+Warning: "scc.maude", line 202 (fmod META-BASICS): didn't expect token GT:
+eq $linear? ( ( GT <---*HERE*
+Warning: "scc.maude", line 202 (fmod META-BASICS): no parse for statement
+eq $linear? ((GT, TL), VS) = $linear? (TL, VS) .
+Warning: "scc.maude", line 203 (fmod META-BASICS): didn't expect token Q:
+eq $linear? ( ( Q <---*HERE*
+Warning: "scc.maude", line 203 (fmod META-BASICS): no parse for statement
+eq $linear? ((Q [TL], TL'), VS) = $linear? ((TL, TL'), VS) .
+Warning: "scc.maude", line 204 (fmod META-BASICS): didn't expect token V:
+eq $linear? ( ( V <---*HERE*
+Warning: "scc.maude", line 204 (fmod META-BASICS): no parse for statement
+eq $linear? ((V, TL), VS) = not (V in VS) and-then $linear? (TL, V ; VS) .
+Warning: "scc.maude", line 205 (fmod META-BASICS): bad token empty.
+Warning: "scc.maude", line 205 (fmod META-BASICS): no parse for statement
+eq $linear? (empty, VS) = true .
+Warning: "scc.maude", line 210 (fmod META-BASICS): didn't expect token Mb:
+eq left-linear? ( Mb <---*HERE*
+Warning: "scc.maude", line 210 (fmod META-BASICS): no parse for statement
+eq left-linear? (Mb Mbs) = linear? (lhs (Mb)) and-then left-linear? (Mbs) .
+Warning: "scc.maude", line 212 (fmod META-BASICS): didn't expect token none:
+eq left-linear? ( ( none <---*HERE*
+Warning: "scc.maude", line 212 (fmod META-BASICS): no parse for statement
+eq left-linear? ((none) .MembAxSet) = true .
+Warning: "scc.maude", line 216 (fmod META-BASICS): didn't expect token ceq:
+eq has-condition? ( ( ceq <---*HERE*
+Warning: "scc.maude", line 216 (fmod META-BASICS): no parse for statement
+eq has-condition? ((ceq T = T' if EqCond [AS] .) Eqs) = true .
+Warning: "scc.maude", line 222 (fmod META-BASICS): didn't expect token Eq:
+eq left-linear? ( Eq <---*HERE*
+Warning: "scc.maude", line 222 (fmod META-BASICS): no parse for statement
+eq left-linear? (Eq Eqs) = linear? (lhs (Eq)) and left-linear? (Eqs) .
+Warning: "scc.maude", line 224 (fmod META-BASICS): didn't expect token none:
+eq left-linear? ( ( none <---*HERE*
+Warning: "scc.maude", line 224 (fmod META-BASICS): no parse for statement
+eq left-linear? ((none) .EquationSet) = true .
+Warning: "scc.maude", line 228 (fmod META-BASICS): bad token occurs.
+Warning: "scc.maude", line 227 (fmod META-BASICS): no parse for statement
+eq is-universal-op? (Op) = (output (Op) == 'Universal) or-else occurs (
+    'Universal, inputs (Op)) .
+Warning: "scc.maude", line 233 (fmod META-BASICS): didn't expect token Op:
+ceq remove-universal-ops ( Op <---*HERE*
+Warning: "scc.maude", line 233 (fmod META-BASICS): no parse for statement
+ceq remove-universal-ops (Op Ops) = remove-universal-ops (Ops) if
+    is-universal-op? (Op) .
+Warning: "scc.maude", line 239 (fmod META-BASICS): bad token fmod.
+Warning: "scc.maude", line 239 (fmod META-BASICS): no parse for statement
+eq isParameterized? (fmod H is ImL sorts SS . SSDS Ops Mbs Eqs endfm) = not (H
+    :: Qid) .
+Warning: "scc.maude", line 241 (fmod META-BASICS): bad token mod.
+Warning: "scc.maude", line 241 (fmod META-BASICS): no parse for statement
+eq isParameterized? (mod H is ImL sorts SS . SSDS Ops Mbs Eqs Rls endm) = not (
+    H :: Qid) .
+Warning: "scc.maude", line 243 (fmod META-BASICS): bad token Th:STheory.
+Warning: "scc.maude", line 243 (fmod META-BASICS): no parse for statement
+eq isParameterized? (Th:STheory) = false .
+Advisory: "scc.maude", line 246 (fmod PTA-OPS): sort String has been imported
+    from both "prelude.maude", line 678 (fmod STRING) and <automatic>.
+Warning: "scc.maude", line 257 (fmod PTA-OPS): undeclared sort KindSet.
+Warning: "scc.maude", line 261 (fmod PTA-OPS): undeclared sort NeTermList.
+Warning: "scc.maude", line 403 (fmod PTA-OPS): undeclared sort Rule.
+Warning: "scc.maude", line 279 (fmod PTA-OPS): bad token qid.
+Warning: "scc.maude", line 279 (fmod PTA-OPS): no parse for statement
+eq tree-sort (K) = qid (tree-name (K)) .
+Warning: "scc.maude", line 283 (fmod PTA-OPS): didn't expect token tree-sort:
+eq tree-sorts ( K KL ) = tree-sort <---*HERE*
+Warning: "scc.maude", line 283 (fmod PTA-OPS): no parse for statement
+eq tree-sorts (K KL) = tree-sort (K) tree-sorts (KL) .
+Warning: "scc.maude", line 288 (fmod PTA-OPS): bad token qid.
+Warning: "scc.maude", line 288 (fmod PTA-OPS): no parse for statement
+eq state-sort (K) = qid (state-name (K)) .
+Warning: "scc.maude", line 297 (fmod PTA-OPS): bad token qid.
+Warning: "scc.maude", line 297 (fmod PTA-OPS): no parse for statement
+eq lit-sort (K) = qid (lit-name (K)) .
+Warning: "scc.maude", line 304 (fmod PTA-OPS): bad token qid.
+Warning: "scc.maude", line 304 (fmod PTA-OPS): no parse for statement
+eq lit-set-var (St, K) = qid (St + ":" + lit-set-name (K)) .
+Warning: "scc.maude", line 308 (fmod PTA-OPS): bad token qid.
+Warning: "scc.maude", line 308 (fmod PTA-OPS): no parse for statement
+eq lit-set-sort (K) = qid (lit-set-name (K)) .
+Warning: "scc.maude", line 313 (fmod PTA-OPS): bad token qid.
+Warning: "scc.maude", line 313 (fmod PTA-OPS): no parse for statement
+eq tree-constant (Q, K) = qid (string (Q) + "." + tree-name (K)) .
+Warning: "scc.maude", line 317 (fmod PTA-OPS): didn't expect token K:
+eq pta-sorts ( K <---*HERE*
+Warning: "scc.maude", line 317 (fmod PTA-OPS): no parse for statement
+eq pta-sorts (K ; KS) = tree-sort (K) ; state-sort (K) ; lit-sort (K) ;
+    lit-set-sort (K) ; pta-sorts (KS) .
+Warning: "scc.maude", line 320 (fmod PTA-OPS): didn't expect token none:
+eq pta-sorts ( none <---*HERE*
+Warning: "scc.maude", line 320 (fmod PTA-OPS): no parse for statement
+eq pta-sorts (none) = none .
+Warning: "scc.maude", line 325 (fmod PTA-OPS): bad token subsort.
+Warning: "scc.maude", line 324 (fmod PTA-OPS): no parse for statement
+eq pta-subsorts (K ; KS) = (subsort state-sort (K) < lit-sort (K) .) (subsort
+    lit-sort (K) < lit-set-sort (K) .) pta-subsorts (KS) .
+Warning: "scc.maude", line 328 (fmod PTA-OPS): didn't expect token none:
+eq pta-subsorts ( none <---*HERE*
+Warning: "scc.maude", line 328 (fmod PTA-OPS): no parse for statement
+eq pta-subsorts (none) = none .
+Warning: "scc.maude", line 333 (fmod PTA-OPS): bad token op.
+Warning: "scc.maude", line 332 (fmod PTA-OPS): no parse for statement
+eq pta-required-ops (K ; KS) = (op '_:_ : tree-sort (K) state-sort (K) ->
+    tree-sort (K) [ctor frozen (1)] .) (op '!_ : state-sort (K) -> lit-sort (K)
+    [ctor] .) (op 'none : nil -> lit-set-sort (K) [ctor] .) (op '_;_ :
+    lit-set-sort (K) lit-set-sort (K) -> lit-set-sort (K) [ctor assoc comm id (
+    qid ("none." + lit-set-name (K)))] .) (op 'accept : lit-set-sort (K) ->
+    '`[Bool`] [none] .) pta-required-ops (KS) .
+Warning: "scc.maude", line 340 (fmod PTA-OPS): didn't expect token none:
+eq pta-required-ops ( none <---*HERE*
+Warning: "scc.maude", line 340 (fmod PTA-OPS): no parse for statement
+eq pta-required-ops (none) = none .
+Warning: "scc.maude", line 344 (fmod PTA-OPS): bad token assoc.
+Warning: "scc.maude", line 344 (fmod PTA-OPS): no parse for statement
+eq pta-axioms (M, assoc AS) = assoc pta-axioms (M, AS) .
+Warning: "scc.maude", line 345 (fmod PTA-OPS): bad token comm.
+Warning: "scc.maude", line 345 (fmod PTA-OPS): no parse for statement
+eq pta-axioms (M, comm AS) = comm pta-axioms (M, AS) .
+Warning: "scc.maude", line 346 (fmod PTA-OPS): bad token id.
+Warning: "scc.maude", line 346 (fmod PTA-OPS): no parse for statement
+eq pta-axioms (M, id (C) AS) = id (tree-constant (getName (C), getKind (M,
+    getType (C)))) pta-axioms (M, AS) .
+Warning: "scc.maude", line 349 (fmod PTA-OPS): bad token left-id.
+Warning: "scc.maude", line 349 (fmod PTA-OPS): no parse for statement
+eq pta-axioms (M, left-id (C) AS) = left-id (tree-constant (getName (C),
+    getKind (M, getType (C)))) pta-axioms (M, AS) .
+Warning: "scc.maude", line 352 (fmod PTA-OPS): bad token right-id.
+Warning: "scc.maude", line 352 (fmod PTA-OPS): no parse for statement
+eq pta-axioms (M, right-id (C) AS) = right-id (tree-constant (getName (C),
+    getKind (M, getType (C)))) pta-axioms (M, AS) .
+Warning: "scc.maude", line 355 (fmod PTA-OPS): didn't expect token none:
+eq pta-axioms ( M , AS ) = none <---*HERE*
+Warning: "scc.maude", line 355 (fmod PTA-OPS): no parse for statement
+eq pta-axioms (M, AS) = none [owise] .
+Warning: "scc.maude", line 360 (fmod PTA-OPS): bad token op.
+Warning: "scc.maude", line 360 (fmod PTA-OPS): no parse for statement
+eq pta-ops (M, (op Q : TpL -> Tp [AS] .) Ops) = (op Q : tree-sorts (get-kinds (
+    M, TpL)) -> tree-sort (getKind (M, Tp)) [ctor pta-axioms (M, AS)] .)
+    pta-ops (M, Ops) .
+Warning: "scc.maude", line 364 (fmod PTA-OPS): didn't expect token none:
+eq pta-ops ( M , none <---*HERE*
+Warning: "scc.maude", line 364 (fmod PTA-OPS): no parse for statement
+eq pta-ops (M, none) = none .
+Warning: "scc.maude", line 368 (fmod PTA-OPS): bad token op.
+Warning: "scc.maude", line 367 (fmod PTA-OPS): no parse for statement
+eq pta-state-decl (C) = (op getName (C) : nil -> getType (C) [ctor] .) .
+Warning: "scc.maude", line 374 (fmod PTA-OPS): didn't expect token
+    pta-state-decl:
+eq pta-state-decls ( C ; CS ) = pta-state-decl <---*HERE*
+Warning: "scc.maude", line 374 (fmod PTA-OPS): no parse for statement
+eq pta-state-decls (C ; CS) = pta-state-decl (C) pta-state-decls (CS) .
+Warning: "scc.maude", line 375 (fmod PTA-OPS): didn't expect token none:
+eq pta-state-decls ( none <---*HERE*
+Warning: "scc.maude", line 375 (fmod PTA-OPS): no parse for statement
+eq pta-state-decls (none) = none .
+Warning: "scc.maude", line 379 (fmod PTA-OPS): bad token qid.
+Warning: "scc.maude", line 379 (fmod PTA-OPS): no parse for statement
+eq tree-var (K, N) = qid ("X" + string (N, 10) + ":" + tree-name (K)) .
+Warning: "scc.maude", line 384 (fmod PTA-OPS): didn't expect token '_:_:
+eq var-states-aux ( K KL , ( C , CL ) , N ) = '_:_ <---*HERE*
+Warning: "scc.maude", line 383 (fmod PTA-OPS): no parse for statement
+eq var-states-aux (K KL, (C, CL), N) = '_:_ [tree-var (K, N), C],
+    var-states-aux (KL, CL, s N) .
+Warning: "scc.maude", line 385 (fmod PTA-OPS): bad token empty.
+Warning: "scc.maude", line 385 (fmod PTA-OPS): no parse for statement
+eq var-states-aux (nil, empty, N) = empty .
+Warning: "scc.maude", line 394 (fmod PTA-OPS): didn't expect token tree-var:
+eq var-list-aux ( K KL , N ) = ( tree-var <---*HERE*
+Warning: "scc.maude", line 394 (fmod PTA-OPS): no parse for statement
+eq var-list-aux (K KL, N) = (tree-var (K, N), var-list-aux (KL, s N)) .
+Warning: "scc.maude", line 395 (fmod PTA-OPS): bad token empty.
+Warning: "scc.maude", line 395 (fmod PTA-OPS): no parse for statement
+eq var-list-aux (nil, N) = empty .
+Warning: "scc.maude", line 404 (fmod PTA-OPS): bad token empty.
+Warning: "scc.maude", line 404 (fmod PTA-OPS): no parse for statement
+eq pta-rule (Q, nil, K, empty, C) = (rl tree-constant (Q, K) => '_:_ [
+    tree-constant (Q, K), C] [none] .) .
+Warning: "scc.maude", line 407 (fmod PTA-OPS): didn't expect token rl:
+eq pta-rule ( Q , NeKL , K , CL , C ) = ( rl <---*HERE*
+Warning: "scc.maude", line 406 (fmod PTA-OPS): no parse for statement
+eq pta-rule (Q, NeKL, K, CL, C) = (rl Q [var-states (NeKL, CL)] => '_:_ [Q [
+    var-list (NeKL)], C] [none] .) .
+Warning: "scc.maude", line 411 (fmod PTA-OPS): didn't expect token rl:
+eq pta-erule ( C , C' ) = ( rl <---*HERE*
+Warning: "scc.maude", line 411 (fmod PTA-OPS): no parse for statement
+eq pta-erule (C, C') = (rl C => C' [none] .) .
+Warning: "scc.maude", line 422 (fmod PTA-OPS): bad token mod.
+Warning: "scc.maude", line 421 (fmod PTA-OPS): no parse for statement
+eq make-pta (M, Q, CS, Eqs, Rls) = (mod Q is protecting 'BOOL . sorts pta-sorts
+    (getKinds (M)) . pta-subsorts (getKinds (M)) pta-required-ops (getKinds (
+    M)) pta-ops (M, remove-universal-ops (getOps (M))) pta-state-decls (CS) (
+    none) .MembAxSet Eqs Rls endm) .
+Warning: "scc.maude", line 440 (fmod PTA-OPS): didn't expect token Q:
+eq ta-parse ( ( Q <---*HERE*
+Warning: "scc.maude", line 440 (fmod PTA-OPS): no parse for statement
+eq ta-parse ((Q [NeTL], TL)) = Q [ta-parse (NeTL)], ta-parse (TL) .
+Warning: "scc.maude", line 442 (fmod PTA-OPS): bad token qid.
+Warning: "scc.maude", line 441 (fmod PTA-OPS): no parse for statement
+eq ta-parse ((C, TL)) = qid (substr (string (C), 0, _-_ (length (string (C)),
+    4))), ta-parse (TL) .
+Warning: "scc.maude", line 444 (fmod PTA-OPS): bad token empty.
+Warning: "scc.maude", line 444 (fmod PTA-OPS): no parse for statement
+eq ta-parse (empty) = empty .
+Advisory: "scc.maude", line 447 (fmod TERM-STATE-MAP): sort String has been
+    imported from both "prelude.maude", line 678 (fmod STRING) and <automatic>.
+Warning: "scc.maude", line 497 (fmod TERM-STATE-MAP): didn't expect token V:
+eq register-terms ( ( V <---*HERE*
+Warning: "scc.maude", line 497 (fmod TERM-STATE-MAP): no parse for statement
+eq register-terms ((V, TL), TSM) = register-terms (TL, TSM) .
+Warning: "scc.maude", line 498 (fmod TERM-STATE-MAP): didn't expect token Q:
+eq register-terms ( ( Q <---*HERE*
+Warning: "scc.maude", line 498 (fmod TERM-STATE-MAP): no parse for statement
+eq register-terms ((Q [TL], TL'), msize (N) TSM) = if find-term (Q [TL], msize
+    (N) TSM) == notFound then register-terms ((TL, TL'), term (Q [TL], N) msize
+    (N + 1) TSM) else register-terms (TL', msize (N) TSM) fi .
+Warning: "scc.maude", line 504 (fmod TERM-STATE-MAP): didn't expect token C:
+eq register-terms ( ( C <---*HERE*
+Warning: "scc.maude", line 504 (fmod TERM-STATE-MAP): no parse for statement
+eq register-terms ((C, TL), msize (N) TSM) = if find-term (C, msize (N) TSM) ==
+    notFound then register-terms (TL, term (C, N) msize (N + 1) TSM) else
+    register-terms (TL, msize (N) TSM) fi .
+Warning: "scc.maude", line 510 (fmod TERM-STATE-MAP): bad token empty.
+Warning: "scc.maude", line 510 (fmod TERM-STATE-MAP): no parse for statement
+eq register-terms (empty, TSM) = TSM .
+Warning: "scc.maude", line 515 (fmod TERM-STATE-MAP): bad token qid.
+Warning: "scc.maude", line 514 (fmod TERM-STATE-MAP): no parse for statement
+eq term-state (K, N) = qid (kind-name (K) + "Term" + string (N, 10) + "." +
+    state-name (K)) .
+Warning: "scc.maude", line 520 (fmod TERM-STATE-MAP): didn't expect token none:
+eq term-states ( TSM ) = none <---*HERE*
+Warning: "scc.maude", line 520 (fmod TERM-STATE-MAP): no parse for statement
+eq term-states (TSM) = none [owise] .
+Warning: "scc.maude", line 527 (fmod TERM-STATE-MAP): didn't expect token
+    Variable:
+eq term-state ( module ( M ) TSM , T , Mode ) = if T :: Variable <---*HERE*
+Warning: "scc.maude", line 526 (fmod TERM-STATE-MAP): no parse for statement
+eq term-state (module (M) TSM, T, Mode) = if T :: Variable then term-var-state
+    (M, T, Mode) else term-state (get-kind (M, T), find-term (T, module (M)
+    TSM)) fi .
+Warning: "scc.maude", line 536 (fmod TERM-STATE-MAP): didn't expect token T:
+eq term-states ( TSM , ( T <---*HERE*
+Warning: "scc.maude", line 536 (fmod TERM-STATE-MAP): no parse for statement
+eq term-states (TSM, (T, TL), Mode) = term-state (TSM, T, Mode), term-states (
+    TSM, TL, Mode) .
+Warning: "scc.maude", line 538 (fmod TERM-STATE-MAP): bad token empty.
+Warning: "scc.maude", line 538 (fmod TERM-STATE-MAP): no parse for statement
+eq term-states (TSM, empty, Mode) = empty .
+Warning: "scc.maude", line 543 (fmod TERM-STATE-MAP): didn't expect token Q:
+eq term-rule ( module ( M ) TSM , Q <---*HERE*
+Warning: "scc.maude", line 543 (fmod TERM-STATE-MAP): no parse for statement
+eq term-rule (module (M) TSM, Q [TL], C, Mode) = pta-rule (Q, get-kinds (M,
+    TL), get-kind (M, Q [TL]), term-states (module (M) TSM, TL, Mode), C) .
+Warning: "scc.maude", line 547 (fmod TERM-STATE-MAP): bad token getName.
+Warning: "scc.maude", line 546 (fmod TERM-STATE-MAP): no parse for statement
+eq term-rule (module (M) TSM, C', C, Mode) = pta-rule (getName (C'), nil,
+    getKind (M, getType (C')), empty, C) .
+Warning: "scc.maude", line 548 (fmod TERM-STATE-MAP): didn't expect token V:
+eq term-rule ( module ( M ) TSM , V <---*HERE*
+Warning: "scc.maude", line 548 (fmod TERM-STATE-MAP): no parse for statement
+eq term-rule (module (M) TSM, V, C, Mode) = pta-erule (term-var-state (M, V,
+    Mode), C) .
+Warning: "scc.maude", line 555 (fmod TERM-STATE-MAP): didn't expect token
+    term-rule:
+eq $term-rules ( TSM , term ( T , N ) TSM' , Mode ) = term-rule <---*HERE*
+Warning: "scc.maude", line 554 (fmod TERM-STATE-MAP): no parse for statement
+eq $term-rules (TSM, term (T, N) TSM', Mode) = term-rule (TSM, T, term-state (
+    TSM, T, Mode), Mode) $term-rules (TSM, TSM', Mode) .
+Warning: "scc.maude", line 557 (fmod TERM-STATE-MAP): didn't expect token none:
+eq $term-rules ( TSM , TSM' , Mode ) = none <---*HERE*
+Warning: "scc.maude", line 557 (fmod TERM-STATE-MAP): no parse for statement
+eq $term-rules (TSM, TSM', Mode) = none [owise] .
+Warning: "scc.maude", line 564 (fmod TERM-STATE-MAP): didn't expect token Mb:
+ceq mb-statemap ( M , Mb <---*HERE*
+Warning: "scc.maude", line 564 (fmod TERM-STATE-MAP): no parse for statement
+ceq mb-statemap (M, Mb Mbs, TSM) = mb-statemap (M, Mbs, register-terms (TL,
+    TSM)) if Q [TL] := lhs (Mb) .
+Warning: "scc.maude", line 572 (fmod TERM-STATE-MAP): didn't expect token Eq:
+ceq eq-statemap ( M , Eq <---*HERE*
+Warning: "scc.maude", line 572 (fmod TERM-STATE-MAP): no parse for statement
+ceq eq-statemap (M, Eq Eqs, TSM) = eq-statemap (M, Eqs, register-terms (TL,
+    TSM)) if Q [TL] := lhs (Eq) .
+Warning: "scc.maude", line 587 (fmod PTA-EMPTINESS-TEST): bad special for
+    operator test-emptiness.
+Warning: "scc.maude", line 579 (fmod PTA-EMPTINESS-TEST): this module contains
+    one or more errors that could not be patched up and thus it cannot be used
+    or imported.
+Advisory: "scc.maude", line 598 (fmod PTA-STATE-NAMES): sort String has been
+    imported from both "prelude.maude", line 678 (fmod STRING) and <automatic>.
+Warning: "scc.maude", line 612 (fmod PTA-STATE-NAMES): bad token qid.
+Warning: "scc.maude", line 612 (fmod PTA-STATE-NAMES): no parse for statement
+eq red-state (K) = qid ("r[" + kind-name (K) + "]." + state-name (K)) .
+Warning: "scc.maude", line 616 (fmod PTA-STATE-NAMES): bad token qid.
+Warning: "scc.maude", line 616 (fmod PTA-STATE-NAMES): no parse for statement
+eq kind-state (K) = qid ("k[" + kind-name (K) + "]." + state-name (K)) .
+Warning: "scc.maude", line 622 (fmod PTA-STATE-NAMES): bad token empty.
+Warning: "scc.maude", line 622 (fmod PTA-STATE-NAMES): no parse for statement
+eq kind-state-list (nil) = empty .
+Warning: "scc.maude", line 631 (fmod SCC-COMMON): unable to use module
+    PTA-EMPTINESS-TEST due to unpatchable errors.
+Advisory: "scc.maude", line 627 (fmod SCC-COMMON): sort String has been
+    imported from both "prelude.maude", line 678 (fmod STRING) and <automatic>.
+Warning: "scc.maude", line 780 (fmod SCC-COMMON): undeclared sort
+    EmptinessResult.
+Warning: "scc.maude", line 667 (fmod SCC-COMMON): bad token getType.
+Warning: "scc.maude", line 667 (fmod SCC-COMMON): no parse for statement
+eq term-var-state (M, V, sca-ctor) = sca-ctor-state (M, getType (V)) .
+Warning: "scc.maude", line 668 (fmod SCC-COMMON): bad token getType.
+Warning: "scc.maude", line 668 (fmod SCC-COMMON): no parse for statement
+eq term-var-state (M, V, sca-def) = sca-def-state (M, getType (V)) .
+Warning: "scc.maude", line 672 (fmod SCC-COMMON): bad token qid.
+Warning: "scc.maude", line 672 (fmod SCC-COMMON): no parse for statement
+eq sca-red-state (K) = qid ("r[" + kind-name (K) + "]." + state-name (K)) .
+Warning: "scc.maude", line 677 (fmod SCC-COMMON): bad token qid.
+Warning: "scc.maude", line 676 (fmod SCC-COMMON): no parse for statement
+eq sca-ctor-state (M, S) = qid ("c" + string (S) + "." + state-name (getKind (
+    M, S))) .
+Warning: "scc.maude", line 678 (fmod SCC-COMMON): bad token getKind.
+Warning: "scc.maude", line 678 (fmod SCC-COMMON): no parse for statement
+eq sca-ctor-state (M, K) = kind-state (getKind (M, K)) .
+Warning: "scc.maude", line 682 (fmod SCC-COMMON): didn't expect token Tp:
+eq sca-ctor-state-list ( M , Tp <---*HERE*
+Warning: "scc.maude", line 682 (fmod SCC-COMMON): no parse for statement
+eq sca-ctor-state-list (M, Tp TpL) = sca-ctor-state (M, Tp),
+    sca-ctor-state-list (M, TpL) .
+Warning: "scc.maude", line 684 (fmod SCC-COMMON): bad token empty.
+Warning: "scc.maude", line 684 (fmod SCC-COMMON): no parse for statement
+eq sca-ctor-state-list (M, nil) = empty .
+Warning: "scc.maude", line 689 (fmod SCC-COMMON): bad token qid.
+Warning: "scc.maude", line 688 (fmod SCC-COMMON): no parse for statement
+eq sca-def-state (M, S) = qid ("d" + string (S) + "." + state-name (getKind (M,
+    S))) .
+Warning: "scc.maude", line 693 (fmod SCC-COMMON): didn't expect token K:
+eq sca-per-kind-states ( K <---*HERE*
+Warning: "scc.maude", line 693 (fmod SCC-COMMON): no parse for statement
+eq sca-per-kind-states (K ; KS) = kind-state (K) ; sca-red-state (K) ;
+    sca-per-kind-states (KS) .
+Warning: "scc.maude", line 695 (fmod SCC-COMMON): didn't expect token none:
+eq sca-per-kind-states ( none <---*HERE*
+Warning: "scc.maude", line 695 (fmod SCC-COMMON): no parse for statement
+eq sca-per-kind-states (none) = none .
+Warning: "scc.maude", line 699 (fmod SCC-COMMON): didn't expect token S:
+eq sca-per-sort-states ( M , S <---*HERE*
+Warning: "scc.maude", line 699 (fmod SCC-COMMON): no parse for statement
+eq sca-per-sort-states (M, S ; SS) = sca-ctor-state (M, S) ; sca-def-state (M,
+    S) ; sca-per-sort-states (M, SS) .
+Warning: "scc.maude", line 702 (fmod SCC-COMMON): didn't expect token none:
+eq sca-per-sort-states ( M , none <---*HERE*
+Warning: "scc.maude", line 702 (fmod SCC-COMMON): no parse for statement
+eq sca-per-sort-states (M, none) = none .
+Warning: "scc.maude", line 708 (fmod SCC-COMMON): bad token getKind.
+Warning: "scc.maude", line 707 (fmod SCC-COMMON): no parse for statement
+eq sca-accept-eqs (M, S ; SS) = (eq 'accept ['_;_ ['!_ [sca-red-state (getKind
+    (M, S))], '!_ [sca-ctor-state (M, S)], sca-def-state (M, S), lit-set-var (
+    "X", getKind (M, S))]] = 'true.Bool [none] .) sca-accept-eqs (M, SS) .
+Warning: "scc.maude", line 714 (fmod SCC-COMMON): didn't expect token none:
+eq sca-accept-eqs ( M , none <---*HERE*
+Warning: "scc.maude", line 714 (fmod SCC-COMMON): no parse for statement
+eq sca-accept-eqs (M, none) = none .
+Warning: "scc.maude", line 730 (fmod SCC-COMMON): didn't expect token pta-rule:
+eq $sca-red-rules ( Q , KL , K KL' , K' , N , NS ) = if N in NS then pta-rule
+    <---*HERE*
+Warning: "scc.maude", line 728 (fmod SCC-COMMON): no parse for statement
+eq $sca-red-rules (Q, KL, K KL', K', N, NS) = if N in NS then pta-rule (Q, KL K
+    KL', K', (kind-state-list (KL), sca-red-state (K), kind-state-list (KL')),
+    sca-red-state (K')) else none fi $sca-red-rules (Q, KL K, KL', K', s N, NS)
+    .
+Warning: "scc.maude", line 738 (fmod SCC-COMMON): didn't expect token none:
+eq $sca-red-rules ( Q , KL , nil , K , N , NS ) = none <---*HERE*
+Warning: "scc.maude", line 738 (fmod SCC-COMMON): no parse for statement
+eq $sca-red-rules (Q, KL, nil, K, N, NS) = none .
+Warning: "scc.maude", line 747 (fmod SCC-COMMON): didn't expect token Eq:
+eq sca-use-eq? ( Eq ) = is-exec? ( Eq ) and not ( drop-bad-eqs and (
+    has-condition? ( Eq <---*HERE*
+Warning: "scc.maude", line 744 (fmod SCC-COMMON): no parse for statement
+eq sca-use-eq? (Eq) = is-exec? (Eq) and not (drop-bad-eqs and (has-condition? (
+    Eq) or not left-linear? (Eq))) .
+Warning: "scc.maude", line 751 (fmod SCC-COMMON): didn't expect token Eq:
+ceq sca-usable-eqs ( Eq <---*HERE*
+Warning: "scc.maude", line 751 (fmod SCC-COMMON): no parse for statement
+ceq sca-usable-eqs (Eq Eqs) = sca-usable-eqs (Eqs) if sca-use-eq? (Eq) = false
+    .
+Warning: "scc.maude", line 758 (fmod SCC-COMMON): didn't expect token Eq:
+eq sca-eq-rules ( M , TSM , Mode , Eq <---*HERE*
+Warning: "scc.maude", line 758 (fmod SCC-COMMON): no parse for statement
+eq sca-eq-rules (M, TSM, Mode, Eq Eqs) = term-rule (TSM, lhs (Eq),
+    sca-red-state (get-kind (M, lhs (Eq))), Mode) sca-eq-rules (M, TSM, Mode,
+    Eqs) .
+Warning: "scc.maude", line 761 (fmod SCC-COMMON): didn't expect token none:
+eq sca-eq-rules ( M , TSM , Mode , none <---*HERE*
+Warning: "scc.maude", line 761 (fmod SCC-COMMON): no parse for statement
+eq sca-eq-rules (M, TSM, Mode, none) = none .
+Warning: "scc.maude", line 766 (fmod SCC-COMMON): bad token qid.
+Warning: "scc.maude", line 766 (fmod SCC-COMMON): no parse for statement
+eq to-ctor (C) = qid ("c" + substr (string (C), 1, length (string (C)))) .
+Warning: "scc.maude", line 772 (fmod SCC-COMMON): bad token qid.
+Warning: "scc.maude", line 771 (fmod SCC-COMMON): no parse for statement
+ceq sca-parse-sort (C ; CS) = qid (substr (string (C), 1, _-_ (rfind (string (
+    C), ".", length (string (C))), 1))) if substr (string (C), 0, 1) = "d" /\ (
+    to-ctor (C) in CS) = false .
+Warning: "scc.maude", line 781 (fmod SCC-COMMON): bad token empty.
+Warning: "scc.maude", line 781 (fmod SCC-COMMON): no parse for statement
+eq sca-result (empty) = complete .
+Warning: "scc.maude", line 782 (fmod SCC-COMMON): bad token accepting.
+Warning: "scc.maude", line 782 (fmod SCC-COMMON): no parse for statement
+eq sca-result (accepting (T, CS)) = counterexample (ta-parse (T),
+    sca-parse-sort (CS)) .
+Warning: "scc.maude", line 784 (fmod SCC-COMMON): didn't expect token
+    invalid-input:
+eq sca-result ( invalid-input <---*HERE*
+Warning: "scc.maude", line 784 (fmod SCC-COMMON): no parse for statement
+eq sca-result (invalid-input) = invalid-input .
+Advisory: "scc.maude", line 789 (fmod SCC): sort String has been imported from
+    both "prelude.maude", line 678 (fmod STRING) and <automatic>.
+Warning: "scc.maude", line 822 (fmod SCC): bad token subsort.
+Warning: "scc.maude", line 822 (fmod SCC): no parse for statement
+eq sca-subsort-rules (M, (subsort S < S' .) SSDS) = pta-erule (sca-ctor-state (
+    M, S), sca-ctor-state (M, S')) sca-subsort-rules (M, SSDS) .
+Warning: "scc.maude", line 825 (fmod SCC): didn't expect token none:
+eq sca-subsort-rules ( M , none <---*HERE*
+Warning: "scc.maude", line 825 (fmod SCC): no parse for statement
+eq sca-subsort-rules (M, none) = none .
+Warning: "scc.maude", line 833 (fmod SCC): bad token getKind.
+Warning: "scc.maude", line 829 (fmod SCC): no parse for statement
+eq sca-op-rules (M, Op Ops) = if output (Op) :: Sort then pta-rule (identifier
+    (Op), get-kinds (M, inputs (Op)), getKind (M, output (Op)),
+    sca-ctor-state-list (M, inputs (Op)), if is-ctor? (Op) then sca-ctor-state
+    (M, output (Op)) else if is-special (Op) then sca-red-state (getKind (M,
+    output (Op))) else sca-def-state (M, output (Op)) fi fi) else none fi
+    pta-rule (identifier (Op), get-kinds (M, inputs (Op)), getKind (M, output (
+    Op)), kind-state-list (get-kinds (M, inputs (Op))), kind-state (getKind (M,
+    output (Op)))) sca-red-rules (identifier (Op), get-kinds (M, inputs (Op)),
+    getKind (M, output (Op)), nats-in-range (0, size (inputs (Op)) + 1))
+    sca-op-rules (M, Ops) .
+Warning: "scc.maude", line 854 (fmod SCC): didn't expect token none:
+eq sca-op-rules ( M , none <---*HERE*
+Warning: "scc.maude", line 854 (fmod SCC): no parse for statement
+eq sca-op-rules (M, none) = none .
+Warning: "scc.maude", line 857 (fmod SCC): didn't expect token Mb:
+eq sca-mb-rules ( M , TSM , Mb <---*HERE*
+Warning: "scc.maude", line 857 (fmod SCC): no parse for statement
+eq sca-mb-rules (M, TSM, Mb Mbs) = term-rule (TSM, lhs (Mb), if is-ctor? (Mb)
+    then sca-ctor-state (M, rhs (Mb)) else sca-def-state (M, rhs (Mb)) fi,
+    sca-ctor) sca-mb-rules (M, TSM, Mbs) .
+Warning: "scc.maude", line 866 (fmod SCC): didn't expect token none:
+eq sca-mb-rules ( M , TSM , none <---*HERE*
+Warning: "scc.maude", line 866 (fmod SCC): no parse for statement
+eq sca-mb-rules (M, TSM, none) = none .
+Warning: "scc.maude", line 873 (fmod SCC): bad token qid.
+Warning: "scc.maude", line 871 (fmod SCC): no parse for statement
+ceq sca (M) = make-pta (M, qid (string (getName (M)) + "-SCA"),
+    sca-per-kind-states (getKinds (M)) ; sca-per-sort-states (M, getSorts (M))
+    ; term-states (TSM), sca-accept-eqs (M, getSorts (M)), sca-subsort-rules (
+    M, getSubsorts (M)) term-rules (TSM, sca-ctor) sca-op-rules (M,
+    remove-universal-ops (getOps (M))) sca-mb-rules (M, TSM, getMbs (M))
+    sca-eq-rules (M, TSM, sca-ctor, sca-usable-eqs (getEqs (M)))) if TSM :=
+    eq-statemap (M, sca-usable-eqs (getEqs (M)), mb-statemap (M, getMbs (M),
+    init (M))) .
+Warning: "scc.maude", line 892 (fmod SCC): bad token wellFormed.
+Warning: "scc.maude", line 891 (fmod SCC): no parse for statement
+eq scc (M) = if wellFormed (M) and-then (getImports (M) == nil) then sca-result
+    (test-emptiness (sca (M))) else invalid-input fi .
+Advisory: "scc.maude", line 899 (fmod MU-SCC): sort String has been imported
+    from both "prelude.maude", line 678 (fmod STRING) and <automatic>.
+Warning: "scc.maude", line 918 (fmod MU-SCC): bad token subsort.
+Warning: "scc.maude", line 918 (fmod MU-SCC): no parse for statement
+eq mu-sca-subsort-rules (M, (subsort S < S' .) SSDS) = pta-erule (
+    sca-ctor-state (M, S), sca-ctor-state (M, S')) pta-erule (sca-def-state (M,
+    S), sca-def-state (M, S')) mu-sca-subsort-rules (M, SSDS) .
+Warning: "scc.maude", line 922 (fmod MU-SCC): didn't expect token none:
+eq mu-sca-subsort-rules ( M , none <---*HERE*
+Warning: "scc.maude", line 922 (fmod MU-SCC): no parse for statement
+eq mu-sca-subsort-rules (M, none) = none .
+Warning: "scc.maude", line 932 (fmod MU-SCC): didn't expect token Tp:
+eq $mu-sca-type-state-list ( M , Tp <---*HERE*
+Warning: "scc.maude", line 932 (fmod MU-SCC): no parse for statement
+eq $mu-sca-type-state-list (M, Tp TpL, N, NS) = (if N in NS then sca-ctor-state
+    (M, Tp) else sca-def-state (M, Tp) fi), $mu-sca-type-state-list (M, TpL, s
+    N, NS) .
+Warning: "scc.maude", line 935 (fmod MU-SCC): bad token empty.
+Warning: "scc.maude", line 935 (fmod MU-SCC): no parse for statement
+eq $mu-sca-type-state-list (M, nil, N, NS) = empty .
+Warning: "scc.maude", line 943 (fmod MU-SCC): bad token getKind.
+Warning: "scc.maude", line 939 (fmod MU-SCC): no parse for statement
+eq mu-sca-op-rules (M, Op Ops) = if output (Op) :: Sort then pta-rule (
+    identifier (Op), get-kinds (M, inputs (Op)), getKind (M, output (Op)),
+    mu-sca-type-state-list (M, inputs (Op), none), sca-def-state (M, output (
+    Op))) if is-ctor? (Op) then pta-rule (identifier (Op), get-kinds (M, inputs
+    (Op)), getKind (M, output (Op)), mu-sca-type-state-list (M, inputs (Op), mu
+    (Op)), sca-ctor-state (M, output (Op))) else if is-special (Op) then
+    pta-rule (identifier (Op), get-kinds (M, inputs (Op)), getKind (M, output (
+    Op)), mu-sca-type-state-list (M, inputs (Op), mu (Op)), sca-red-state (
+    getKind (M, output (Op)))) else none fi fi else none fi pta-rule (
+    identifier (Op), get-kinds (M, inputs (Op)), getKind (M, output (Op)),
+    kind-state-list (get-kinds (M, inputs (Op))), kind-state (getKind (M,
+    output (Op)))) sca-red-rules (identifier (Op), get-kinds (M, inputs (Op)),
+    getKind (M, output (Op)), mu (Op)) mu-sca-op-rules (M, Ops) .
+Warning: "scc.maude", line 973 (fmod MU-SCC): didn't expect token none:
+eq mu-sca-op-rules ( M , none <---*HERE*
+Warning: "scc.maude", line 973 (fmod MU-SCC): no parse for statement
+eq mu-sca-op-rules (M, none) = none .
+Warning: "scc.maude", line 980 (fmod MU-SCC): bad token qid.
+Warning: "scc.maude", line 978 (fmod MU-SCC): no parse for statement
+ceq mu-sca (M) = make-pta (M, qid (string (getName (M)) + "-MU-SCA"),
+    sca-per-kind-states (getKinds (M)) ; sca-per-sort-states (M, getSorts (M))
+    ; term-states (TSM), sca-accept-eqs (M, getSorts (M)), mu-sca-subsort-rules
+    (M, getSubsorts (M)) term-rules (TSM, sca-def) mu-sca-op-rules (M,
+    remove-universal-ops (getOps (M))) sca-eq-rules (M, TSM, sca-def,
+    sca-usable-eqs (getEqs (M)))) if getMbs (M) = none /\ TSM := eq-statemap (
+    M, sca-usable-eqs (getEqs (M)), init (M)) .
+Warning: "scc.maude", line 998 (fmod MU-SCC): bad token wellFormed.
+Warning: "scc.maude", line 997 (fmod MU-SCC): no parse for statement
+eq mu-scc (M) = if wellFormed (M) and-then (getImports (M) == nil) then
+    sca-result (test-emptiness (mu-sca (M))) else invalid-input fi .
+Warning: "scc.maude", line 1009 (fmod CCC): unable to use module
+    PTA-EMPTINESS-TEST due to unpatchable errors.
+Advisory: "scc.maude", line 1006 (fmod CCC): sort String has been imported from
+    both "prelude.maude", line 678 (fmod STRING) and <automatic>.
+Warning: "scc.maude", line 1190 (fmod CCC): undeclared sort EmptinessResult.
+Warning: "scc.maude", line 1036 (fmod CCC): bad token qid.
+Warning: "scc.maude", line 1036 (fmod CCC): no parse for statement
+eq mu-red-state (K) = qid ("rmu[" + kind-name (K) + "]." + state-name (K)) .
+Warning: "scc.maude", line 1041 (fmod CCC): bad token qid.
+Warning: "scc.maude", line 1040 (fmod CCC): no parse for statement
+eq cca-type-state (M, S) = qid ("p" + string (S) + "." + state-name (getKind (
+    M, S))) .
+Warning: "scc.maude", line 1042 (fmod CCC): didn't expect token K:
+eq cca-type-state ( M , K <---*HERE*
+Warning: "scc.maude", line 1042 (fmod CCC): no parse for statement
+eq cca-type-state (M, K) = kind-state (K) .
+Warning: "scc.maude", line 1046 (fmod CCC): didn't expect token Tp:
+eq cca-type-state-list ( M , Tp <---*HERE*
+Warning: "scc.maude", line 1046 (fmod CCC): no parse for statement
+eq cca-type-state-list (M, Tp TpL) = cca-type-state (M, Tp),
+    cca-type-state-list (M, TpL) .
+Warning: "scc.maude", line 1048 (fmod CCC): bad token empty.
+Warning: "scc.maude", line 1048 (fmod CCC): no parse for statement
+eq cca-type-state-list (M, nil) = empty .
+Warning: "scc.maude", line 1052 (fmod CCC): didn't expect token K:
+eq cca-per-kind-states ( K <---*HERE*
+Warning: "scc.maude", line 1052 (fmod CCC): no parse for statement
+eq cca-per-kind-states (K ; KS) = kind-state (K) ; mu-red-state (K) ; red-state
+    (K) ; cca-per-kind-states (KS) .
+Warning: "scc.maude", line 1055 (fmod CCC): didn't expect token none:
+eq cca-per-kind-states ( none <---*HERE*
+Warning: "scc.maude", line 1055 (fmod CCC): no parse for statement
+eq cca-per-kind-states (none) = none .
+Warning: "scc.maude", line 1058 (fmod CCC): didn't expect token S:
+eq cca-per-sort-states ( M , S <---*HERE*
+Warning: "scc.maude", line 1058 (fmod CCC): no parse for statement
+eq cca-per-sort-states (M, S ; SS) = cca-type-state (M, S) ;
+    cca-per-sort-states (M, SS) .
+Warning: "scc.maude", line 1060 (fmod CCC): didn't expect token none:
+eq cca-per-sort-states ( M , none <---*HERE*
+Warning: "scc.maude", line 1060 (fmod CCC): no parse for statement
+eq cca-per-sort-states (M, none) = none .
+Warning: "scc.maude", line 1063 (fmod CCC): bad token getType.
+Warning: "scc.maude", line 1063 (fmod CCC): no parse for statement
+eq term-var-state (M, V, cca) = cca-type-state (M, getType (V)) .
+Warning: "scc.maude", line 1069 (fmod CCC): bad token maximalSorts.
+Warning: "scc.maude", line 1068 (fmod CCC): no parse for statement
+eq cca-accept-eqs (M, K ; KS) = $cca-accept-eqs (M, K, maximalSorts (M, K))
+    cca-accept-eqs (M, KS) .
+Warning: "scc.maude", line 1071 (fmod CCC): didn't expect token none:
+eq cca-accept-eqs ( M , none <---*HERE*
+Warning: "scc.maude", line 1071 (fmod CCC): no parse for statement
+eq cca-accept-eqs (M, none) = none .
+Warning: "scc.maude", line 1074 (fmod CCC): didn't expect token S:
+eq $cca-accept-eqs ( M , K , S <---*HERE*
+Warning: "scc.maude", line 1074 (fmod CCC): no parse for statement
+eq $cca-accept-eqs (M, K, S ; SS) = (eq 'accept ['_;_ [cca-type-state (M, S),
+    red-state (K), '!_ [mu-red-state (K)], lit-set-var ("X", K)]] = 'true.Bool
+    [none] .) $cca-accept-eqs (M, K, SS) .
+Warning: "scc.maude", line 1081 (fmod CCC): didn't expect token none:
+eq $cca-accept-eqs ( M , K , none <---*HERE*
+Warning: "scc.maude", line 1081 (fmod CCC): no parse for statement
+eq $cca-accept-eqs (M, K, none) = none .
+Warning: "scc.maude", line 1085 (fmod CCC): bad token subsort.
+Warning: "scc.maude", line 1085 (fmod CCC): no parse for statement
+eq cca-subsort-rules (M, (subsort S < S' .) SSDS) = pta-erule (cca-type-state (
+    M, S), cca-type-state (M, S')) cca-subsort-rules (M, SSDS) .
+Warning: "scc.maude", line 1088 (fmod CCC): didn't expect token none:
+eq cca-subsort-rules ( M , none <---*HERE*
+Warning: "scc.maude", line 1088 (fmod CCC): no parse for statement
+eq cca-subsort-rules (M, none) = none .
+Warning: "scc.maude", line 1094 (fmod CCC): didn't expect token pta-rule:
+eq $cca-red-rules ( Q , KL , K KL' , K' , N , NS ) = pta-rule <---*HERE*
+Warning: "scc.maude", line 1093 (fmod CCC): no parse for statement
+eq $cca-red-rules (Q, KL, K KL', K', N, NS) = pta-rule (Q, KL K KL', K', (
+    kind-state-list (KL), red-state (K), kind-state-list (KL')), red-state (
+    K')) if N in NS then pta-rule (Q, KL K KL', K', (kind-state-list (KL),
+    mu-red-state (K), kind-state-list (KL')), mu-red-state (K')) else none fi
+    $cca-red-rules (Q, KL K, KL', K', s N, NS) .
+Warning: "scc.maude", line 1105 (fmod CCC): didn't expect token none:
+eq $cca-red-rules ( Q , KL , nil , K , N , NS ) = none <---*HERE*
+Warning: "scc.maude", line 1105 (fmod CCC): no parse for statement
+eq $cca-red-rules (Q, KL, nil, K, N, NS) = none .
+Warning: "scc.maude", line 1118 (fmod CCC): bad token getKind.
+Warning: "scc.maude", line 1114 (fmod CCC): no parse for statement
+eq cca-op-rules (M, Op Ops) = if output (Op) :: Sort then pta-rule (identifier
+    (Op), get-kinds (M, inputs (Op)), getKind (M, output (Op)),
+    cca-type-state-list (M, inputs (Op)), cca-type-state (M, output (Op))) else
+    none fi if output (Op) :: Sort and-then not is-ctor? (Op) and-then
+    is-special (Op) then pta-rule (identifier (Op), get-kinds (M, inputs (Op)),
+    getKind (M, output (Op)), cca-type-state-list (M, inputs (Op)),
+    mu-red-state (getKind (M, output (Op)))) else none fi pta-rule (identifier
+    (Op), get-kinds (M, inputs (Op)), getKind (M, output (Op)), kind-state-list
+    (get-kinds (M, inputs (Op))), kind-state (getKind (M, output (Op))))
+    cca-red-rules (identifier (Op), get-kinds (M, inputs (Op)), getKind (M,
+    output (Op)), mu (Op)) cca-op-rules (M, Ops) .
+Warning: "scc.maude", line 1144 (fmod CCC): didn't expect token none:
+eq cca-op-rules ( M , none <---*HERE*
+Warning: "scc.maude", line 1144 (fmod CCC): no parse for statement
+eq cca-op-rules (M, none) = none .
+Warning: "scc.maude", line 1148 (fmod CCC): didn't expect token Mb:
+eq cca-mb-rules ( M , TSM , Mb <---*HERE*
+Warning: "scc.maude", line 1148 (fmod CCC): no parse for statement
+eq cca-mb-rules (M, TSM, Mb Mbs) = term-rule (TSM, lhs (Mb), cca-type-state (M,
+    rhs (Mb)), cca) cca-mb-rules (M, TSM, Mbs) .
+Warning: "scc.maude", line 1151 (fmod CCC): didn't expect token none:
+eq cca-mb-rules ( M , TSM , none <---*HERE*
+Warning: "scc.maude", line 1151 (fmod CCC): no parse for statement
+eq cca-mb-rules (M, TSM, none) = none .
+Warning: "scc.maude", line 1155 (fmod CCC): didn't expect token Eq:
+eq cca-eq-rules ( M , TSM , Eq <---*HERE*
+Warning: "scc.maude", line 1155 (fmod CCC): no parse for statement
+eq cca-eq-rules (M, TSM, Eq Eqs) = term-rule (TSM, lhs (Eq), mu-red-state (
+    get-kind (M, lhs (Eq))), cca) cca-eq-rules (M, TSM, Eqs) .
+Warning: "scc.maude", line 1158 (fmod CCC): didn't expect token none:
+eq cca-eq-rules ( M , TSM , none <---*HERE*
+Warning: "scc.maude", line 1158 (fmod CCC): no parse for statement
+eq cca-eq-rules (M, TSM, none) = none .
+Warning: "scc.maude", line 1162 (fmod CCC): didn't expect token K:
+eq cca-r-epsilon-rules ( K <---*HERE*
+Warning: "scc.maude", line 1162 (fmod CCC): no parse for statement
+eq cca-r-epsilon-rules (K ; KS) = pta-erule (mu-red-state (K), red-state (K))
+    cca-r-epsilon-rules (KS) .
+Warning: "scc.maude", line 1165 (fmod CCC): didn't expect token none:
+eq cca-r-epsilon-rules ( none <---*HERE*
+Warning: "scc.maude", line 1165 (fmod CCC): no parse for statement
+eq cca-r-epsilon-rules (none) = none .
+Warning: "scc.maude", line 1171 (fmod CCC): bad token qid.
+Warning: "scc.maude", line 1169 (fmod CCC): no parse for statement
+ceq cca (M) = make-pta (M, qid (string (getName (M)) + "-CCA"),
+    cca-per-kind-states (getKinds (M)) ; cca-per-sort-states (M, getSorts (M))
+    ; term-states (TSM), cca-accept-eqs (M, getKinds (M)), cca-op-rules (M,
+    remove-universal-ops (getOps (M))) cca-mb-rules (M, TSM, getMbs (M))
+    cca-subsort-rules (M, getSubsorts (M)) term-rules (TSM, cca) cca-eq-rules (
+    M, TSM, getEqs (M)) cca-r-epsilon-rules (getKinds (M))) if TSM :=
+    eq-statemap (M, getEqs (M), mb-statemap (M, getMbs (M), init (M))) .
+Warning: "scc.maude", line 1191 (fmod CCC): bad token empty.
+Warning: "scc.maude", line 1191 (fmod CCC): no parse for statement
+eq cca-result (empty) = complete .
+Warning: "scc.maude", line 1192 (fmod CCC): bad token accepting.
+Warning: "scc.maude", line 1192 (fmod CCC): no parse for statement
+eq cca-result (accepting (T, CS)) = counterexample (ta-parse (T)) .
+Warning: "scc.maude", line 1193 (fmod CCC): didn't expect token invalid-input:
+eq cca-result ( invalid-input <---*HERE*
+Warning: "scc.maude", line 1193 (fmod CCC): no parse for statement
+eq cca-result (invalid-input) = invalid-input .
+Warning: "scc.maude", line 1198 (fmod CCC): bad token wellFormed.
+Warning: "scc.maude", line 1197 (fmod CCC): no parse for statement
+eq ccc (M) = if wellFormed (M) and-then (getImports (M) == nil) then cca-result
+    (test-emptiness (cca (M))) else invalid-input fi .
+Advisory: "scc.maude", line 1207 (fmod SCC-CHECKER): sort String has been
+    imported from both "prelude.maude", line 678 (fmod STRING) and <automatic>.
+Warning: "scc.maude", line 1218 (fmod SCC-CHECKER): undeclared sort QidList.
+Warning: "scc.maude", line 1223 (fmod SCC-CHECKER): didn't expect token '\!:
+eq warning-font ( QL ) = '\! <---*HERE*
+Warning: "scc.maude", line 1223 (fmod SCC-CHECKER): no parse for statement
+eq warning-font (QL) = '\! '\y QL '\o .
+Warning: "scc.maude", line 1226 (fmod SCC-CHECKER): didn't expect token
+    'Warning::
+eq warning ( QL ) = warning-font ( 'Warning: <---*HERE*
+Warning: "scc.maude", line 1226 (fmod SCC-CHECKER): no parse for statement
+eq warning (QL) = warning-font ('Warning:) QL '\n .
+Warning: "scc.maude", line 1234 (fmod SCC-CHECKER): bad token idem.
+Warning: "scc.maude", line 1234 (fmod SCC-CHECKER): no parse for statement
+eq check-attrs (idem AS, QL) = warning ('Ignoring 'idempotence 'for QL '.)
+    check-attrs (AS, QL) .
+Warning: "scc.maude", line 1237 (fmod SCC-CHECKER): didn't expect token nil:
+eq check-attrs ( AS , QL ) = nil <---*HERE*
+Warning: "scc.maude", line 1237 (fmod SCC-CHECKER): no parse for statement
+eq check-attrs (AS, QL) = nil [owise] .
+Warning: "scc.maude", line 1241 (fmod SCC-CHECKER): bad token op.
+Warning: "scc.maude", line 1241 (fmod SCC-CHECKER): no parse for statement
+eq check-ops ((op Q : TpL -> Tp [AS] .) Ops) = check-attrs (AS, Q ': TpL '->
+    Tp) check-ops (Ops) .
+Warning: "scc.maude", line 1244 (fmod SCC-CHECKER): didn't expect token none:
+eq check-ops ( none <---*HERE*
+Warning: "scc.maude", line 1244 (fmod SCC-CHECKER): no parse for statement
+eq check-ops (none) = nil .
+Warning: "scc.maude", line 1250 (fmod SCC-CHECKER): didn't expect token 'This:
+eq check-mbs ( Mbs ) = if has-condition? ( Mbs ) then warning ( 'This
+    <---*HERE*
+Warning: "scc.maude", line 1248 (fmod SCC-CHECKER): no parse for statement
+eq check-mbs (Mbs) = if has-condition? (Mbs) then warning ('This 'module 'has
+    'conditional 'memberships. 'The 'sufficient 'completeness 'checker 'will
+    'treat 'these 'as 'unconditional. warning-font ('This 'is 'unsound!)) else
+    nil fi if not left-linear? (Mbs) then warning ('This 'module 'has
+    'memberships 'that 'are 'not 'left-linear. 'The 'sufficient 'completeness
+    'checker 'will 'rename 'variables 'as 'needed 'to 'drop 'the 'non-linearity
+    'conditions. warning-font ('This 'is 'unsound!)) else nil fi .
+Warning: "scc.maude", line 1270 (fmod SCC-CHECKER): didn't expect token 'This:
+eq check-eqs ( Eqs ) = if has-condition? ( Eqs ) then if drop-bad-eqs then
+    warning ( 'This <---*HERE*
+Warning: "scc.maude", line 1267 (fmod SCC-CHECKER): no parse for statement
+eq check-eqs (Eqs) = if has-condition? (Eqs) then if drop-bad-eqs then warning
+    ('This 'module 'has 'conditional 'equations 'which 'will 'be 'ignored 'when
+    'checking 'sufficient 'completeness.) else warning ('This 'module 'has
+    'conditional 'equations 'which 'will 'be 'treated 'as 'unconditional.) fi
+    else nil fi if not left-linear? (Eqs) then if drop-bad-eqs then warning (
+    'This 'module 'has 'equations 'that 'are 'not 'left-linear 'which 'will 'be
+    'ignored 'when 'checking.) else warning ('This 'module 'has 'equations
+    'that 'are 'not 'left-linear. 'The 'sufficient 'completeness 'checker 'will
+    'rename 'variables 'as 'needed 'to 'drop 'the 'non-linearity 'conditions.)
+    fi else nil fi .
+Warning: "scc.maude", line 1298 (fmod SCC-CHECKER): bad token getImports.
+Warning: "scc.maude", line 1297 (fmod SCC-CHECKER): no parse for statement
+eq scc-check-module (M) = if getImports (M) == nil then nil else warning ('The
+    'module 'has 'not 'been 'flattened.) fi check-ops (getOps (M)) check-mbs (
+    getMbs (M)) check-eqs (getEqs (M)) .
+Advisory: "scc.maude", line 1321 (mod CC-LOOP): sort String has been imported
+    from both "prelude.maude", line 678 (fmod STRING) and <automatic>.
+Advisory: "scc.maude", line 1321 (mod CC-LOOP): sort EmptinessResult has been
+    imported from both <automatic> and <automatic>.
+Advisory: "scc.maude", line 1321 (mod CC-LOOP): sort Qid has been imported from
+    both "prelude.maude", line 818 (fmod QID) and <automatic>.
+Advisory: "scc.maude", line 1321 (mod CC-LOOP): sort QidList has been imported
+    from both "prelude.maude", line 993 (fmod LIST) and <automatic>.
+Warning: "scc.maude", line 1337 (mod CC-LOOP): undeclared sort ResultPair.
+Warning: "scc.maude", line 1368 (mod CC-LOOP): didn't expect token getEqs:
+eq sound-analysis? ( M ) = ( drop-bad-eqs or-else ( check-eqs ( getEqs
+    <---*HERE*
+Warning: "scc.maude", line 1367 (mod CC-LOOP): no parse for statement
+eq sound-analysis? (M) = (drop-bad-eqs or-else (check-eqs (getEqs (M)) == nil))
+    and-then (check-mbs (getMbs (M)) == nil) .
+Warning: "scc.maude", line 1373 (mod CC-LOOP): didn't expect token getEqs:
+eq complete-analysis? ( M ) = ( not drop-bad-eqs or-else check-eqs ( getEqs
+    <---*HERE*
+Warning: "scc.maude", line 1372 (mod CC-LOOP): no parse for statement
+eq complete-analysis? (M) = (not drop-bad-eqs or-else check-eqs (getEqs (M)) ==
+    nil) and-then (check-mbs (getMbs (M)) == nil) .
+Warning: "scc.maude", line 1378 (mod CC-LOOP): didn't expect token Op:
+eq ctor-ops ( M , Op <---*HERE*
+Warning: "scc.maude", line 1378 (mod CC-LOOP): no parse for statement
+eq ctor-ops (M, Op Ops) = if is-universal-op? (Op) or-else is-ctor? (Op) then
+    Op ctor-ops (M, Ops) else (op identifier (Op) : get-kinds (M, inputs (Op))
+    -> getKind (M, output (Op)) [attrs (Op)] .) ctor-ops (M, Ops) fi .
+Warning: "scc.maude", line 1387 (mod CC-LOOP): didn't expect token none:
+eq ctor-ops ( M , none <---*HERE*
+Warning: "scc.maude", line 1387 (mod CC-LOOP): no parse for statement
+eq ctor-ops (M, none) = none .
+Warning: "scc.maude", line 1391 (mod CC-LOOP): didn't expect token Mb:
+eq ctor-mbs ( Mb <---*HERE*
+Warning: "scc.maude", line 1391 (mod CC-LOOP): no parse for statement
+eq ctor-mbs (Mb Mbs) = if is-ctor? (Mb) then Mb ctor-mbs (Mbs) else ctor-mbs (
+    Mbs) fi .
+Warning: "scc.maude", line 1397 (mod CC-LOOP): didn't expect token none:
+eq ctor-mbs ( none <---*HERE*
+Warning: "scc.maude", line 1397 (mod CC-LOOP): no parse for statement
+eq ctor-mbs (none) = none .
+Warning: "scc.maude", line 1401 (mod CC-LOOP): didn't expect token fmod:
+eq ctor-subsystem ( M , fmod <---*HERE*
+Warning: "scc.maude", line 1401 (mod CC-LOOP): no parse for statement
+eq ctor-subsystem (M, fmod Q is IL sorts SS . SSDS Ops Mbs Eqs endfm) = fmod Q
+    is IL sorts SS . SSDS ctor-ops (M, Ops) ctor-mbs (Mbs) Eqs endfm .
+Warning: "scc.maude", line 1403 (mod CC-LOOP): didn't expect token mod:
+eq ctor-subsystem ( M , mod <---*HERE*
+Warning: "scc.maude", line 1403 (mod CC-LOOP): no parse for statement
+eq ctor-subsystem (M, mod Q is IL sorts SS . SSDS Ops Mbs Eqs Rls endm) = mod Q
+    is IL sorts SS . SSDS ctor-ops (M, Ops) ctor-mbs (Mbs) Eqs Rls endm .
+Warning: "scc.maude", line 1405 (mod CC-LOOP): didn't expect token fth:
+eq ctor-subsystem ( M , fth <---*HERE*
+Warning: "scc.maude", line 1405 (mod CC-LOOP): no parse for statement
+eq ctor-subsystem (M, fth Q is IL sorts SS . SSDS Ops Mbs Eqs endfth) = fth Q
+    is IL sorts SS . SSDS ctor-ops (M, Ops) ctor-mbs (Mbs) Eqs endfth .
+Warning: "scc.maude", line 1407 (mod CC-LOOP): didn't expect token th:
+eq ctor-subsystem ( M , th <---*HERE*
+Warning: "scc.maude", line 1407 (mod CC-LOOP): no parse for statement
+eq ctor-subsystem (M, th Q is IL sorts SS . SSDS Ops Mbs Eqs Rls endth) = th Q
+    is IL sorts SS . SSDS ctor-ops (M, Ops) ctor-mbs (Mbs) Eqs Rls endth .
+Warning: "scc.maude", line 1415 (mod CC-LOOP): didn't expect token Eq:
+ceq match-eq? ( M , T , Eq <---*HERE*
+Warning: "scc.maude", line 1415 (mod CC-LOOP): no parse for statement
+ceq match-eq? (M, T, Eq Eqs) = true if is-exec? (Eq) /\ get-kind (M, T) =
+    get-kind (M, lhs (Eq)) /\ metaXmatch (M, lhs (Eq), T, condition (Eq), 0,
+    unbounded, 0) : MatchPair .
+Warning: "scc.maude", line 1422 (mod CC-LOOP): didn't expect token getEqs:
+eq is-reducible? ( M , T ) = match-eq? ( M , T , getEqs <---*HERE*
+Warning: "scc.maude", line 1422 (mod CC-LOOP): no parse for statement
+eq is-reducible? (M, T) = match-eq? (M, T, getEqs (M)) .
+Warning: "scc.maude", line 1426 (mod CC-LOOP): didn't expect token (:
+eq true-counterexample? ( M , T ) = leastSort ( <---*HERE*
+Warning: "scc.maude", line 1425 (mod CC-LOOP): no parse for statement
+eq true-counterexample? (M, T) = leastSort (M, T) =/= leastSort (ctor-subsystem
+    (M), T) and-then not is-reducible? (M, T) .
+Warning: "scc.maude", line 1439 (mod CC-LOOP): didn't expect token getName:
+eq scc-scan-result ( M , complete , true ) = if sound-analysis? ( M ) then '\!
+    '\g 'Success: '\o '\c getName <---*HERE*
+Warning: "scc.maude", line 1437 (mod CC-LOOP): no parse for statement
+eq scc-scan-result (M, complete, true) = if sound-analysis? (M) then '\! '\g
+    'Success: '\o '\c getName (M) '\o 'is 'mu-sufficiently 'complete 'under
+    'the 'assumption 'that 'it 'is 'ground 'mu-weakly 'normalizing '`, '
+    'ground 'mu-confluent '`, ' 'and 'ground 'mu-sort-decreasing. else
+    warning-font ('Maybe:) 'No 'counterexamples 'were 'found 'when 'checking
+    'mu-sufficient 'completeness. 'However '`, ' '\c getName (M) '\o 'may
+    'still 'not 'be 'sufficiently 'complete. fi .
+Warning: "scc.maude", line 1452 (mod CC-LOOP): didn't expect token getName:
+eq scc-scan-result ( M , complete , false ) = if sound-analysis? ( M ) then '\!
+    '\g 'Success: '\o '\c getName <---*HERE*
+Warning: "scc.maude", line 1450 (mod CC-LOOP): no parse for statement
+eq scc-scan-result (M, complete, false) = if sound-analysis? (M) then '\! '\g
+    'Success: '\o '\c getName (M) '\o 'is 'sufficiently 'complete 'under 'the
+    'assumption 'that 'it 'is 'ground 'weakly-normalizing '`, ' 'confluent '`,
+    ' 'and 'ground 'sort-decreasing. else warning-font ('Maybe:) 'No
+    'counterexamples 'were 'found 'when 'checking 'sufficient 'completeness.
+    'However '`, ' '\c getName (M) '\o 'may 'still 'not 'be 'sufficiently
+    'complete. fi .
+Warning: "scc.maude", line 1464 (mod CC-LOOP): didn't expect token
+    metaPrettyPrint:
+eq scc-scan-result ( M , counterexample ( T , S ) , true ) = if
+    complete-analysis? ( M ) then failure ( 'The 'term '\m metaPrettyPrint
+    <---*HERE*
+Warning: "scc.maude", line 1462 (mod CC-LOOP): no parse for statement
+eq scc-scan-result (M, counterexample (T, S), true) = if complete-analysis? (M)
+    then failure ('The 'term '\m metaPrettyPrint (M, T, mixfix) '\o ' 'is 'an
+    'mu-irreducible 'term 'with 'sort '\m S '\o 'in '\c getName (M) '\o 'with
+    'defined 'symbols 'in 'replacement 'positions.) else failure ('The 'term
+    '\m metaPrettyPrint (M, T, mixfix) '\o 'was 'found 'to 'be 'a
+    'counterexample. 'Since 'the 'analysis 'is 'incomplete '`, ' 'it 'may 'not
+    'be 'a 'real 'counterexample.) fi .
+Warning: "scc.maude", line 1474 (mod CC-LOOP): didn't expect token
+    metaPrettyPrint:
+eq scc-scan-result ( M , counterexample ( T , S ) , false ) = if
+    complete-analysis? ( M ) then failure ( 'The 'term '\m metaPrettyPrint
+    <---*HERE*
+Warning: "scc.maude", line 1472 (mod CC-LOOP): no parse for statement
+eq scc-scan-result (M, counterexample (T, S), false) = if complete-analysis? (
+    M) then failure ('The 'term '\m metaPrettyPrint (M, T, mixfix) '\o ' 'is
+    'an 'irreducible 'term 'with 'sort '\m S '\o 'in '\c getName (M) '\o 'that
+    'does 'not 'have 'sort '\m S '\o 'in 'the 'constructor 'subsignature.) else
+    failure ('The 'term '\m metaPrettyPrint (M, T, mixfix) '\o 'was 'found 'to
+    'be 'a 'counterexample. 'Since 'the 'analysis 'is 'incomplete '`, ' 'it
+    'may 'not 'be 'a 'real 'counterexample.) fi .
+Warning: "scc.maude", line 1484 (mod CC-LOOP): didn't expect token getName:
+eq scc-scan-result ( M , invalid-input , B ) = error ( 'Could 'not 'parse
+    'module getName <---*HERE*
+Warning: "scc.maude", line 1483 (mod CC-LOOP): no parse for statement
+eq scc-scan-result (M, invalid-input, B) = error ('Could 'not 'parse 'module
+    getName (M) '.) .
+Warning: "scc.maude", line 1488 (mod CC-LOOP): didn't expect token getName:
+eq ccc-scan-result ( M , complete ) = '\! '\g 'Success: '\o '\c getName
+    <---*HERE*
+Warning: "scc.maude", line 1487 (mod CC-LOOP): no parse for statement
+eq ccc-scan-result (M, complete) = '\! '\g 'Success: '\o '\c getName (M) '\o
+    'is 'canonically 'complete. .
+Warning: "scc.maude", line 1490 (mod CC-LOOP): didn't expect token
+    metaPrettyPrint:
+eq ccc-scan-result ( M , counterexample ( T ) ) = failure ( 'The 'term '\m
+    metaPrettyPrint <---*HERE*
+Warning: "scc.maude", line 1489 (mod CC-LOOP): no parse for statement
+eq ccc-scan-result (M, counterexample (T)) = failure ('The 'term '\m
+    metaPrettyPrint (M, T, mixfix) '\o 'is 'a 'counterexample 'that 'is
+    'mu-irreducible '`, ' 'but 'reducible 'under 'ordinary 'rewriting.) .
+Warning: "scc.maude", line 1494 (mod CC-LOOP): didn't expect token getName:
+eq ccc-scan-result ( M , invalid-input ) = error ( 'Could 'not 'parse 'module
+    getName <---*HERE*
+Warning: "scc.maude", line 1493 (mod CC-LOOP): no parse for statement
+eq ccc-scan-result (M, invalid-input) = error ('Could 'not 'parse 'module
+    getName (M) '.) .
+Warning: "scc.maude", line 1499 (mod CC-LOOP): didn't expect token (:
+eq exec ( scc module ( Q ) . ) = 'Checking 'sufficient 'completeness 'of '\c Q
+    '\o '... '\n if not ( upModule ( <---*HERE*
+Warning: "scc.maude", line 1497 (mod CC-LOOP): no parse for statement
+eq exec (scc module (Q) .) = 'Checking 'sufficient 'completeness 'of '\c Q '\o
+    '... '\n if not (upModule (Q, true) :: Module) then error ('The 'module Q
+    'could 'not 'be 'found.) else if isParameterized? (upModule (Q, true)) then
+    error ('The 'SCC 'cannot 'check 'parameterized 'modules.) else if upModule
+    (Q, true) :: STheory then error ('The 'SCC 'cannot 'check 'theories) else
+    scc-check-module (upModule (Q, true)) scc-scan-result (upModule (Q, true),
+    scc (upModule (Q, true)), false) fi fi fi .
+Warning: "scc.maude", line 1514 (mod CC-LOOP): didn't expect token (:
+eq exec ( mu-scc module ( Q ) . ) = 'Checking 'the 'mu-sufficient 'completeness
+    'of '\c Q '\o '... '\n if not ( upModule ( <---*HERE*
+Warning: "scc.maude", line 1512 (mod CC-LOOP): no parse for statement
+eq exec (mu-scc module (Q) .) = 'Checking 'the 'mu-sufficient 'completeness 'of
+    '\c Q '\o '... '\n if not (upModule (Q, true) :: Module) then error ('The
+    'module Q 'could 'not 'be 'found.) else if isParameterized? (upModule (Q,
+    true)) then error ('The 'SCC 'cannot 'check 'parameterized 'modules.) else
+    if upModule (Q, true) :: STheory then error ('The 'SCC 'cannot 'check
+    'theories) else if getMbs (upModule (Q, true)) =/= none then error ('The
+    'SCC 'cannot 'yet 'check 'mu-sufficient 'completeness 'of 'theories 'with
+    'memberships.) else scc-check-module (upModule (Q, true)) scc-scan-result (
+    upModule (Q, true), mu-scc (upModule (Q, true)), true) fi fi fi fi .
+Warning: "scc.maude", line 1531 (mod CC-LOOP): didn't expect token (:
+eq exec ( ccc module ( Q ) . ) = 'Checking 'canonical 'completeness 'of '\c Q
+    '\o '... '\n if not ( upModule ( <---*HERE*
+Warning: "scc.maude", line 1529 (mod CC-LOOP): no parse for statement
+eq exec (ccc module (Q) .) = 'Checking 'canonical 'completeness 'of '\c Q '\o
+    '... '\n if not (upModule (Q, true) :: Module) then error ('The 'module Q
+    'could 'not 'be 'found.) else if isParameterized? (upModule (Q, true)) then
+    error ('This 'tool 'cannot 'check 'parameterized 'modules.) else if
+    upModule (Q, true) :: STheory then error ('This 'tool 'cannot 'check
+    'theories) else ccc-scan-result (upModule (Q, true), ccc (upModule (Q,
+    true))) fi fi fi .
+Warning: "scc.maude", line 1554 (mod CC-LOOP): didn't expect token downTerm:
+crl [ exec ] : [ NeQL , scc , nil ] => [ nil , scc , exec ( downTerm <---*HERE*
+Warning: "scc.maude", line 1552 (mod CC-LOOP): no parse for statement
+crl [exec] : [NeQL, scc, nil] => [nil, scc, exec (downTerm (T, errorCommand))]
+    if {T, Tp} := metaParse (['CC-GRAMMAR], NeQL, 'Command) .
+Warning: "scc.maude", line 1563 (mod CC-LOOP): didn't expect token (:
+crl [ invalid ] : [ NeQL , scc , nil ] => [ nil , scc , 'The 'command 'could
+    'not 'be 'parsed '-- 'starting 'with 'the 'word 'token qid ( string ( N ,
+    10 ) ) ': at ( N , NeQL ) '. ] if noParse ( <---*HERE*
+Warning: "scc.maude", line 1558 (mod CC-LOOP): no parse for statement
+crl [invalid] : [NeQL, scc, nil] => [nil, scc, 'The 'command 'could 'not 'be
+    'parsed '-- 'starting 'with 'the 'word 'token qid (string (N, 10)) ': at (
+    N, NeQL) '.] if noParse (N) := metaParse (['CC-GRAMMAR], NeQL, 'Command) /\
+    N < size (NeQL) .
+Warning: "scc.maude", line 1575 (mod CC-LOOP): didn't expect token (:
+crl [ eol ] : [ NeQL , scc , nil ] => [ nil , scc , 'Unexpected 'end 'of
+    'command. if ( size ( NeQL ) > 0 ) and last ( NeQL ) =/= '. then 'Perhaps
+    'a 'terminating 'period 'was 'omitted? else nil fi ] if noParse (
+    <---*HERE*
+Warning: "scc.maude", line 1566 (mod CC-LOOP): no parse for statement
+crl [eol] : [NeQL, scc, nil] => [nil, scc, 'Unexpected 'end 'of 'command. if (
+    size (NeQL) > 0) and last (NeQL) =/= '. then 'Perhaps 'a 'terminating
+    'period 'was 'omitted? else nil fi] if noParse (N) := metaParse ([
+    'SCC-GRAMMAR], NeQL, 'Command) /\ N >= size (NeQL) .
+Warning: "scc.maude", line 1582 (mod CC-LOOP): didn't expect token
+    metaPrettyPrint:
+crl [ ambiguous ] : [ NeQL , scc , nil ] => [ nil , scc , 'The 'command 'is
+    'ambiguous. 'Two 'possible 'parses 'are metaPrettyPrint <---*HERE*
+Warning: "scc.maude", line 1578 (mod CC-LOOP): no parse for statement
+crl [ambiguous] : [NeQL, scc, nil] => [nil, scc, 'The 'command 'is 'ambiguous.
+    'Two 'possible 'parses 'are metaPrettyPrint (['SCC-GRAMMAR], T1) 'and
+    metaPrettyPrint (['SCC-GRAMMAR], T2) '.] if ambiguity ({T1, Tp1}, {T2,
+    Tp2}) := metaParse (['SCC-GRAMMAR], NeQL, 'Command) .
+Warning: sort declarations for operator _;_ failed preregularity check on 1 out
+    of 225 sort tuples. First such tuple is (EmptyTypeSet, EmptyTypeSet).
+Warning: "list-scc.maude", line 21: no module CC-LOOP scc LIST-EXAMPLE.

@@ -32,7 +32,6 @@ blockquote {
 }
 
 h1 { font-size: 22px; font-weight: normal;
-     border-bottom: 1px solid black; 
      text-align: center;
    }
 h2 { font-size: 16px;  }

@@ -1,0 +1,9 @@
+for f in *.maude; do
+    echo 
+    echo "$f"
+    echo 
+    echo '```'"$f"
+    cat "$f"
+    echo '```'
+    echo 
+done

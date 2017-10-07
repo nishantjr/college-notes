@@ -1,0 +1,6 @@
+load /home/njr/co/github/maude-team/mfe/src/mfe.maude .
+(set include BOOL off .)
+load list-example.maude
+(select tool CRC .)
+(check Church-Rosser .)
+quit

@@ -1,6 +1,7 @@
 --- Disable Prelude's bool so that acrpo can define it's own.
 set include BOOL off .
 
+--- Define an order on the function symbols
 fmod TEST is   
   sorts Element List .  
   subsorts Element < List . 
@@ -18,8 +19,10 @@ fmod TEST is
 
 endfm
 
+--- Finally, check that each equation rewrites it's LHS to a "lesser" RHS.
 load ../acrpo-tool-distribution/acrpo.maude
-
 reduce (L:List ; P:List) ; Q:List >AC L:List ; (P:List ; Q:List) .
 reduce L:List ; nil               >AC L:List .
 reduce nil ; L:List               >AC L:List .
+
+quit
