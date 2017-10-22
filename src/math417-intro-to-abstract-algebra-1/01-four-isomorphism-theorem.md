@@ -19,9 +19,9 @@ Index of a group $|G : H|$
 
 ## First Isomorpism Theorem (aka: an image is a quotient)
 
-> Suppose, $\varphi: G \to H$ is a *surjective* homomorphism, and $N = Kern(\varphi)$  
+> Suppose, $\varphi: G \to H$ is a *surjective* homomorphism, and $N = Kern(\varphi)$
 > 
-> Then, $\hat\varphi: G/N \to H,\quad \hat\varphi(gN) := \varphi(g)$ is an isomorphism  
+> Then, $\hat\varphi: G/N \to H,\quad \hat\varphi(gN) := \varphi(g)$ is an isomorphism
 > and $G/N \cong H$
 
 Alternately,

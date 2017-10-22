@@ -1,0 +1,70 @@
+--- Permute lists of `Qid`s
+--- =======================
+
+fmod LIST-QID is protecting QID .
+    sort ListQid .
+    subsort Qid < ListQid .
+    op nil :                 -> ListQid [ctor] .
+    op _:_ : ListQid ListQid -> ListQid [ctor assoc id: nil] .
+endfm
+
+fmod SET-LIST-QID is protecting LIST-QID .
+    sort Set-ListQid .
+    subsort ListQid <  Set-ListQid .
+
+    vars E1 E2 : Qid .
+    vars L1 L2 L3 : ListQid .
+    vars S1   : Set-ListQid .
+
+    op mt  :                         -> Set-ListQid  [ctor] .
+    op _ _ : Set-ListQid Set-ListQid -> Set-ListQid  [ctor assoc comm id: mt] . 
+    eq L1 L1 = L1 .
+
+
+--- We generalize list concatenation to generate left cosets of a `Set-ListQid`:
+
+
+    op _:_ : ListQid Set-ListQid -> Set-ListQid [assoc id: nil] .
+    eq E1 : (L1 L2 S1) = (E1 : L1) (E1 : (L2 S1)) .
+    eq E1 : mt        = mt .
+
+
+--- `p(with, of)`: With each element, `e` in the list `with`, generate permutations
+--- of the list `of` with `e` as the first element and return their union. Behaviour
+--- is undefined if any element is in `with` but not in `of`.
+
+
+    op p : ListQid ListQid -> Set-ListQid .
+    eq p( E1 : L1, L2 : E1 : L3 ) = (E1 : perm( L2 : L3))
+                                    p( L1,  L2 : E1 : L3) .
+    eq p( nil, L1 ) = mt .
+
+
+
+    op perm : ListQid -> Set-ListQid .
+    eq perm(E1 : L1)  = p (E1 : L1, E1 : L1) .
+    eq perm(nil) = nil .
+endfm
+
+
+--- Finally, we test things out:
+
+
+reduce ('a : 'b) : 'c : ('d : 'e) .    --- Are our lists associative?
+reduce ('x) ('a : 'b) ('a : 'b) 'a .   --- Cosets and Set union need to have
+                                       --- their precedence sorted out
+
+reduce 'a : ( 'b 'c )                  --- Cosets work as expected?
+    == ('a : 'b) ('a : 'c) .                
+reduce 'a : mt == mt .                 --- and hopefully, not losing our identities
+reduce 'a : nil == 'a .                ---
+
+reduce ('a : ('a : nil)) ('a : 'a : nil) .
+
+reduce perm('a) == 'a .
+reduce perm('a : 'a) == 'a : 'a .
+reduce perm('a : 'b) == ( 'a : 'b ) ( 'b : 'a ) .
+reduce perm('a : 'b : 'c : 'a : 'b : 'c ) .
+
+quit
+
