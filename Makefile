@@ -1,4 +1,8 @@
 .build/%.pdf: src/%.md
-	mkdir $(dir $@)
-	pandoc $^ --filter panpipe -o $@
+	@mkdir -p $(dir $@)
+	pandoc $^ -o $@ \
+	    --filter panpipe \
+	    --include-before-body macros.tex \
+	    --variable author:'Nishant Rodrigues' \
+	    --variable geometry:'margin=2cm'
 
