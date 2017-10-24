@@ -4,14 +4,6 @@ author: Nishant Rodrigues
 geometry: margin=2cm
 ---
 
-\newcommand \N {\mathbb N}
-\newcommand \Z {\mathbb Z}
-
-\newcommand \normeq {\trianglelefteq}
-\newcommand \aut {\text {Aut}}
-\newcommand \stab {\text {Stab}}
-\newcommand \orbit {\mathcal O}
-
 Center of $G, Z(G)$
 :   group of all elements in $G$ that commute.
     $Z(G) = \{ a: ag = ga \forall g \in G \}$
@@ -56,7 +48,7 @@ These hold for:
 
 1.  Groups (Normal subgroups)
 2.  Rings (Ideals)
-3.  $R-$modules
+3.  $R-$modules (Submodules)
 4.  ...
 
 First Isomorpism Theorem (aka: an image is a quotient)
@@ -212,4 +204,3 @@ Nilpotent groups
     * $H < G \implies H < N_G(H)$ (Every proper subgroup of $H$ is a proper subgroup of it's normalizer)
 
 > cyclic ($\Z_p$) $\subset$ abelian $\subset p-$groups ($D_8, D_{2^n}$) $\subset$ nilpotent $\subset$ solvable ($D_10, S_3, S_4$) $\subset$ groups ($S_5, A_5$)
-
