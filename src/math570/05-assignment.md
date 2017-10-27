@@ -5,10 +5,6 @@ author: Nishant Rodrigues
 ---
 
 \newcommand \leQ {\le_Q}
-\newcommand \union {\cup}
-\newcommand \satisfies{\vDash}
-\newcommand \N {\mathbb N}
-\newcommand \Z {\mathbb Z}
 \newcommand \ElDiag {\text {ElDiag}}
 
 1.  a.  $T$ is finititely axiomatizable iff $\langle T \rangle$ is a

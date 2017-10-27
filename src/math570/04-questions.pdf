@@ -1,0 +1,13 @@
+--2017-10-27 16:19:26--  https://faculty.math.illinois.edu/~anush/Courses/2017F.Math570.Logic/Homework/hw4.pdf
+Loaded CA certificate '/etc/ssl/certs/ca-certificates.crt'
+Resolving faculty.math.illinois.edu... 128.174.199.46
+Connecting to faculty.math.illinois.edu|128.174.199.46|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 81096 (79K) [application/pdf]
+Saving to: ‘hw4.pdf’
+
+     0K .......... .......... .......... .......... .......... 63% 6.55M 0s
+    50K .......... .......... .........                       100% 58.4M=0.008s
+
+2017-10-27 16:19:26 (9.73 MB/s) - ‘hw4.pdf’ saved [81096/81096]
+
