@@ -8,7 +8,10 @@
 
 \newcommand \union      \cup
 \newcommand \intersect  \cap
+\newcommand \Union      \bigcup
+
 \newcommand \bijection  \longleftrightarrow
+\newcommand \comp       \circ               % composition
 
 % "does not imply": Stolen from https://tex.stackexchange.com/a/47091/32726
 \newcommand \nimplies   {\mathrel{{\ooalign{\hidewidth$\not\phantom{=}$\hidewidth\cr$\implies$}}}}
@@ -23,11 +26,21 @@
 
 % Logic
 \newcommand \proves     {\vdash}
+\newcommand \nproves    {\not\vdash}
 \newcommand \satisfies  {\vDash}
+\newcommand \nsatisfies {\not\vDash}
 \newcommand \satisfy    {\vDash}
 \newcommand \model      {\vDash}
 \newcommand \Th         {\text{Th}}
 \newcommand \limplies   {\longrightarrow}
+\newcommand \liff       {\longleftrightarrow}
 \newcommand \Land       {\bigwedge}
 \newcommand \embeds     {\hookrightarrow}
 \newcommand \elEmbeds   {\hookrightarrow_e}
+\newcommand \arith {\sigma_{\text{arith}}}
+
+% Swap phi and varphi. I find phi too similar to emptyset
+\let\temp\phi
+\let\phi\varphi
+\let\varphi\temp
+

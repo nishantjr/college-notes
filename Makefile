@@ -15,8 +15,10 @@ export PATH := $(shell pwd)/bin:$(PATH)
 
 src/math570/notes.pdf:
 	wget https://faculty.math.illinois.edu/~anush/Teaching_notes/logic_lectures.pdf -O $@
-src/math570/%-questions.pdf:
+src/math570/0%-questions.pdf:
 	wget $(@:src/math570/0%-questions.pdf=https://faculty.math.illinois.edu/~anush/Courses/2017F.Math570.Logic/Homework/hw%.pdf) -O $@
+src/math570/1%-questions.pdf:
+	wget $(@:src/math570/%-questions.pdf=https://faculty.math.illinois.edu/~anush/Courses/2017F.Math570.Logic/Homework/hw%.pdf) -O $@
 
 # Make, why are you deleting `.tex` files when creating HTML
 .PRECIOUS: .build/%.tex

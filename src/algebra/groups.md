@@ -40,6 +40,21 @@ H characteristic subgroup of $G$, ($H$ char $G$):
 :   (Similar to the $\emptyset-$definable sets/substructures)
 
 
+Chinese Remainder Theorem
+=========================
+
+Given:
+
+*   $n_1, \cdot n_k$ pairwise co-prime
+*   $$\begin{aligned}
+    x \equiv a_1 \bmod n_1  \\
+    x \equiv a_2 \bmod n_2 \\
+    \vdots \\
+    x \equiv a_k \bmod n_k \\
+    \end{aligned}$$
+
+There is a solution $x$ unique $\mod N = \prod_k n_i$
+
 
 Isomorphism theorems
 ====================

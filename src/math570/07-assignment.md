@@ -66,8 +66,6 @@ title: Math 570 - Homework 7
         Since $N \elEmbeds M_\omega$
         But since $\psi$
         
-\newcommand \arith {\sigma_{\text{arith}}}
-
 3.  1.  We can encode $\arith$ sentences in $\arith$. Let $[\phi]$
         represent this encoding.
     2.  For any sigma sentence, $\theta$, we can define an $\arith$

@@ -1,0 +1,14 @@
+#!/usr/bin/bash
+
+# XXX: Needs maude-ceta and scc in PATH; from http://maude.cs.uiuc.edu/tools/scc/releases/Maude-ceta-2.3-linux.tgz
+unset MAUDE_LIB
+
+file="$1"; shift
+module="$1"; shift
+
+echo "
+load tree.maude .
+select CC-LOOP .
+loop init-cc .
+(scc $module .)
+" |  maude-ceta -no-banner scc.maude
