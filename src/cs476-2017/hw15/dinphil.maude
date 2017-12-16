@@ -1,0 +1,223 @@
+load model-checker.maude
+
+set include BOOL off .
+
+fmod IMP-SYNTAX is
+  pr TRUTH . --- here we use the built-in booleans because they can go in conditional equations
+  sort Id NzNat Nat .
+  subsort NzNat < Nat .
+  ops a b c d e f g i j k l m n o p q r s t u v w x y z : -> Id [ctor] .
+  op  _,   : Id        -> Id    [ctor] .
+  --- op true  :           -> Bool  [ctor] .
+  --- op false :           -> Bool  [ctor] .
+  op  0    :           -> Nat   [ctor] .
+  op  1    :           -> NzNat [ctor] .
+  op  _+_  : Nat Nat   -> Nat   [ctor assoc comm id: 0] .
+  op  _+_  : NzNat Nat -> NzNat [ctor ditto] .
+  op  _*_  : Nat Nat   -> Nat   [ctor assoc comm] .
+
+  sorts  BoolExp BoolRedex . 
+  sorts  NatExp  NatRedex .
+  subsort Id < NatRedex .
+  subsort Nat  NatRedex  < NatExp  .
+  subsort Bool BoolRedex < BoolExp .
+  op (_&&_) : BoolExp BoolExp -> BoolRedex [ctor] . 
+  op (_||_) : BoolExp BoolExp -> BoolRedex [ctor] .
+  op  ~_    : BoolExp         -> BoolRedex [ctor] .
+  op (_<_)  : NatExp NatExp   -> BoolRedex [ctor] .
+  op (_<=_) : NatExp NatExp   -> BoolRedex [ctor] .
+  op (_=_)  : NatExp NatExp   -> BoolRedex [ctor] .
+  op  _-_   : NatExp NatExp   -> NatRedex  [ctor] .
+  op  _+_   : NatRedex NatExp -> NatRedex  [ditto] .
+  op  _+_   : NatExp NatExp   -> NatExp    [ditto] .
+  op  _*_   : NatExp NatExp   -> NatExp    [ditto] .
+
+  sort BasicStmt Stmt .
+  subsort BasicStmt < Stmt .
+  --- stmts have id: skip; leading to a simpler semantics
+  --- but not suitable for symbolic reasoning with unification
+  op  _;_  : Stmt Stmt -> Stmt [ctor assoc id: skip prec 60] .
+  op  skip : -> BasicStmt [ctor] .
+  op  _:=_ : Id NatExp -> BasicStmt [ctor] .
+  op  if_then_fi : BoolExp Stmt -> BasicStmt [ctor] .
+  op  while_do_od : BoolExp Stmt -> BasicStmt [ctor] .
+endfm
+
+fmod IMP-DATA is pr IMP-SYNTAX .
+  op  ~Bool_                : Bool -> Bool .
+  ops (_/\Bool_) (_\/Bool_) : Bool Bool -> Bool .
+  op  _-Nat_                : Nat Nat -> Nat .
+  ops (_<Nat_)  (_<=Nat_) : Nat Nat -> Bool .
+  op  (_=Nat_) : Nat Nat -> Bool [comm] .
+  op  (_*Nat_) : Nat Nat -> Nat  [assoc comm] .
+  var N M : Nat . var P R Q : NzNat . var B : Bool .
+  eq         ~Bool  true    = false [variant] .
+  eq         ~Bool  false   = true  [variant] .
+  eq true    /\Bool B       = B     [variant] .
+  eq false   /\Bool B       = false [variant] .
+  eq true    \/Bool B       = true  [variant] .
+  eq false   \/Bool B       = B     [variant] .
+  eq N       -Nat  (N + M)  = 0     [variant] .
+  eq (N + P) -Nat   N       = P     [variant] .
+  eq N       <Nat   N + P   = true  [variant] .
+  eq N + M   <Nat   N       = false [variant] .
+  eq N       <=Nat  N + M   = true  [variant] .
+  eq N + P   <=Nat  N       = false [variant] .
+  eq N + P    =Nat  N       = false [variant] .
+  eq N        =Nat  N       = true  [variant] .
+  eq N       *Nat   0       = 0     [variant] .
+  eq N       *Nat   1       = N     [variant] .
+  eq (P + R) *Nat   Q       = (P *Nat Q) + (R *Nat Q) .
+endfm
+
+fmod IMP-MEM is pr IMP-SYNTAX .
+  sort PreMemory Memory .
+  op [_,_] : Id Nat -> PreMemory [ctor] .
+  op none  : -> PreMemory [ctor] .
+  op __    : PreMemory PreMemory -> PreMemory [ctor assoc comm id: none] .
+  op {_}   : PreMemory -> Memory [ctor] .
+  op err   : -> [Memory] [ctor] .
+  var I : Id . var J K : Nat . var M : PreMemory .
+  eq {[I,J] [I,K] M} = err .
+endfm
+
+fmod IMP-EVAL is pr IMP-MEM + IMP-DATA .
+  op eval : Memory NatExp  -> [Nat]  .
+  op eval : Memory BoolExp -> [Bool] .
+  var NE1 NE2 : NatExp  . var B : Bool . var NR1 NR2 : NatRedex . var P : NzNat .
+  var BE1 BE2 : BoolExp . var N : Nat  . var M : Memory . var PM : PreMemory . var I : Id .
+  --- recursive case
+  eq eval(M,NR1 + P  )  = eval(M,NR1) + P [variant] .
+  eq eval(M,NR1 + NR2)  = eval(M,NR1) + eval(M,NR2) [variant] .
+  eq eval(M,NE1 - NE2)  = eval(M,NE1) -Nat   eval(M,NE2) [variant] .
+  eq eval(M,NE1 * NE2)  = eval(M,NE1) *Nat   eval(M,NE2) [variant] .
+  eq eval(M,BE1 && BE2) = eval(M,BE1) /\Bool eval(M,BE2) [variant] .
+  eq eval(M,BE1 || BE2) = eval(M,BE1) \/Bool eval(M,BE2) [variant] .
+  eq eval(M,NE1 <  NE2) = eval(M,NE1) <Nat   eval(M,NE2) [variant] .
+  eq eval(M,NE1 <= NE2) = eval(M,NE1) <=Nat  eval(M,NE2) [variant] .
+  eq eval(M,NE1  = NE2) = eval(M,NE1)  =Nat  eval(M,NE2) [variant] .
+  eq eval(M,~ BE1)      = ~Bool eval(M,BE1) [variant] .
+  --- base case
+ ceq eval({[I,N] PM},I) = N if {[I,N] PM} =/= err .
+  eq eval(M,N)          = N [variant] .
+  eq eval(M,B)          = B [variant] .
+endfm
+
+mod IMP-NUMBERS is pr IMP-SYNTAX .
+  ops 2 3 4 5 6 7 8 9 10 : -> NzNat .
+  eq 2  = 1 + 1 .
+  eq 3  = 1 + 1 + 1 .
+  eq 4  = 1 + 1 + 1 + 1 .
+  eq 5  = 1 + 1 + 1 + 1 + 1 .
+  eq 6  = 1 + 1 + 1 + 1 + 1 + 1 .
+  eq 7  = 1 + 1 + 1 + 1 + 1 + 1 + 1 .
+  eq 8  = 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 .
+  eq 9  = 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 .
+  eq 10 = 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 .
+endm
+
+mod THREADED-IMP-SEMANTICS is pr IMP-EVAL + IMP-SYNTAX + IMP-NUMBERS .
+  sort ThreadedImpState Thread ThreadSet .
+  subsort Thread < ThreadSet .
+  op __    : ThreadSet ThreadSet -> ThreadSet [ctor prec 61 assoc comm id: none] .
+  op none  : -> ThreadSet .
+  op {_|_} : Stmt Nat -> Thread [ctor] .
+  op _|_|_ : ThreadSet Memory Nat -> ThreadedImpState [ctor prec 62] .
+
+  sort TermStmt .
+  subsort TermStmt < Stmt .
+
+  var NE : NatExp . var S S'  : Stmt    . var I  : Id . var TS : ThreadSet .
+  var M  : Memory . var N J K : Nat     . var BR : BoolRedex . 
+  var B  : Bool   . var BE    : BoolExp . var PM : PreMemory .
+
+  rl {T:TermStmt ; S' | J} TS | M | K         => {S' | J}  TS | M | J .
+  rl {I := NE ; S' | J} TS | {[I,N] PM} | K   => {S' | J} TS | {[I,eval({[I,N] PM},NE)] PM} | J .
+  rl {if BR then S fi ; S' | J} TS | M | K    => {if eval(M,BR) then S fi ; S' | J} TS | M | J .
+  rl {if true then S fi ; S' | J} TS | M | K  => {S ; S' | J} TS | M | J .
+  rl {if false then S fi ; S' | J} TS | M | K => {S' | J} TS | M | J .
+  rl {while BE do S od ; S' | J} TS | M | K   => {if BE then S ; while BE do S od fi ; S' | J} TS | M | J .
+endm
+
+---
+--- Consider the following module which defines an instance of the famous dining philosophers
+--- problem using the threaded version of the programming language IMP. In the traditional
+--- formulation of the problem, there are a group of N + 2 philosophers sitting around a
+--- circle table (for N any natural number) and between each pair of philosophers is a single
+--- chopstick. In order to eat, each philosopher must first pick up the chopstick on his left
+--- and then on his right.
+--- 
+--- In our IMP version, the chopsticks are represented by variables a, b, c, and d.
+--- A variable set to 0 represents an unused chopstick.
+--- A philosopher "picks up" a chopstick by setting the respective variable to any non-zero value.
+---
+--- There are three possible initial states we will consider:
+--- 
+--- [1] init-thds(0)     | init-mem | 0
+--- [2] init-thds(1)     | init-mem | 0
+--- [3] init-thds(1 + 1) | init-mem | 0
+---
+--- Your task has several parts:
+---
+--- [1][a] Define a proposition, two-eat, that holds whenever two philosphers are
+---        "eating" at the same time, i.e. when two threads execute the "eat" statement
+--- [1][b] Define a parameterized proposition, neighbors-eat(N), where N is a Nat, which
+---        holds whenever two neighboring philosophers are "eating" at the same time where
+---        the size of the group of philosophers is N + 1
+--- [2][a] Using the Maude search command or LTL model checking, from each initial state,
+---        check whether they can reach a state that satisfies two-eat
+--- [2][b] Using the Maude search command or LTL model checking, from each initial state,
+---        check whether they can reach a state that satisfies neighbors-eat(N) where
+---        the initial state contains N + 1 philosophers
+---
+--- If [2][b] has a solution state (i.e. if any initial state can reach a state where
+--- neighbors-eat holds), we say that two philosophers were being "impolite," since they
+--- used the same chopstick to eat at the same time. Answer the next question only if
+--- your answer to [2][b] shows that philosophers can reach an impolite state.
+--- 
+--- [3] Describe in your own words why the philosophers can reach an impolite state.
+---
+--- NOTE: You may not modify any definition in the DINPHIL module.
+---       Your predicate definitions may not change the meaning/semantics of any IMP program.
+---       Your predicate definitions may use the [owise] attribute.
+---
+
+mod DINPHIL is pr THREADED-IMP-SEMANTICS .
+  op eat       : -> TermStmt  [ctor] .
+  op phil      : Id Id Nat  -> Thread    .
+  op init-thds : Nat -> [ThreadSet] .
+  op init-mem  : -> Memory    .
+  var I I' : Id . var N : Nat .
+
+  eq init-mem         = {[a,0] [b,0] [c,0] [d,0]} .
+  eq init-thds(0)     = phil(a,b,0) phil(b,a,1) .
+  eq init-thds(1)     = phil(a,b,0) phil(b,c,1) phil(c,a,2) .
+  eq init-thds(1 + 1) = phil(a,b,0) phil(b,c,1) phil(c,d,2) phil(d,a,3) .
+  eq phil(I,I',N)  = 
+     {while true do
+        while I  = 1 do skip od ;
+        I  := 1 ;
+        while I' = 1 do skip od ;
+        I' := 1 ;
+        eat ;
+	I  := 0 ;
+	I' := 0
+      od | N} . 
+endm
+
+--- define predicates two-eat and neighbors-eat inside this module
+mod DINPHIL-CHECK is inc DINPHIL . inc (MODEL-CHECKER) * 
+     (sort Nat to Nat*,sort NzNat to NzNat*,
+      op _+_ to _.+_, op _*_ to _.*_, op _<_ to _.<_, op _<=_ to _.<=_) .
+  subsort ThreadedImpState < State .
+  --- INSERT CODE BELOW
+
+  --- INSERT CODE ABOVE
+endm
+
+--- search/LTL commands which perform the verification above
+--- can two people eat at the same time?
+--- include (3) commands to verify this property for each initial state
+
+--- can two neighbors eat at the same time?
+--- include (3) commands to verify this property for each initial state

@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
 set -e
-maude -no-banner "$@" | grep -v -e === -e "^rewrites" -e Bye
+maude -no-banner "$@" | grep -v -e ====== -e "^rewrites" -e "^states" -e "^$" -e Bye
