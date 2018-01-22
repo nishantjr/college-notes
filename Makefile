@@ -2,8 +2,6 @@ export PATH := $(shell pwd)/bin:$(PATH)
 export MAUDE_LIB := $(shell pwd)/src/cs476-2017/:$(MAUDE_LIB)
 
 .build/%.pdf .build/%.tex: src/%.md
-	echo $$PATH
-	echo $$MAUDE_LIB
 	@mkdir -p $(dir $@)
 	pandoc $^ -o $@ \
 	    --filter panpipe \
