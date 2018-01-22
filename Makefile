@@ -17,6 +17,8 @@ export MAUDE_LIB := $(shell pwd)/src/cs476-2017/:$(MAUDE_LIB)
 
 src/math570/notes.pdf:
 	wget https://faculty.math.illinois.edu/~anush/Teaching_notes/logic_lectures.pdf -O $@
+src/math570/final_prob_list.pdf:
+	wget https://faculty.math.illinois.edu/~anush/Courses/2017F.Math570.Logic/final_prob_list.pdf -O $@
 src/math570/0%-questions.pdf:
 	wget $(@:src/math570/0%-questions.pdf=https://faculty.math.illinois.edu/~anush/Courses/2017F.Math570.Logic/Homework/hw%.pdf) -O $@
 src/math570/1%-questions.pdf:
