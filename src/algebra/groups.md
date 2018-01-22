@@ -125,22 +125,17 @@ Stabilizer of $x \in X$
 
     $\ker(\cdot) \subseteq \stab_G(x), \forall x \in X$
 
+Orbit
+:   $\{ g \cdot a : \forall g \in G\}$
+
+
 Faithful:
 :   $\ker(\cdot) = 1$
 
-*  $|\orbit_a| =  [G : \stab_G(a)]$
+Important results:
 
-*  $S_n$ on $\{1, 2, \ldots n \}$:
- 
-    * Identity permutation representation.
-    * Faithful.
-    * For each $i$, $\stab_{S_n}(i) \cong S_{n-1}$.
-
-*  $D_8$ on vertices of square:
- 
-    -   Permutation representation:
-        -   $r \mapsto (1 2 3 4)$
-        -   $s \mapsto (2 4)$
+*   $|\orbit_a| =  [G : \stab_G(a)]$
+*   $
 
 Action by conjugation
 --------------------------

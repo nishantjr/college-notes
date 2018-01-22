@@ -4,15 +4,9 @@ author: Nishant Rodrigues
 geometry: margin=1cm
 ---
 
-\newcommand \satisfy \vDash
-\newcommand \satisfies \satisfy
-\newcommand \nsatisfy \nvDash
 \newcommand \bottom {\text{Bottom}}
 \newcommand \theory {\text{Th}}
 \newcommand \elementarySubstruct \preceq
-\newcommand \R{\mathbb R}
-\newcommand \Q{\mathbb Q}
-\newcommand \N{\mathbb N}
 \newcommand \FOL{\mathbb {FOL}}
 1.  a.  Show that: $T$ is semantically complete $\iff$ $\forall M, M' \satisfy T, M \equiv M'$
 

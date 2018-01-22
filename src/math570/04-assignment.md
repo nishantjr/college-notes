@@ -4,13 +4,9 @@ title:  Math 500 - Homework 4
 geometry: margin=1cm
 ---
 
-\newcommand \Z {\mathbb Z}
-\newcommand \union \cup
 \newcommand \intersection \cap
 
 \newcommand \sigring {\tau_{\text{ring}}}
-\newcommand \proves \vdash
-\newcommand \limplies \rightarrow
 \newcommand \FIELDS {\text{FIELDS}}
 \newcommand \ACF {\text{ACF}}
 

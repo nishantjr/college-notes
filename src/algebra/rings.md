@@ -131,18 +131,17 @@ Polynomial Rings
 Gauss' Lemma
 :   $R$ UFD, $Q$ its field of fractions then: $p(x)$ factorizable in
     $Q[x] \Longrightarrow$ factorizable in $R[x]$
+    
+Eisenstien's Criterion
 
--   $p(x)$ of degree 2/3 over field $F$ irreducible
-    $\Longleftrightarrow$ has root in $F$.
--   $p(x) \in \mathbb Z[x]$, monic. then the roots of $p(x)$ in
-    $\mathbb Q$ must be integers dividing the constant term.
--   ID R, Ideal I, $p(x)$ non-constant monic polynomial. Then if $p(x)$
-    cannot be reduced into polynomials of a smaller degree, then $p(x)$
-    is irreducible in $R[x]$
--   Eisenstien's Criterion: $P$ prime ideal of $R$ Integral domain.
+:   $P$ prime ideal of $R$ Integral domain.
     $f(x) = x^n + a_{n-1}x^{n-1} + \cdots a_1 x + a_0 \in R[x]$.
     $a_{n-1}, \ldots, a_1, a_0 \in P, a_0 \notin P^2 \Longrightarrow f(x)$
     is irreducible.
+
+Roots divide constant terms of monic polynnomials
+:   $p(x) \in \mathbb Z[x]$, monic. then the roots of $p(x)$ in
+    $\mathbb Q$ must be integers dividing the constant term.
 
 Group Rings
 -----------
