@@ -52,12 +52,11 @@ minimum number of non-zero terms.
 
 Let $g_0$ be an element in $g$, sucht that $x_1(g0) \ne x_2(g0)$ (this exists, coz distinct.)
 
-For any g \in G, 
+For any $g \in G$, 
 
     a_1 x_1 (g) .... + a_m X_m(g) = 0
     
 Multiplying by x_m(g_0 )
-
 
     a_1 x_m(g0) x_1 (g) .... + a_m X_m(g0) X_m(g) = 0           1
  

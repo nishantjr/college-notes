@@ -78,9 +78,9 @@ $\mathbb X / 3 \mathbb Z$
   - unitary, irreducible Representation, inner product.
 
 Direct Sum
-: A vector space $V$ is a direct sum of subspaces $W$ and $W'$ if $\forall v \in
-  V$, \exists$ a unique $w \in W, w' \in W'$ such that $v = w + w'$. We write $V =
-  W \oplus W'$
+:   A vector space $V$ is a direct sum of subspaces $W$ and $W'$ if
+    $\forall v \in  V, \exists$ a unique $w \in W, w' \in W'$ such
+    that $v = w + w'$. We write $V =  W \oplus W'$
 
   e.g. $V = \mathbb C^2$, $W = \{(z_1, z_2)  : z_1 = z_2 \}, W' = \{ z_1, z_2  :
   z_1 = -z_2 \}$
@@ -101,7 +101,7 @@ Invariant / stable subspace
   \begin{bmatrix} 0 & 1 \\ 1 & 0 \end{bmatrix}$.
 
   This has a subspace $\begin{bmatrix}
-  \end{bmatrix}
+  \end{bmatrix}$
 
 Irreducible representation
 : A representation $\rho: G \to GL(V)$ is irreducible if it's only invariant
