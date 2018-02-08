@@ -1,17 +1,24 @@
 % Basic set theory
 \renewcommand \C {\mathbb C}
+\newcommand   \D {\mathbb D}
 \newcommand   \F {\mathbb F}
 \newcommand   \N {\mathbb N}
 \newcommand   \Q {\mathbb Q}
 \newcommand   \R {\mathbb R}
+\renewcommand \S {\mathbb S}
 \newcommand   \Z {\mathbb Z}
 
+\newcommand \id         {\mathbbm 1}
 \newcommand \union      \cup
 \newcommand \intersect  \cap
 \newcommand \Union      \bigcup
 
 \newcommand \bijection  \longleftrightarrow
+\newcommand \inclusion  \hookrightarrow
 \newcommand \comp       \circ               % composition
+\newcommand \compose    \circ               % composition
+
+\newcommand \angleb[1]   {\langle #1 \rangle}
 
 % "does not imply": Stolen from https://tex.stackexchange.com/a/47091/32726
 \newcommand \nimplies   {\mathrel{{\ooalign{\hidewidth$\not\phantom{=}$\hidewidth\cr$\implies$}}}}
@@ -42,13 +49,16 @@
 \newcommand \arith {\sigma_{\text{arith}}}
 
 % Linear Temporal Logic
-
+% TODO: Prepend with `l` and make conditional on $ltl being set?
 \newcommand \henceforth \square
 \newcommand \always     \henceforth
 \newcommand \eventually \lozenge
-\newcommand \next       \circ
+\newcommand \lnext      \circ
 
+% Topology
+\newcommand \homotopic  \simeq
 \newcommand \tiff {\text{iff}}
+\newcommand \FundGroup {\pi_1}
 
 % Swap phi and varphi. I find phi too similar to emptyset
 \let\temp\phi
