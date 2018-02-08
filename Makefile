@@ -1,6 +1,13 @@
 export PATH := $(shell pwd)/bin:$(PATH)
 export MAUDE_LIB := $(shell pwd)/src/cs476-2017/:$(MAUDE_LIB)
 
+always_build =                                                                 \
+    $(wildcard src/algebra/*.md) $(wildcard src/topology/*.md)                 \
+    $(wildcard src/math500-abstract-algebra/*.md)                              \
+    $(wildcard src/math525-algebraic-topology/*.md)                            \
+    $(wildcard src/cs576-automated-deduction/nelson-oppen.md)
+all: $(patsubst src/%.md,.build/%.pdf, ${always_build})
+
 .build/%.pdf .build/%.tex: src/%.md
 	@mkdir -p $(dir $@)
 	pandoc $^ -o $@ \
