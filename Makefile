@@ -12,6 +12,7 @@ all: $(patsubst src/%.md,.build/%.pdf, ${always_build})
 	@mkdir -p $(dir $@)
 	pandoc $^ -o $@ \
 	    --filter panpipe \
+	    --from markdown+line_blocks \
 	    --include-before-body macros.tex \
 	    --variable author:'Nishant Rodrigues' \
 	    --variable geometry:'margin=2cm'
