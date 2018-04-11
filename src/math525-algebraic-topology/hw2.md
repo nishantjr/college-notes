@@ -35,6 +35,17 @@ title: Math 525 - Homework 2
         We can continuously move $q$ along the band, until it comes up near $p$ from the other side.
         The path $q$ would however be flipped.
         
+        ---
+        
+        There is a retraction of the mobius band onto the diagonal $d$ forming
+        a circle. Thus $\FundGroup(M) = \Z$.
+        
+        The image of the boundary is in $\FundGroup(M)$ is $d^2$.
+        If there is a deform retraction back onto the border, then
+        it induces an inclusion from $\FundGroup(r(M))$ to $\FundGroup(M)$.
+        
+        XXX
+        
 2.  $\Rightarrow$: Suppose that $[\gamma]$ is the identity in
     $\Pi_1(X)$. Then, $\gamma \homotopic c_{x_0}$ the constant map. This
     means that there is a continuous function: $f: I \times \S^1 \to X$,
