@@ -1,3 +1,10 @@
+---
+header-includes: |
+    \usepackage{tikz}
+---
+
+\newcommand \Provable {\text{Provable}}
+
 $\sigma-$structure
 :   Underlying set or "Universe" along with an interpretation of contant
     symbols, functions and relations.

@@ -125,6 +125,11 @@ Unique Lifting Property
     |       the lifts agree on all of $Y$.
 
 
+Isomorphism between covering spaces $p_1 : \squiggle X_1 \to X$, $p_2 : \squiggle X_2 \to X$
+
+:   is a homeomorphism $f: \squiggle X_1 \to \squiggle X_2$, such that $p_1 = p_2 f$
+
+
 Cell Complexes
 ---------------
 

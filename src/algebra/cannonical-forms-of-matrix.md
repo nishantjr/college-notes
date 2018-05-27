@@ -7,7 +7,7 @@ Characteristic polynomial
 Minimal polynomial $m_T(x)$
 :   The unique monic polynomial that generates the ideal $\ann(V)$
 
-Companion Matrix $\mathscr C_{a(x)}$
+Companion Matrix $\mathcal C_{a(x)}$
 :   Given the polynomial $p(x) = x^k + b_{k-1}x^{k-1} + b_{k-2} x^{k-2} + \cdots b_0$
 
     $$\begin{bmatrix}
@@ -53,5 +53,5 @@ Caculating Rational Normal Form:
 g | a , g | b
 g x = a, g y = b
 
-ra + sb = g = rgx + rgy = g(rx + sy) \implies g | rx + sy
+$ra + sb = g = rgx + rgy = g(rx + sy) \implies g | rx + sy$
 
